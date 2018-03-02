@@ -741,6 +741,8 @@ namespace OpenTK.Platform.iPhoneOS
             return point;
         }
 
+        bool INativeWindow.CursorGrabbed { get { return true; } set {}}
+
         public override void LayoutSubviews()
         {
             base.LayoutSubviews ();

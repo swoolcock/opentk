@@ -86,6 +86,9 @@ let runtimeProjects =
     let xamarinFilter f =
         if isXamarinPlatform then
             f
+            -- "**/OpenTK.GLWidget.csproj"
+            -- "**/OpenTK.GLControl.csproj"
+            -- "**/OpenTK.csproj"
             -- "**/OpenTK.NS20.csproj"
             -- "**/OpenTK.Android.csproj"
         else
@@ -94,7 +97,7 @@ let runtimeProjects =
             -- "**/OpenTK.iOS.csproj"
 
     !! "src/**/*.??proj"
-    ++ "tests/**/OpenTK.Tests*.??proj"
+    -- "tests/**/OpenTK.Tests*.??proj"
     -- "src/Generator.*/**.csproj"
     |> xamarinFilter
 
@@ -223,7 +226,7 @@ Target "All" DoNothing
   ==> "GenerateBindings"
   ==> "Build"
   ==> "CopyBinaries"
-  ==> "RunTests"
+//  ==> "RunTests"
   ==> "All"
 
 "All"
