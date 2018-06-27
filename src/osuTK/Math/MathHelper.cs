@@ -1,5 +1,5 @@
 ﻿/* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK Team.
+ * Copyright (c) 2006-2008 the osuTK Team.
  * This notice may not be removed from any source distribution.
  * See license.txt for licensing detailed licensing details.
  *
@@ -9,7 +9,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Contains common mathematical functions and constants.

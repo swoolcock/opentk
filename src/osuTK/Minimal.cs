@@ -37,7 +37,7 @@ namespace Microsoft.Win32
     }
 }
 
-namespace OpenTK
+namespace osuTK
 {
     public sealed class Icon : IDisposable
     {
@@ -149,8 +149,8 @@ namespace OpenTK
     }
 }
 
-// Need a different namespace to avoid clash with OpenTK.Graphics.
-namespace OpenTK.Minimal
+// Need a different namespace to avoid clash with osuTK.Graphics.
+namespace osuTK.Minimal
 {
     using System.Drawing;
 

@@ -11,7 +11,7 @@ namespace Bind.ES
         {
             Settings.DefaultOutputPath = Path.Combine(
                 Settings.DefaultOutputPath, "../ES30");
-            Settings.DefaultOutputNamespace = "OpenTK.Graphics.ES30";
+            Settings.DefaultOutputNamespace = "osuTK.Graphics.ES30";
             Settings.DefaultImportsFile = "ES30Core.cs";
             Settings.DefaultDelegatesFile = "ES30Delegates.cs";
             Settings.DefaultEnumsFile = "ES30Enums.cs";
@@ -24,7 +24,7 @@ namespace Bind.ES
             Profile = "gles2"; // The 3.0 spec reuses the gles2 apiname
             Version = "2.0|3.0";
 
-            // For compatibility with OpenTK 1.0 and Xamarin, generate
+            // For compatibility with osuTK 1.0 and Xamarin, generate
             // overloads using the "All" enum in addition to strongly-typed enums.
             // This can be disabled by passing "-o:-keep_untyped_enums" as a cmdline parameter.
             Settings.DefaultCompatibility |= Settings.Legacy.KeepUntypedEnums;

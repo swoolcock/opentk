@@ -23,7 +23,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-namespace OpenTK.Audio
+namespace osuTK.Audio
 {
     /// <summary>Represents exceptions related to invalid values.</summary>
     public class AudioValueException : AudioException

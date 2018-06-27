@@ -26,14 +26,14 @@
 //
 
 using System;
-using OpenTK.Platform;
-using OpenTK.Graphics;
-using OpenTK.Platform.MacOS;
+using osuTK.Platform;
+using osuTK.Graphics;
+using osuTK.Platform.MacOS;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-namespace OpenTK
+namespace osuTK
 {
     internal class CocoaContext : DesktopGraphicsContext
     {

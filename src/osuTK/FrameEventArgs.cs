@@ -25,7 +25,7 @@
 
 using System;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Defines the arguments for frame events.

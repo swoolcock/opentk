@@ -7,7 +7,7 @@
     <ProjectGuid>{C426C9D1-8857-4E52-BAC7-4C05EE6070AB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenTK.Rewrite</RootNamespace>
+    <RootNamespace>osuTK.Rewrite</RootNamespace>
     <AssemblyName>Rewrite</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -27,7 +27,7 @@
     <DocumentationFile>bin\Debug\Rewrite.xml</DocumentationFile>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Commandlineparameters>--assembly ../../OpenTK/Debug/OpenTK.dll --signing-key ../../../OpenTK.snk --debug</Commandlineparameters>
+    <Commandlineparameters>--assembly ../../osuTK/Debug/osuTK.dll --signing-key ../../../osuTK.snk --debug</Commandlineparameters>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -38,19 +38,19 @@
     <DocumentationFile>bin\Release\Rewrite.xml</DocumentationFile>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Commandlineparameters>--assembly ../../OpenTK/Release/OpenTK.dll --signing-key ../../../OpenTK.snk</Commandlineparameters>
+    <Commandlineparameters>--assembly ../../osuTK/Release/osuTK.dll --signing-key ../../../osuTK.snk</Commandlineparameters>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\..\OpenTK.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\osuTK.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\..\OpenTK.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\osuTK.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommandLine, Version=2.0.275.0, Culture=neutral, PublicKeyToken=de6f01bd326f8c32">
@@ -68,14 +68,14 @@
   <ItemGroup>
     <Compile Include="CountAttribute.cs" />
     <Compile Include="GeneratedVariableIdentifier.cs" />
-    <Compile Include="OpenTKAssemblyResolver.cs" />
+    <Compile Include="osuTKAssemblyResolver.cs" />
     <Compile Include="Options.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\OpenTK.snk">
-      <Link>OpenTK.snk</Link>
+    <None Include="..\..\osuTK.snk">
+      <Link>osuTK.snk</Link>
     </None>
     <None Include="packages.config" />
     <None Include="paket.references" />

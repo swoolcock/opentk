@@ -28,9 +28,9 @@
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform.Linux
+namespace osuTK.Platform.Linux
 {
     // Bindings for linux/input.h
     internal class Evdev

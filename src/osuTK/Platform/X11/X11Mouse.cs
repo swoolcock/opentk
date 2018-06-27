@@ -25,9 +25,9 @@
 
 using System;
 using System.Diagnostics;
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     // Note: we cannot create a background window to retrieve events,
     // because X11 doesn't deliver core pointer events to background

@@ -29,10 +29,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using OpenTK.Input;
-using OpenTK.Platform.Common;
+using osuTK.Input;
+using osuTK.Platform.Common;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     internal class WinRawJoystick : IJoystickDriver2
     {

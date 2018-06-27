@@ -31,7 +31,7 @@ using System.Text;
 
 #pragma warning disable 0649 // field is never assigned
 
-namespace OpenTK.Platform.Linux
+namespace osuTK.Platform.Linux
 {
     internal partial class Libc
     {

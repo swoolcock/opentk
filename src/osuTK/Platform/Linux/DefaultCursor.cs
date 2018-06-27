@@ -25,7 +25,7 @@
 // THE SOFTWARE.
 //
 
-namespace OpenTK.Platform.Linux
+namespace osuTK.Platform.Linux
 {
     internal static class Cursors
     {

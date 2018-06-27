@@ -27,7 +27,7 @@
 
 using System;
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     internal struct GamePadConfigurationTarget
     {

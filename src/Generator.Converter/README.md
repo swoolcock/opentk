@@ -1,6 +1,6 @@
 ﻿### Introduction
 
-This is a simple tool to convert Khronos XML to OpenTK XML files.
+This is a simple tool to convert Khronos XML to osuTK XML files.
 
 ### Usage
 ```
@@ -13,7 +13,7 @@ Converting latest remote specification:
 
   -o, --output-file    The path to the output file. Defaults to stdout if no path is provided.
 
-  -i, --input-files    Required. A list of the Khronos XML files to parse into OpenTK XML. Remote resources in the form of URLs are supported.
+  -i, --input-files    Required. A list of the Khronos XML files to parse into osuTK XML. Remote resources in the form of URLs are supported.
 
   --help               Display this help screen.
 
@@ -21,4 +21,4 @@ Converting latest remote specification:
 ```
 ### Support
 
-If you encounter a bug, please file an issue report at the OpenTK [issue tracker](http://github.com/opentk/opentk/issues).
+If you encounter a bug, please file an issue report at the osuTK [issue tracker](http://github.com/opentk/opentk/issues).

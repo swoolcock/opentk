@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     /// <summary>
     /// Used by draggingSourceOperationMask() <see cref="CocoaNativeWindow.DraggingEntered"/> to get permission for dropped object

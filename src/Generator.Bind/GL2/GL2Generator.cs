@@ -44,7 +44,7 @@ namespace Bind.GL2
                 // Defaults
             }
 
-            Settings.DefaultOutputNamespace = "OpenTK.Graphics.OpenGL";
+            Settings.DefaultOutputNamespace = "osuTK.Graphics.OpenGL";
             Settings.DefaultImportsFile = "GLCore.cs";
             Settings.DefaultDelegatesFile = "GLDelegates.cs";
             Settings.DefaultEnumsFile = "GLEnums.cs";

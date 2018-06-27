@@ -25,7 +25,7 @@
 
 using System;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Indicates that this function is generated automatically by a tool.

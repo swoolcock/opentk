@@ -27,10 +27,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using OpenTK.Input;
-using OpenTK.Platform.Common;
+using osuTK.Input;
+using osuTK.Platform.Common;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     using Carbon;
     using CFAllocatorRef = System.IntPtr;
@@ -267,7 +267,7 @@ namespace OpenTK.Platform.MacOS
 
                     case CGEventType.ScrollWheel:
                         {
-                            // Note: OpenTK follows the win32 convention, where
+                            // Note: osuTK follows the win32 convention, where
                             // (+h, +v) = (right, up). MacOS reports (+h, +v) = (left, up)
                             // so we need to flip the horizontal scroll direction.
                             double h = CG.EventGetDoubleValueField(@event, CGEventField.ScrollWheelEventPointDeltaAxis2) * MacOSFactory.ScrollFactor;
@@ -281,7 +281,7 @@ namespace OpenTK.Platform.MacOS
                     case CGEventType.OtherMouseDown:
                         {
                             int n = CG.EventGetIntegerValueField(@event, CGEventField.MouseEventButtonNumber);
-                            n = n == 1 ? 2 : n == 2 ? 1 : n; // flip middle and right button numbers to match OpenTK
+                            n = n == 1 ? 2 : n == 2 ? 1 : n; // flip middle and right button numbers to match osuTK
                             MouseButton b = MouseButton.Left + n;
                             CursorState[b] = true;
                         }
@@ -292,7 +292,7 @@ namespace OpenTK.Platform.MacOS
                     case CGEventType.OtherMouseUp:
                         {
                             int n = CG.EventGetIntegerValueField(@event, CGEventField.MouseEventButtonNumber);
-                            n = n == 1 ? 2 : n == 2 ? 1 : n; // flip middle and right button numbers to match OpenTK
+                            n = n == 1 ? 2 : n == 2 ? 1 : n; // flip middle and right button numbers to match osuTK
                             MouseButton b = MouseButton.Left + n;
                             CursorState[b] = false;
                         }
@@ -512,7 +512,7 @@ namespace OpenTK.Platform.MacOS
                     break;
 
                 case HIDPage.Button:
-                    mouse.State[OpenTK.Input.MouseButton.Left + usage - 1] = v_int == 1;
+                    mouse.State[osuTK.Input.MouseButton.Left + usage - 1] = v_int == 1;
                     break;
 
                 case HIDPage.Consumer:
@@ -1447,7 +1447,7 @@ namespace OpenTK.Platform.MacOS
             //_Reserved = 0xFFFF
         }
 
-        // Maps HIDKey to OpenTK.Input.Key.
+        // Maps HIDKey to osuTK.Input.Key.
         private static readonly Key[] RawKeyMap = new Key[]
         {
             Key.Unknown,

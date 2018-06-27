@@ -23,9 +23,9 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     using Graphics;
 
@@ -88,7 +88,7 @@ namespace OpenTK.Platform.MacOS
             return InputDriver.JoystickDriver;
         }
 
-        public override OpenTK.Input.IGamePadDriver CreateGamePadDriver()
+        public override osuTK.Input.IGamePadDriver CreateGamePadDriver()
         {
             return new MappedGamePadDriver();
         }

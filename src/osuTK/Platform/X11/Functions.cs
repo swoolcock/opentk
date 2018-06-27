@@ -1,5 +1,5 @@
 /* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK Team.
+ * Copyright (c) 2006-2008 the osuTK Team.
  * This notice may not be removed from any source distribution.
  * See license.txt for licensing detailed licensing details.
  */
@@ -9,7 +9,7 @@ using System.Drawing;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     // using XID = System.Int32;
     using Window = System.IntPtr;

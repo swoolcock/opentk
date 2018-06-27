@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace OpenTK.Tests.Math.DataProviders
+namespace osuTK.Tests.Math.DataProviders
 {
 	/// <summary>
 	/// Generates/Provides Quaternion test data.

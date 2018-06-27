@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Used to indicate how to calculate the count/length of a parameter.

@@ -2,7 +2,7 @@
  * See license.txt for license info
  */
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     /// <summary>
     /// Defines a common interface for all input devices.
@@ -15,7 +15,7 @@ namespace OpenTK.Input
         string Description { get; }
 
         /// <summary>
-        /// Gets an OpenTK.Input.InputDeviceType value, representing the device type of this IInputDevice instance.
+        /// Gets an osuTK.Input.InputDeviceType value, representing the device type of this IInputDevice instance.
         /// </summary>
         InputDeviceType DeviceType { get; }
     }

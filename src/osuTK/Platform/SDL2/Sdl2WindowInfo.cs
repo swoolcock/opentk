@@ -26,7 +26,7 @@
 using System;
 using System.Diagnostics;
 
-namespace OpenTK.Platform.SDL2
+namespace osuTK.Platform.SDL2
 {
     internal class Sdl2WindowInfo : IWindowInfo
     {

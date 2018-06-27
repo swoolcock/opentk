@@ -25,7 +25,7 @@
 
 using System;
 
-namespace OpenTK.Graphics
+namespace osuTK.Graphics
 {
     /// <summary>Defines the ColorFormat component of a GraphicsMode.</summary>
     /// <remarks>

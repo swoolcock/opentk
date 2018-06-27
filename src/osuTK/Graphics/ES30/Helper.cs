@@ -28,7 +28,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace OpenTK.Graphics.ES30
+namespace osuTK.Graphics.ES30
 {
     /// <summary>
     /// Provides access to OpenGL ES 3.0 methods.

@@ -25,7 +25,7 @@
 // THE SOFTWARE.
 //
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     /// <summary>
     /// Enumerates available <see cref="GamePad"/> types.

@@ -25,7 +25,7 @@
 
 using System;
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     /// <summary>
     /// Represents a joystick device and provides methods to query its status.

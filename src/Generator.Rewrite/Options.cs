@@ -2,7 +2,7 @@
 using CommandLine.Text;
 using Mono.Cecil;
 
-namespace OpenTK.Rewrite
+namespace osuTK.Rewrite
 {
     /// <summary>
     /// A container class used by <see cref="CommandLine.Parser"/> to parse command line arguments.

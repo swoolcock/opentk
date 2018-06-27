@@ -25,7 +25,7 @@
 // THE SOFTWARE.
 //
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     internal enum NSOpenGLProfile
     {

@@ -8,13 +8,13 @@
     <ProjectGuid>{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>OpenTK</RootNamespace>
+    <RootNamespace>osuTK</RootNamespace>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
-    <AssemblyName>OpenTK</AssemblyName>
+    <AssemblyName>osuTK</AssemblyName>
     <Deterministic>true</Deterministic>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <CodeAnalysisRuleSet>..\..\stylecop.ruleset</CodeAnalysisRuleSet>
@@ -30,7 +30,7 @@
     <AndroidLinkMode>None</AndroidLinkMode>
     <ConsolePause>false</ConsolePause>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>bin\Debug\Android\OpenTK.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\Android\osuTK.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
@@ -42,7 +42,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>ANDROID;OPENGLES;OPENTK_1_1</DefineConstants>
     <DebugSymbols>true</DebugSymbols>
-    <DocumentationFile>bin\Release\Android\OpenTK.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Android\osuTK.xml</DocumentationFile>
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(OS)' == 'Unix' ">
@@ -241,8 +241,8 @@
     <Compile Include="Platform\X11\Bindings\DL.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="OpenTK.Android.csproj.paket.template" />
-    <None Include="OpenTK.dll.config">
+    <None Include="osuTK.Android.csproj.paket.template" />
+    <None Include="osuTK.dll.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="paket.references" />
@@ -264,10 +264,10 @@
   </Target>
   -->
   <Target Name="AfterBuild">
-    <Exec Command="$(OutputPath)..\..\..\..\Generator.Rewrite\bin\Debug\Rewrite.exe $(OutputPath)OpenTK.dll ..\..\OpenTK.snk -debug" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" />
-    <Exec Command="$(OutputPath)..\..\..\..\Generator.Rewrite\bin\Release\Rewrite.exe $(OutputPath)OpenTK.dll ..\..\OpenTK.snk" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Release'" />
-    <Exec WorkingDirectory="$(SolutionDir)src/Generator.Rewrite/bin/Debug/" Command="mono ./Rewrite.exe $(SolutionDir)src/OpenTK/bin/Debug/Android/OpenTK.dll $(SolutionDir)OpenTK.snk -debug" Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Debug'" />
-    <Exec WorkingDirectory="$(SolutionDir)src/Generator.Rewrite/bin/Release" Command="mono ./Rewrite.exe $(SolutionDir)src/OpenTK/bin/Release/Android/OpenTK.dll $(SolutionDir)OpenTK.snk" Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Release'" />
+    <Exec Command="$(OutputPath)..\..\..\..\Generator.Rewrite\bin\Debug\Rewrite.exe $(OutputPath)osuTK.dll ..\..\osuTK.snk -debug" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" />
+    <Exec Command="$(OutputPath)..\..\..\..\Generator.Rewrite\bin\Release\Rewrite.exe $(OutputPath)osuTK.dll ..\..\osuTK.snk" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Release'" />
+    <Exec WorkingDirectory="$(SolutionDir)src/Generator.Rewrite/bin/Debug/" Command="mono ./Rewrite.exe $(SolutionDir)src/osuTK/bin/Debug/Android/osuTK.dll $(SolutionDir)osuTK.snk -debug" Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Debug'" />
+    <Exec WorkingDirectory="$(SolutionDir)src/Generator.Rewrite/bin/Release" Command="mono ./Rewrite.exe $(SolutionDir)src/osuTK/bin/Release/Android/osuTK.dll $(SolutionDir)osuTK.snk" Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Release'" />
   </Target>
   <ItemGroup>
     <Analyzer Include="..\..\packages\StyleCop.Analyzers\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll">

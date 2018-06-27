@@ -1,4 +1,4 @@
-﻿namespace OpenTK
+﻿namespace osuTK
 {
     /// <summary>
     /// Enumerates available window borders.

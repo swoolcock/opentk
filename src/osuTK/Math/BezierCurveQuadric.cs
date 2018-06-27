@@ -1,5 +1,5 @@
 /* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK Team.
+ * Copyright (c) 2006-2008 the osuTK Team.
  * This notice may not be removed from any source distribution.
  * See license.txt for licensing detailed licensing details.
  *
@@ -8,7 +8,7 @@
 
 using System;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Represents a quadric bezier curve with two anchor and one control point.

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OpenTK.Platform.Dummy
+namespace osuTK.Platform.Dummy
 {
     internal class DummyWindowInfo : IWindowInfo
     {

@@ -28,7 +28,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.Win32;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     internal sealed class WinDisplayDeviceDriver : DisplayDeviceBase
     {
@@ -131,7 +131,7 @@ namespace OpenTK.Platform.Windows
                         opentk_dev_available_res.Add(res);
                     }
 
-                    // Construct the OpenTK DisplayDevice through the accumulated parameters.
+                    // Construct the osuTK DisplayDevice through the accumulated parameters.
                     // The constructor will automatically add the DisplayDevice to the list
                     // of available devices.
                     #pragma warning disable 612,618

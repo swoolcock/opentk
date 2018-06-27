@@ -25,7 +25,7 @@
 
 using System.Collections.Generic;
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     internal abstract class DisplayDeviceBase : IDisplayDeviceDriver
     {

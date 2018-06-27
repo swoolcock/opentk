@@ -27,7 +27,7 @@
 
 using System;
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     /// <summary>
     /// Enumerates modifier keys.

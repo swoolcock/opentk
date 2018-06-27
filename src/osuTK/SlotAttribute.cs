@@ -25,11 +25,11 @@
 
 using System;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Defines the slot index for a wrapper function.
-    /// This type supports OpenTK and should not be
+    /// This type supports osuTK and should not be
     /// used in user code.
     /// </summary>
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = false)]

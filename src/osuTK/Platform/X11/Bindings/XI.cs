@@ -26,7 +26,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     using Bool = Boolean;
     using Cursor = IntPtr;

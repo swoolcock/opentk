@@ -27,7 +27,7 @@
 
 using System;
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     /// <summary>
     /// Describes the state of a joystick hat.
@@ -111,9 +111,9 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Returns a <see cref="System.String"/> that represents the current <see cref="OpenTK.Input.JoystickHatState"/>.
+        /// Returns a <see cref="System.String"/> that represents the current <see cref="osuTK.Input.JoystickHatState"/>.
         /// </summary>
-        /// <returns>A <see cref="System.String"/> that represents the current <see cref="OpenTK.Input.JoystickHatState"/>.</returns>
+        /// <returns>A <see cref="System.String"/> that represents the current <see cref="osuTK.Input.JoystickHatState"/>.</returns>
         public override string ToString()
         {
             return String.Format(
@@ -125,7 +125,7 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Serves as a hash function for a <see cref="OpenTK.Input.JoystickHatState"/> object.
+        /// Serves as a hash function for a <see cref="osuTK.Input.JoystickHatState"/> object.
         /// </summary>
         /// <returns>A hash code for this instance that is suitable for use in hashing algorithms and data structures such as a
         /// hash table.</returns>
@@ -135,11 +135,11 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Determines whether the specified <see cref="System.Object"/> is equal to the current <see cref="OpenTK.Input.JoystickHatState"/>.
+        /// Determines whether the specified <see cref="System.Object"/> is equal to the current <see cref="osuTK.Input.JoystickHatState"/>.
         /// </summary>
-        /// <param name="obj">The <see cref="System.Object"/> to compare with the current <see cref="OpenTK.Input.JoystickHatState"/>.</param>
+        /// <param name="obj">The <see cref="System.Object"/> to compare with the current <see cref="osuTK.Input.JoystickHatState"/>.</param>
         /// <returns><c>true</c> if the specified <see cref="System.Object"/> is equal to the current
-        /// <see cref="OpenTK.Input.JoystickHatState"/>; otherwise, <c>false</c>.</returns>
+        /// <see cref="osuTK.Input.JoystickHatState"/>; otherwise, <c>false</c>.</returns>
         public override bool Equals(object obj)
         {
             return
@@ -148,11 +148,11 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Determines whether the specified <see cref="OpenTK.Input.JoystickHatState"/> is equal to the current <see cref="OpenTK.Input.JoystickHatState"/>.
+        /// Determines whether the specified <see cref="osuTK.Input.JoystickHatState"/> is equal to the current <see cref="osuTK.Input.JoystickHatState"/>.
         /// </summary>
-        /// <param name="other">The <see cref="OpenTK.Input.JoystickHatState"/> to compare with the current <see cref="OpenTK.Input.JoystickHatState"/>.</param>
-        /// <returns><c>true</c> if the specified <see cref="OpenTK.Input.JoystickHatState"/> is equal to the current
-        /// <see cref="OpenTK.Input.JoystickHatState"/>; otherwise, <c>false</c>.</returns>
+        /// <param name="other">The <see cref="osuTK.Input.JoystickHatState"/> to compare with the current <see cref="osuTK.Input.JoystickHatState"/>.</param>
+        /// <returns><c>true</c> if the specified <see cref="osuTK.Input.JoystickHatState"/> is equal to the current
+        /// <see cref="osuTK.Input.JoystickHatState"/>; otherwise, <c>false</c>.</returns>
         public bool Equals(JoystickHatState other)
         {
             return Position == other.Position;

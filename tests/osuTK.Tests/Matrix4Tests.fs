@@ -1,14 +1,14 @@
-namespace OpenTK.Tests
+namespace osuTK.Tests
 
 open Xunit
 open FsCheck
 open FsCheck.Xunit
 open System
-open OpenTK
-open OpenTK.Tests.Generators
+open osuTK
+open osuTK.Tests.Generators
 
 module Matrix4 =
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Constructors =
         //
         [<Property>]
@@ -89,7 +89,7 @@ module Matrix4 =
             Assert.Equal(o, A.M43)
             Assert.Equal(p, A.M44)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Equality =
         //
         [<Property>]
@@ -104,7 +104,7 @@ module Matrix4 =
         let ``A matrix is not equal to an object which is not a matrix`` (a : Matrix4, b : Vector3) =
             Assert.False(a.Equals(b))
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Multiplication =
         //
         [<Property>]
@@ -203,7 +203,7 @@ module Matrix4 =
             Assert.Equal(R4, AScaled.Row3)
 
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Addition =
         //
         [<Property>]
@@ -233,7 +233,7 @@ module Matrix4 =
             Assert.Equal(o + o, sum.M43)
             Assert.Equal(p + p, sum.M44)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Subtraction =
         //
         [<Property>]
@@ -263,7 +263,7 @@ module Matrix4 =
             Assert.Equal(o - o, sub.M43)
             Assert.Equal(p - p, sub.M44)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Indexing =
         //
         [<Property>]
@@ -364,7 +364,7 @@ module Matrix4 =
             (fun() -> a.[1, 6] |> ignore) |> Assert.ThrowsIndexExn
             (fun() -> a.[7, 12] |> ignore) |> Assert.ThrowsIndexExn
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module ``Row and column properties`` =
         //
         [<Property>]

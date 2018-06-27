@@ -26,9 +26,9 @@
 using System;
 using System.ComponentModel;
 using System.Drawing;
-using OpenTK.Platform;
+using osuTK.Platform;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Defines the interface for a native window.
@@ -61,17 +61,17 @@ namespace OpenTK
         bool Exists { get; }
 
         /// <summary>
-        /// Gets the <see cref="OpenTK.Platform.IWindowInfo"/> for this window.
+        /// Gets the <see cref="osuTK.Platform.IWindowInfo"/> for this window.
         /// </summary>
         IWindowInfo WindowInfo { get; }
 
         /// <summary>
-        /// Gets or sets the <see cref="OpenTK.WindowState"/> for this window.
+        /// Gets or sets the <see cref="osuTK.WindowState"/> for this window.
         /// </summary>
         WindowState WindowState { get; set; }
 
         /// <summary>
-        /// Gets or sets the <see cref="OpenTK.WindowBorder"/> for this window.
+        /// Gets or sets the <see cref="osuTK.WindowBorder"/> for this window.
         /// </summary>
         WindowBorder WindowBorder { get; set; }
 
@@ -123,7 +123,7 @@ namespace OpenTK
         Size ClientSize { get; set; }
 
         /// <summary>
-        /// Gets or sets the <see cref="OpenTK.MouseCursor"/> for this window.
+        /// Gets or sets the <see cref="osuTK.MouseCursor"/> for this window.
         /// </summary>
         /// <value>The cursor.</value>
         MouseCursor Cursor { get; set; }
@@ -228,7 +228,7 @@ namespace OpenTK
         /// <summary>
         /// Occurs whenever a keyboard key is pressed.
         /// </summary>
-        event EventHandler<OpenTK.Input.KeyboardKeyEventArgs> KeyDown;
+        event EventHandler<osuTK.Input.KeyboardKeyEventArgs> KeyDown;
 
         /// <summary>
         /// Occurs whenever a character is typed.
@@ -238,7 +238,7 @@ namespace OpenTK
         /// <summary>
         /// Occurs whenever a keyboard key is released.
         /// </summary>
-        event EventHandler<OpenTK.Input.KeyboardKeyEventArgs> KeyUp;
+        event EventHandler<osuTK.Input.KeyboardKeyEventArgs> KeyUp;
 
         /// <summary>
         /// Occurs whenever the mouse cursor leaves the window <see cref="Bounds"/>.
@@ -251,12 +251,12 @@ namespace OpenTK
         event EventHandler<EventArgs> MouseEnter;
 
         /// <summary>
-        /// Occurs whenever a <see cref="OpenTK.Input.MouseButton"/> is clicked.
+        /// Occurs whenever a <see cref="osuTK.Input.MouseButton"/> is clicked.
         /// </summary>
         event EventHandler<Input.MouseButtonEventArgs> MouseDown;
 
         /// <summary>
-        /// Occurs whenever a <see cref="OpenTK.Input.MouseButton"/> is released.
+        /// Occurs whenever a <see cref="osuTK.Input.MouseButton"/> is released.
         /// </summary>
         event EventHandler<Input.MouseButtonEventArgs> MouseUp;
 
@@ -276,6 +276,6 @@ namespace OpenTK
         /// <summary>
         /// Occurs whenever file dropped on window.
         /// </summary>
-        event EventHandler<OpenTK.Input.FileDropEventArgs> FileDrop;
+        event EventHandler<osuTK.Input.FileDropEventArgs> FileDrop;
     }
 }

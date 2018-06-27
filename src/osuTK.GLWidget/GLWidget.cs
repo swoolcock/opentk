@@ -2,10 +2,10 @@
 using System.Threading;
 using System.ComponentModel;
 using Gdk;
-using OpenTK.Graphics;
+using osuTK.Graphics;
 using Gtk;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// The <see cref="GLWidget"/> is a GTK widget for which an OpenGL context can be used to draw arbitrary graphics.

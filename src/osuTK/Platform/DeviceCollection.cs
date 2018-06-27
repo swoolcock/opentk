@@ -29,7 +29,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     // Holds a collection of hardware devices with an associated id.
     // Note: 'id' refers to a unique hardware-specific device identifier.

@@ -3,14 +3,14 @@
  * Spec: Effects Extension Guide.pdf (bundled with OpenAL SDK)
  * Copyright (c) 2008 Christoph Brandtner and Stefanos Apostolopoulos
  * See license.txt for license details
- * http://www.OpenTK.net */
+ * http://www.osuTK.net */
 
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
 
-namespace OpenTK.Audio.OpenAL
+namespace osuTK.Audio.OpenAL
 {
     /// <summary>
     /// Provides access to the OpenAL effects extension.

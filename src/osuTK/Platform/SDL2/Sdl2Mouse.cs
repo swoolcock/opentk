@@ -25,9 +25,9 @@
 
 using System;
 using System.Diagnostics;
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform.SDL2
+namespace osuTK.Platform.SDL2
 {
     internal class Sdl2Mouse : IMouseDriver2
     {

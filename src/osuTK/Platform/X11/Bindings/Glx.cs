@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 
 #pragma warning disable 1591
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     public enum GLXAttribute : int
     {

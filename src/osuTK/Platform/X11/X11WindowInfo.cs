@@ -26,7 +26,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     /// \internal
     /// <summary>Describes an X11 window.</summary>

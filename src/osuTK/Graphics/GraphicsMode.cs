@@ -1,5 +1,5 @@
 ﻿/* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK Team.
+ * Copyright (c) 2006-2008 the osuTK Team.
  * This notice may not be removed from any source distribution.
  * See license.txt for licensing detailed licensing details.
  */
@@ -7,7 +7,7 @@
 using System;
 using System.Diagnostics;
 
-namespace OpenTK.Graphics
+namespace osuTK.Graphics
 {
     /// <summary>Defines the format for graphics operations.</summary>
     public class GraphicsMode : IEquatable<GraphicsMode>
@@ -126,12 +126,12 @@ namespace OpenTK.Graphics
         public IntPtr? Index { get; set; } = null;
 
         /// <summary>
-        /// Gets an OpenTK.Graphics.ColorFormat that describes the color format for this GraphicsFormat.
+        /// Gets an osuTK.Graphics.ColorFormat that describes the color format for this GraphicsFormat.
         /// </summary>
         public ColorFormat ColorFormat { get; private set; }
 
         /// <summary>
-        /// Gets an OpenTK.Graphics.ColorFormat that describes the accumulator format for this GraphicsFormat.
+        /// Gets an osuTK.Graphics.ColorFormat that describes the accumulator format for this GraphicsFormat.
         /// </summary>
         public ColorFormat AccumulatorFormat { get; private set; }
 
@@ -177,7 +177,7 @@ namespace OpenTK.Graphics
         /// </summary>
         public int Buffers { get; private set; }
 
-        /// <summary>Returns an OpenTK.GraphicsFormat compatible with the underlying platform.</summary>
+        /// <summary>Returns an osuTK.GraphicsFormat compatible with the underlying platform.</summary>
         public static GraphicsMode Default
         {
             get

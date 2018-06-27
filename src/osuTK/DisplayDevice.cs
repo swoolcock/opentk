@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Defines a display device on the underlying system, and provides

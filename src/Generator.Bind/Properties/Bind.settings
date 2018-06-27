@@ -1,12 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OpenTK.OpenGL.Bind.Properties" GeneratedClassName="Bind">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="osuTK.OpenGL.Bind.Properties" GeneratedClassName="Bind">
   <Profiles />
   <Settings>
     <Setting Name="OutputGLClass" Type="System.String" Scope="User">
       <Value Profile="(Default)">GL</Value>
     </Setting>
     <Setting Name="OutputNamespace" Type="System.String" Scope="User">
-      <Value Profile="(Default)">OpenTK.OpenGL</Value>
+      <Value Profile="(Default)">osuTK.OpenGL</Value>
     </Setting>
     <Setting Name="OutputPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">..\..\Source\OpenGL\OpenGL\Bindings</Value>

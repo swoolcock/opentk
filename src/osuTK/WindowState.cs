@@ -1,10 +1,10 @@
 ﻿/* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK Team.
+ * Copyright (c) 2006-2008 the osuTK Team.
  * This notice may not be removed from any source distribution.
  * See license.txt for licensing details.
  */
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Enumerates available window states.

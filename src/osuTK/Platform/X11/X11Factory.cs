@@ -25,10 +25,10 @@
 
 using System;
 using System.Diagnostics;
-using OpenTK.Graphics;
-using OpenTK.Input;
+using osuTK.Graphics;
+using osuTK.Input;
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     internal class X11Factory : PlatformFactoryBase
     {

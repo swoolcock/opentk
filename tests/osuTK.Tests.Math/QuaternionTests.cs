@@ -1,8 +1,8 @@
 ﻿using Xunit;
-using OpenTK.Tests.Math.Helpers;
-using OpenTK.Tests.Math.DataProviders;
+using osuTK.Tests.Math.Helpers;
+using osuTK.Tests.Math.DataProviders;
 
-namespace OpenTK.Tests.Math
+namespace osuTK.Tests.Math
 {
 	public class QuaternionTests
 	{

@@ -28,10 +28,10 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows.Forms;
 
-using OpenTK.Platform;
-using OpenTK.Graphics;
+using osuTK.Platform;
+using osuTK.Graphics;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// OpenGL-aware WinForms control.
@@ -70,7 +70,7 @@ namespace OpenTK
         /// <summary>
         /// Constructs a new instance with the specified GraphicsMode.
         /// </summary>
-        /// <param name="mode">The OpenTK.Graphics.GraphicsMode of the control.</param>
+        /// <param name="mode">The osuTK.Graphics.GraphicsMode of the control.</param>
         public GLControl(GraphicsMode mode)
             : this(mode, 1, 0, GraphicsContextFlags.Default)
         { }
@@ -78,7 +78,7 @@ namespace OpenTK
         /// <summary>
         /// Constructs a new instance with the specified GraphicsMode.
         /// </summary>
-        /// <param name="mode">The OpenTK.Graphics.GraphicsMode of the control.</param>
+        /// <param name="mode">The osuTK.Graphics.GraphicsMode of the control.</param>
         /// <param name="major">The major version for the OpenGL GraphicsContext.</param>
         /// <param name="minor">The minor version for the OpenGL GraphicsContext.</param>
         /// <param name="flags">The GraphicsContextFlags for the OpenGL GraphicsContext.</param>
@@ -315,7 +315,7 @@ namespace OpenTK
         }
 
         /// <summary>
-        /// Needed to delay the invoke on OS X. Also needed because OpenTK is .NET 2, otherwise I'd use an inline Action.
+        /// Needed to delay the invoke on OS X. Also needed because osuTK is .NET 2, otherwise I'd use an inline Action.
         /// </summary>
         public delegate void DelayUpdate();
 
@@ -468,7 +468,7 @@ namespace OpenTK
         }
 
         /// <summary>
-        /// Gets the <see cref="OpenTK.Platform.IWindowInfo"/> for this instance.
+        /// Gets the <see cref="osuTK.Platform.IWindowInfo"/> for this instance.
         /// </summary>
         public IWindowInfo WindowInfo => _implementation.WindowInfo;
     }

@@ -28,9 +28,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-using OpenTK.Audio.OpenAL;
+using osuTK.Audio.OpenAL;
 
-namespace OpenTK.Audio
+namespace osuTK.Audio
 {
 
     /// <summary>
@@ -232,7 +232,7 @@ namespace OpenTK.Audio
         }
 
         /// <summary>
-        /// Gets the OpenTK.Audio.ALFormat for this instance.
+        /// Gets the osuTK.Audio.ALFormat for this instance.
         /// </summary>
         public ALFormat SampleFormat { get; private set; }
 

@@ -1,7 +1,7 @@
-# Contribution guidelines for OpenTK
+# Contribution guidelines for osuTK
 
 ## Preface
-First of all, thank you for considering contributing to the OpenTK
+First of all, thank you for considering contributing to the osuTK
 project! It's a large codebase with a lot of twists and turns, and a
 helping hand is always welcome.
 
@@ -29,7 +29,7 @@ or how to contribute, please drop us a line on [Gitter][1] or
 
 
 ## Things to keep in mind
-Like a lot of other modern projects, OpenTK is written for multiple
+Like a lot of other modern projects, osuTK is written for multiple
 platforms and operating systems. Therefore, it's important to keep this
 in mind when contributing to the project - otherwise, it may make
 accepting your contribution much more difficult. You'll want to consider
@@ -37,7 +37,7 @@ that the bug you're experiencing might not be present on other platforms
 or system configurations, or that your pull request doesn't take all
 platforms into account. Sometimes this important, sometimes it's not.
 
-OpenTK is also (as previously mentioned) a very large codebase which has
+osuTK is also (as previously mentioned) a very large codebase which has
 seen a lot of people and a lot of styles over the years. This is
 reflected in the deeper, darker parts of the codebase where mixed
 styles, weird naming, bizarre code and eldritch sorcery abound. What may
@@ -75,7 +75,7 @@ For first-time contributors, there are a few steps that you'll need to
 go through in order to start contributing.
 
 #### 1. Get a copy of the code
-First, fork OpenTK to your own profile and clone a local copy.
+First, fork osuTK to your own profile and clone a local copy.
 
 ```bash
 $ git clone git@github.com:username/opentk.git
@@ -182,7 +182,7 @@ This includes how the behaviour of the library will change if the pull
 request is accepted - a maintainer should be able to read your
 description and fully understand what accepting it would mean without
 having to dive into the code.
-* Be based on the `develop` branch of the main OpenTK repository.
+* Be based on the `develop` branch of the main osuTK repository.
 
 All pull requests should have the following:
 * If applicable, a compilable example which demonstrates the changes. A
@@ -301,12 +301,12 @@ If you can include a compilable example which demonstrates the issue
 you're having, the chances that the bug will be fixed increase
 substantially. It's a lot faster to work with a problem if you have
 something that quickly shows you what's going wrong. As with pull
-requests, a git repository is preferred. The OpenTK version that
+requests, a git repository is preferred. The osuTK version that
 exhibits the issue should be included as a package reference, either
 from NuGet or MyGet.
 
 One important thing - make sure that the problem is actually an issue
-with OpenTK before opening a bug. It may be a driver issue if it's
+with osuTK before opening a bug. It may be a driver issue if it's
 graphical, or a library problem if it's input-related. It may be a
 problem with your code, or it might be an issue in a library you use. As
 with most things, asking for help on Gitter, Discord, or other related

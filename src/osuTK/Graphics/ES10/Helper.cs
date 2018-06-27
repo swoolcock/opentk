@@ -1,4 +1,4 @@
-﻿namespace OpenTK.Graphics.ES10
+﻿namespace osuTK.Graphics.ES10
 {
     /// <summary>
     /// Provides access to OpenGL ES 1.0 methods.

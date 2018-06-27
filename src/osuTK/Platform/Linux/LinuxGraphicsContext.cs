@@ -28,15 +28,15 @@
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using OpenTK.Graphics;
+using osuTK.Graphics;
 
-namespace OpenTK.Platform.Linux
+namespace osuTK.Platform.Linux
 {
     /// \internal
     /// <summary>
     /// Defines an IGraphicsContext implementation for the Linux KMS framebuffer.
     /// For Linux/X11 and other Unix operating systems, use the more generic
-    /// <see cref="OpenTK.Platform.Egl.EglUnixContext"/> instead.
+    /// <see cref="osuTK.Platform.Egl.EglUnixContext"/> instead.
     /// </summary>
     /// <remarks>
     /// Note: to display our results, we need to allocate a GBM framebuffer

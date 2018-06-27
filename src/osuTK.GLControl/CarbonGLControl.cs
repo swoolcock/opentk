@@ -25,11 +25,11 @@
 
 using System.Windows.Forms;
 
-using OpenTK.Graphics;
-using OpenTK.Platform;
-using OpenTK.Platform.MacOS;
+using osuTK.Graphics;
+using osuTK.Platform;
+using osuTK.Platform.MacOS;
 
-namespace OpenTK
+namespace osuTK
 {
     internal class CarbonGLControl : IGLControl
     {

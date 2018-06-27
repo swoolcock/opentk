@@ -23,10 +23,10 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-using OpenTK.Graphics;
-using OpenTK.Platform;
+using osuTK.Graphics;
+using osuTK.Platform;
 
-namespace OpenTK
+namespace osuTK
 {
     internal interface IGLControl
     {

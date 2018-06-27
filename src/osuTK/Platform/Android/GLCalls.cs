@@ -6,18 +6,18 @@
  */
 
 using System;
-using OpenTK;
-using OpenTK.Graphics;
-using OpenTK.Platform;
-using OpenTK.Platform.Android;
+using osuTK;
+using osuTK.Graphics;
+using osuTK.Platform;
+using osuTK.Platform.Android;
 
-using All  = OpenTK.Graphics.ES11.All;
+using All  = osuTK.Graphics.ES11.All;
 
-using ES11 = OpenTK.Graphics.ES11;
-using ES20 = OpenTK.Graphics.ES20;
-using ES30 = OpenTK.Graphics.ES30;
+using ES11 = osuTK.Graphics.ES11;
+using ES20 = osuTK.Graphics.ES20;
+using ES30 = osuTK.Graphics.ES30;
 
-namespace OpenTK
+namespace osuTK
 {
     internal sealed class GLCalls
     {

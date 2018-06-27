@@ -26,12 +26,12 @@
 //
 
 using System;
-using OpenTK.Input;
+using osuTK.Input;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Diagnostics;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     internal class XInputJoystick : IJoystickDriver2, IDisposable
     {

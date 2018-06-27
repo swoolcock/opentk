@@ -3,7 +3,7 @@
 
   <add name="gles1">
     <!-- Enums from old ESCL parser -->
-    <!-- Required for OpenTK 1.0 compatibility -->
+    <!-- Required for osuTK 1.0 compatibility -->
     <enum name="Amdcompressed3Dctexture" obsolete="Use enum with correct capitalisation instead.">
       <token name="3DC_X_AMD" value="0x87F9" />
       <token name="3DC_XY_AMD" value="0x87FA" />

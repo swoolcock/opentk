@@ -1,17 +1,17 @@
-OpenTK
+osuTK
 ======
 
 
 ### MAINTAINERS WANTED
 
-OpenTK is a large project, with a huge number of components. We're looking to add a more maintainers to the team.
+osuTK is a large project, with a huge number of components. We're looking to add a more maintainers to the team.
 Email [@varon](https://github.com/varon) or message him in Gitter if you'd like to help out.
 
 [![Join the chat at https://gitter.im/opentk/opentk](https://badges.gitter.im/opentk/opentk.svg)](https://gitter.im/opentk/opentk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Join the chat at https://discord.gg/GZTYR4s](https://img.shields.io/badge/chat-on%20discord-green.svg)](https://discord.gg/GZTYR4s)  
 
 The Open Toolkit library is a fast, low-level C# binding for OpenGL, OpenGL ES and OpenAL. It runs on all major platforms and powers hundreds of apps, games and scientific research.
 
-Use OpenTK to add cross-platform 3d graphics, audio, compute and haptics to your C# application. Integrate it into your existing user interface or use it standalone without any external dependencies.
+Use osuTK to add cross-platform 3d graphics, audio, compute and haptics to your C# application. Integrate it into your existing user interface or use it standalone without any external dependencies.
 
 Project website: https://opentk.github.io/
 
@@ -35,22 +35,22 @@ Features
 - Improve your code flow with strong types and inline documentation
 - Write once run everywhere
 
-OpenTK is available for Windows, Linux, Mac OS X, *BSD, SteamOS, Android and iOS. It can be used standalone or integrated into a GUI (Windows.Forms, WPF, GTK+, Qt, VTK, ...)
+osuTK is available for Windows, Linux, Mac OS X, *BSD, SteamOS, Android and iOS. It can be used standalone or integrated into a GUI (Windows.Forms, WPF, GTK+, Qt, VTK, ...)
 
-[Download binaries](http://www.opentk.com) or [NuGet packages](http://www.nuget.org/packages/OpenTK/)
+[Download binaries](http://www.opentk.com) or [NuGet packages](http://www.nuget.org/packages/osuTK/)
 
 
 Instructions
 ============
 
-The simplest way to use OpenTK in your project is to install the [NuGet package](http://www.nuget.org/packages/OpenTK/).
+The simplest way to use osuTK in your project is to install the [NuGet package](http://www.nuget.org/packages/osuTK/).
 If you want to try out the latest development build from the `develop` branch, we also have a [MyGet feed](https://www.myget.org/F/opentk-develop/api/v3/index.json).
 
-Note what installing NuGet package will add reference to OpenTK.dll, but OpenTK.dll.config
+Note what installing NuGet package will add reference to osuTK.dll, but osuTK.dll.config
 will not be copied to the project output directory automatically, so you need to add it to your project
 and then enable the "Copy to Output Directory" option (as in step 3 below).
 
-To build OpenTK from source, do the following once:
+To build osuTK from source, do the following once:
 ```
 git clone https://github.com/opentk/opentk   # Download source code from git
 cd opentk                                    # Enter the source directory
@@ -58,7 +58,7 @@ cd opentk                                    # Enter the source directory
 ./build.sh                                   # Build on Mono (Linux / Mac OS X)
 ```
 
-After this is done at least once, you can build OpenTK normally through
+After this is done at least once, you can build osuTK normally through
 your IDE.
 
 News
@@ -68,13 +68,13 @@ News
 
 A pre-release package is available.
 
-https://www.nuget.org/packages/OpenTK/3.0.0-pre
+https://www.nuget.org/packages/osuTK/3.0.0-pre
 
-https://www.nuget.org/packages/OpenTK.GLControl/3.0.0-pre
+https://www.nuget.org/packages/osuTK.GLControl/3.0.0-pre
 
 ### 2016-09-23
 
-OpenTK 2.0.0 is now available for download from [Nuget](https://www.nuget.org/packages/OpenTK/2.0.0).
+osuTK 2.0.0 is now available for download from [Nuget](https://www.nuget.org/packages/osuTK/2.0.0).
 
 Aside from being a maintenance release to bring the current package closer in-line with develop, this the project's first release since adopting a new build system.
 
@@ -87,7 +87,7 @@ We would welcome any feedback on the package, so please open a GitHub issue if y
 
 ### 2016-07-19
 
-The new OpenTK website is live. You can view it at [opentk.github.io](https://opentk.github.io/)
+The new osuTK website is live. You can view it at [opentk.github.io](https://opentk.github.io/)
 
 We are currently looking for contributors for tutorials and other resources.
 
@@ -95,21 +95,21 @@ We are currently looking for contributors for tutorials and other resources.
 
 A pre-release package is available.
 
-https://www.nuget.org/packages/OpenTK.Next/1.2.2336.6514-pre
-https://www.nuget.org/packages/OpenTK.Next.GLControl/1.2.2336.6514-pre
+https://www.nuget.org/packages/osuTK.Next/1.2.2336.6514-pre
+https://www.nuget.org/packages/osuTK.Next.GLControl/1.2.2336.6514-pre
 
-*The OpenTK.Next package id will no longer be used for future releases.
+*The osuTK.Next package id will no longer be used for future releases.
 
 
 ### 2014-07-24
 
-OpenTK 1.1.4c was released on 24 July 2014.
+osuTK 1.1.4c was released on 24 July 2014.
 
 This is a hotfix release that improves stability on Mac OS X. Moreover, it synchronizes the GamePad configuration database with SDL 2.0.4 and fixes an invalid GUID introduced in 1.1.4b.
 
 ### 2014-07-21
 
-OpenTK 1.1.4 was released on 21 July 2014.
+osuTK 1.1.4 was released on 21 July 2014.
 
 This release resolves a number of identified issues, adds experimental support for Linux/KMS and synchronizes the OpenGL and OpenGL ES bindings with the July 2014 Khronos specifications.
 
@@ -120,25 +120,25 @@ This release resolves a number of identified issues, adds experimental support f
 3. Fixed an issue where `GameWindow` might remain open on Linux/X11 after calling `Close()` or `Dispose()`.
 4. Fixed a potential crash on Mac OS X systems without hardware acceleration (e.g. virtual machines).
 5. Fixed function parameters for the `OES_byte_coordinates` extension.
-6. Fixed an issue where OpenTK would always perform a full rebuild even when a partial rebuild could work.
+6. Fixed an issue where osuTK would always perform a full rebuild even when a partial rebuild could work.
 7. Fixed all compilation warnings on VS2013 and Mono 3.4.0.
 8. Improved OpenGL and OpenGL ES documentation on 'count' parameters.
-9. New platform: Linux/KMS. You can now run OpenTK applications on a Linux terminal without an X11 display server.
+9. New platform: Linux/KMS. You can now run osuTK applications on a Linux terminal without an X11 display server.
 10. New OpenGL ES extensions:
   - ANDROID_extension_pack_es31a
 
-OpenTK 1.1.4 is backwards compatible with 1.1.3. Users of previous versions are **strongly** encouraged to upgrade.
+osuTK 1.1.4 is backwards compatible with 1.1.3. Users of previous versions are **strongly** encouraged to upgrade.
 
 
 Known issues
 ============
 
 1. The SDL2 backend has a number of limitations compared to the native platform backends. In particular, SDL2 does not support:
-   - `OpenTK.GLControl`. OpenTK will automatically switch to a native platform backend instead.
+   - `osuTK.GLControl`. osuTK will automatically switch to a native platform backend instead.
    - `DisplayDevice.ChangeResolution()` without a fullscreen `INativeWindow`.
    - Switching between `WindowBorder.Fixed` and `WindowBorder.Resizable`.
    - High-resolution mouse input. Additionally, it is limited to a single keyboard and mouse device.
-2. OpenTK.Input.GamePad.SetVibration is currently not implemented. This API will be implemented in a future release.
+2. osuTK.Input.GamePad.SetVibration is currently not implemented. This API will be implemented in a future release.
 
 
 Contributing
@@ -181,15 +181,15 @@ Requirements
 Documentation
 =============
 
-Your favorite IDE will display inline documentation for all OpenTK APIs. Additional information can be found in the [OpenTK Manual](http://web.archive.org/web/20150325224427/http://www.opentk.com/doc).
+Your favorite IDE will display inline documentation for all osuTK APIs. Additional information can be found in the [osuTK Manual](http://web.archive.org/web/20150325224427/http://www.opentk.com/doc).
 
-Technical documentation about the implementation of OpenTK can be found in the [Technical Wiki](https://github.com/opentk/opentk/wiki).
+Technical documentation about the implementation of osuTK can be found in the [Technical Wiki](https://github.com/opentk/opentk/wiki).
 
 
 Need Help?
 ==========
 
-Post your questions at the [OpenTK forums](http://www.opentk.com/forum).
+Post your questions at the [osuTK forums](http://www.opentk.com/forum).
 
 Report bugs at https://github.com/opentk/opentk/issues
 
@@ -205,17 +205,17 @@ http://www.opentk.com/project/license
 API compatibility
 =================
 
-OpenTK 1.1.4 is backwards compatible with 1.1.3.
+osuTK 1.1.4 is backwards compatible with 1.1.3.
 
-OpenTK 1.1.3 is backwards compatible with 1.1.2.
+osuTK 1.1.3 is backwards compatible with 1.1.2.
 
-OpenTK 1.1.2 is backwards compatible with 1.1.1.
+osuTK 1.1.2 is backwards compatible with 1.1.1.
 
-OpenTK 1.1.1 is backwards compatible with 1.1.0.
+osuTK 1.1.1 is backwards compatible with 1.1.0.
 
-OpenTK 1.1.0 is not backwards compatible with 1.0. Most projects will be able to upgrade without any modifications. Projects using the following signatures will have to implement the suggested changes:
+osuTK 1.1.0 is not backwards compatible with 1.0. Most projects will be able to upgrade without any modifications. Projects using the following signatures will have to implement the suggested changes:
 
-Namespace OpenTK.Graphics.OpenGL
+Namespace osuTK.Graphics.OpenGL
 Change signature:
 - GL.MultiDrawArrays (`out` -> `ref`)
 - GL.Amd.DeletePerfMonitors (`out` -> `ref`)
@@ -230,7 +230,7 @@ Change return type:
 - GL.WaitSync (returns `WaitSyncFlags` instead of `ArbSync`)
 
 
-Namespace OpenTK.Graphics.ES11
+Namespace osuTK.Graphics.ES11
 Change return type:
 - GL.GetError (`ErrorCode` instead of `All`)
 
@@ -273,7 +273,7 @@ Change namespace:
 - GL.DisableDriverControlQCOM -> GL.Qcom.DisableDriverControl
 
 
-Namespace OpenTK.Graphics.ES20.GL
+Namespace osuTK.Graphics.ES20.GL
 Change signature (may cause crash):
 - GL.NV.GetFence now takes three parameters instead of two
 

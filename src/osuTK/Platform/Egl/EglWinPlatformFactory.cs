@@ -24,10 +24,10 @@
 //
 
 using System;
-using OpenTK.Graphics;
-using OpenTK.Platform.Windows;
+using osuTK.Graphics;
+using osuTK.Platform.Windows;
 
-namespace OpenTK.Platform.Egl
+namespace osuTK.Platform.Egl
 {
     // EGL factory for the Windows platform.
     internal class EglWinPlatformFactory : WinFactory
@@ -36,7 +36,7 @@ namespace OpenTK.Platform.Egl
         {
             WinWindowInfo win_win = (WinWindowInfo)window;
             IntPtr egl_display = GetDisplay(win_win.DeviceContext);
-            EglWindowInfo egl_win = new OpenTK.Platform.Egl.EglWindowInfo(win_win.Handle, egl_display);
+            EglWindowInfo egl_win = new osuTK.Platform.Egl.EglWindowInfo(win_win.Handle, egl_display);
             return new EglWinContext(mode, egl_win, shareContext, major, minor, flags);
         }
 
@@ -44,7 +44,7 @@ namespace OpenTK.Platform.Egl
         {
             WinWindowInfo win_win = (WinWindowInfo)window;
             IntPtr egl_display = GetDisplay(win_win.DeviceContext);
-            EglWindowInfo egl_win = new OpenTK.Platform.Egl.EglWindowInfo(win_win.Handle, egl_display);
+            EglWindowInfo egl_win = new osuTK.Platform.Egl.EglWindowInfo(win_win.Handle, egl_display);
             return new EglWinContext(handle, egl_win, shareContext, major, minor, flags);
         }
 

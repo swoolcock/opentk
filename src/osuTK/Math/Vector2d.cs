@@ -24,7 +24,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Xml.Serialization;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>Represents a 2D vector using two double-precision floating-point numbers.</summary>
     [Serializable]
@@ -721,7 +721,7 @@ namespace OpenTK
         }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2d with the Y and X components of this instance.
+        /// Gets or sets an osuTK.Vector2d with the Y and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2d Yx { get { return new Vector2d(Y, X); } set { Y = value.X; X = value.Y; } }
@@ -838,7 +838,7 @@ namespace OpenTK
             return !left.Equals(right);
         }
 
-        /// <summary>Converts OpenTK.Vector2 to OpenTK.Vector2d.</summary>
+        /// <summary>Converts osuTK.Vector2 to osuTK.Vector2d.</summary>
         /// <param name="v2">The Vector2 to convert.</param>
         /// <returns>The resulting Vector2d.</returns>
         public static explicit operator Vector2d(Vector2 v2)
@@ -846,7 +846,7 @@ namespace OpenTK
             return new Vector2d(v2.X, v2.Y);
         }
 
-        /// <summary>Converts OpenTK.Vector2d to OpenTK.Vector2.</summary>
+        /// <summary>Converts osuTK.Vector2d to osuTK.Vector2.</summary>
         /// <param name="v2d">The Vector2d to convert.</param>
         /// <returns>The resulting Vector2.</returns>
         public static explicit operator Vector2(Vector2d v2d)

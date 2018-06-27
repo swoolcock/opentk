@@ -6468,7 +6468,7 @@
        <use token="ETC1_RGB8_OES" />
     </enum>
 
-    <!-- For compatibility with OpenTK 1.0 -->
+    <!-- For compatibility with osuTK 1.0 -->
     <enum name="ProgramParameter">
       <reuse enum="GetProgramParameterName" />
     </enum>

@@ -1,4 +1,4 @@
-// OpenTK.Rewrite: IL rewriter for OpenTK.dll
+// osuTK.Rewrite: IL rewriter for osuTK.dll
 // Copyright (C) 2013 Stefanos Apostolopoulos
 //
 // This program is free software: you can redistribute it and/or modify
@@ -23,9 +23,9 @@ using Mono.Cecil;
 using Mono.Cecil.Cil;
 using Mono.Cecil.Rocks;
 
-namespace OpenTK.Rewrite
+namespace osuTK.Rewrite
 {
-    // Replaces OpenTK.InteropHelper method instances
+    // Replaces osuTK.InteropHelper method instances
     // with the s IL instructions.
     internal class Program
     {
@@ -64,7 +64,7 @@ namespace OpenTK.Rewrite
         private static TypeDefinition TypeIntPtr;
         private static TypeDefinition TypeInt32;
 
-        // OpenTK.BindingsBase
+        // osuTK.BindingsBase
         private static TypeDefinition TypeBindingsBase;
 
         private void Rewrite()
@@ -74,7 +74,7 @@ namespace OpenTK.Rewrite
             var read_params = new ReaderParameters();
             var write_params = new WriterParameters();
 
-            read_params.AssemblyResolver = new OpenTKAssemblyResolver();
+            read_params.AssemblyResolver = new osuTKAssemblyResolver();
             read_params.ReadSymbols = true;
             read_params.ReadWrite = true;
             write_params.WriteSymbols = true;
@@ -146,7 +146,7 @@ namespace OpenTK.Rewrite
                         TypeIntPtr = mscorlib.MainModule.GetType("System.IntPtr");
                         TypeInt32 = mscorlib.MainModule.GetType("System.Int32");
 
-                        TypeBindingsBase = assembly.Modules.Select(m => m.GetType("OpenTK.BindingsBase")).First();
+                        TypeBindingsBase = assembly.Modules.Select(m => m.GetType("osuTK.BindingsBase")).First();
 
                         foreach (var module in assembly.Modules)
                         {
@@ -392,13 +392,13 @@ namespace OpenTK.Rewrite
                 module = module.Substring(0, module.LastIndexOf('.'));
 
                 // Only works for Graphics modules due to hardcoded use of
-                // OpenTK.Graphics.GraphicsContext
-                if (module == "OpenTK.Graphics.OpenGL4" ||
-                    module == "OpenTK.Graphics.OpenGL" ||
-                    module == "OpenTK.Graphics.ES10" ||
-                    module == "OpenTK.Graphics.ES11" ||
-                    module == "OpenTK.Graphics.ES20" ||
-                    module == "OpenTK.Graphics.ES30")
+                // osuTK.Graphics.GraphicsContext
+                if (module == "osuTK.Graphics.OpenGL4" ||
+                    module == "osuTK.Graphics.OpenGL" ||
+                    module == "osuTK.Graphics.ES10" ||
+                    module == "osuTK.Graphics.ES11" ||
+                    module == "osuTK.Graphics.ES20" ||
+                    module == "osuTK.Graphics.ES30")
                 {
                     var errorHelperType = wrapper.Module.GetType(module, "ErrorHelper");
 
@@ -409,11 +409,11 @@ namespace OpenTK.Rewrite
 
                         // GraphicsContext type
                         var graphicsContext = wrapper.Module.Types.First(
-                            type => type.FullName == "OpenTK.Graphics.GraphicsContext");
+                            type => type.FullName == "osuTK.Graphics.GraphicsContext");
 
                         // IGraphicsContext type
                         var iGraphicsContext = wrapper.Module.Types.First(
-                            type => type.FullName == "OpenTK.Graphics.IGraphicsContext");
+                            type => type.FullName == "osuTK.Graphics.IGraphicsContext");
 
                         // Get the constructor that takes a GraphicsContext parameter
                         var ctor = vars.ErrorHelperType.GetConstructors().FirstOrDefault(

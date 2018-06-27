@@ -25,7 +25,7 @@
 
 using System;
 
-namespace OpenTK.Graphics
+namespace osuTK.Graphics
 {
     /// <summary>
     /// Enumerates various flags that affect the creation of new GraphicsContexts.

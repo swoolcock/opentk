@@ -26,9 +26,9 @@
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     internal sealed class WinRawInput : WinInputBase
     {

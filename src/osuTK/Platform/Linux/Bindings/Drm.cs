@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 
 #pragma warning disable 0649 // field is never assigned
 
-namespace OpenTK.Platform.Linux
+namespace osuTK.Platform.Linux
 {
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     internal delegate void VBlankCallback(int fd,

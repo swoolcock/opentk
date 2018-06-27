@@ -27,9 +27,9 @@
 
 using System;
 using System.Diagnostics;
-using OpenTK.Platform;
+using osuTK.Platform;
 
-namespace OpenTK.Graphics
+namespace osuTK.Graphics
 {
     // Provides the foundation for all IGraphicsContext implementations.
     internal abstract class GraphicsContextBase : IGraphicsContext, IGraphicsContextInternal, IEquatable<IGraphicsContextInternal>

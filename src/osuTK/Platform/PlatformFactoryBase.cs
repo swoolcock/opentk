@@ -28,10 +28,10 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using OpenTK.Graphics;
-using OpenTK.Input;
+using osuTK.Graphics;
+using osuTK.Input;
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     /// \internal
     /// <summary>
@@ -105,7 +105,7 @@ namespace OpenTK.Platform
                 }
                 else
                 {
-                    Debug.Print("[OpenTK] {0} leaked with {1} live resources, did you forget to call Dispose()?",
+                    Debug.Print("[osuTK] {0} leaked with {1} live resources, did you forget to call Dispose()?",
                         GetType().FullName, Resources.Count);
                 }
                 IsDisposed = true;

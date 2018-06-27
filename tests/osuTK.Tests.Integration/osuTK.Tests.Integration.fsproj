@@ -7,16 +7,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>522d9279-3ed6-475f-867a-6ae69a53c24a</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>OpenTK.Tests.Integration</RootNamespace>
-    <AssemblyName>OpenTK.Tests.Integration</AssemblyName>
+    <RootNamespace>osuTK.Tests.Integration</RootNamespace>
+    <AssemblyName>osuTK.Tests.Integration</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Name>OpenTK.Tests.Integration</Name>
+    <Name>osuTK.Tests.Integration</Name>
     <Deterministic>true</Deterministic>
     <StartAction>Program</StartAction>
     <StartProgram>packages\xunit.runner.console\tools\xunit.console.exe</StartProgram>
-    <StartArguments>OpenTK.Tests.Integration.dll</StartArguments>
+    <StartArguments>osuTK.Tests.Integration.dll</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,7 +26,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\OpenTK.Tests.Integration.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\osuTK.Tests.Integration.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\OpenTK.Tests.Integration.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\osuTK.Tests.Integration.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
@@ -72,8 +72,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Numerics" />
-    <ProjectReference Include="..\..\src\OpenTK\OpenTK.csproj">
-      <Name>OpenTK</Name>
+    <ProjectReference Include="..\..\src\osuTK\osuTK.csproj">
+      <Name>osuTK</Name>
       <Project>{a37a7e14-0000-0000-0000-000000000000}</Project>
       <Private>True</Private>
     </ProjectReference>

@@ -9,7 +9,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>OpenTK.GLWidget</AssemblyName>
+    <AssemblyName>osuTK.GLWidget</AssemblyName>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -17,7 +17,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>
     </AppDesignerFolder>
-    <RootNamespace>OpenTK.GLWidget</RootNamespace>
+    <RootNamespace>osuTK.GLWidget</RootNamespace>
     <StartArguments>
     </StartArguments>
     <FileUpgradeFlags>
@@ -52,7 +52,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>DEBUG;TRACE;GTK3;</DefineConstants>
-    <DocumentationFile>bin\Debug\OpenTK.GLWidget.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\osuTK.GLWidget.xml</DocumentationFile>
     <DebugSymbols>True</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <Optimize>False</Optimize>
@@ -69,7 +69,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>TRACE;GTK3;</DefineConstants>
-    <DocumentationFile>bin\Release\OpenTK.GLWidget.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\osuTK.GLWidget.xml</DocumentationFile>
     <FileAlignment>4096</FileAlignment>
     <Optimize>True</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -83,7 +83,7 @@
     <SignAssembly>True</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\..\OpenTK.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\osuTK.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -91,8 +91,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OpenTK\OpenTK.csproj">
-      <Name>OpenTK</Name>
+    <ProjectReference Include="..\osuTK\osuTK.csproj">
+      <Name>osuTK</Name>
       <Project>{A37A7E14-0000-0000-0000-000000000000}</Project>
       <Private>False</Private>
     </ProjectReference>

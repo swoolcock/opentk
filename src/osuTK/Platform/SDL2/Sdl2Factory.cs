@@ -24,10 +24,10 @@
 //
 
 using System;
-using OpenTK.Graphics;
-using OpenTK.Input;
+using osuTK.Graphics;
+using osuTK.Input;
 
-namespace OpenTK.Platform.SDL2
+namespace osuTK.Platform.SDL2
 {
     internal class Sdl2Factory : PlatformFactoryBase
     {

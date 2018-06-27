@@ -28,7 +28,7 @@
 using System;
 using System.Diagnostics;
 
-namespace OpenTK.Platform.Common
+namespace osuTK.Platform.Common
 {
     internal class HidHelper
     {

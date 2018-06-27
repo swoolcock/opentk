@@ -25,7 +25,7 @@
 
 using System;
 
-namespace OpenTK
+namespace osuTK
 {
     internal class InteropHelper
     {

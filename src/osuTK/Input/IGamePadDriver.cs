@@ -1,4 +1,4 @@
-﻿namespace OpenTK.Input
+﻿namespace osuTK.Input
 {
     internal interface IGamePadDriver
     {

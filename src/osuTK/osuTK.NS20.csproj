@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyName>OpenTK</AssemblyName>
+    <AssemblyName>osuTK</AssemblyName>
     <PackageVersion>1.0.4</PackageVersion>
-    <PackageId>ppy.OpenTK.NS20</PackageId>
-    <Title>ppy.OpenTK.NS20</Title>
+    <PackageId>ppy.osuTK.NS20</PackageId>
+    <Title>ppy.osuTK.NS20</Title>
     <PackageProjectUrl>https://github.com/ppy/opentk/tree/netstandard</PackageProjectUrl>
     <Authors>ppy Pty Ltd &amp; The Open Toolkit Team</Authors>
-    <Description>A build of OpenTK geared towards netstandard20 deploys.</Description>
-    <RootNamespace>OpenTK</RootNamespace>
+    <Description>A build of osuTK geared towards netstandard20 deploys.</Description>
+    <RootNamespace>osuTK</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>$(DefineConstants);WIN32;CARBON;X11;SDL2;OPENGL;OPENGLES;MINIMAL</DefineConstants>
@@ -566,13 +566,13 @@
     <Compile Include="Audio\OpenAL\AL\ALEnums.cs">
       <SubType>Code</SubType>
     </Compile>
-    <None Include="..\..\OpenTK.snk">
-      <Link>OpenTK.snk</Link>
+    <None Include="..\..\osuTK.snk">
+      <Link>osuTK.snk</Link>
     </None>
     <Compile Include="Platform\X11\X11Keyboard.cs" />
     <Compile Include="Platform\X11\X11Mouse.cs" />
     <Compile Include="Input\ButtonState.cs" />
-    <EmbeddedResource Include="OpenTK.dll.config">
+    <EmbeddedResource Include="osuTK.dll.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <Compile Include="Platform\MacOS\HIDInput.cs" />
@@ -696,15 +696,15 @@
     <Compile Include="Platform\Linux\DefaultCursor.cs" />
     <Compile Include="Platform\Linux\Bindings\Kms.cs" />
     <Compile Include="Input\FileDropEventArgs.cs" />
-    <None Include="OpenTK.csproj.paket.template" />
+    <None Include="osuTK.csproj.paket.template" />
     <None Include="paket.references" />
     <Compile Include="Platform\MacOS\Cocoa\NSDragOperation.cs" />
     <Compile Include="Platform\MacOS\CoreVideo.cs" />
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="$(MSBuildThisFileDirectory)..\Generator.Rewrite\bin\Debug\Rewrite.exe $(OutputPath)OpenTK.dll $(MSBuildThisFileDirectory)..\..\OpenTK.snk -debug -netstandard" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" />
-    <Exec Command="$(MSBuildThisFileDirectory)..\Generator.Rewrite\bin\Release\Rewrite.exe $(OutputPath)OpenTK.dll $(MSBuildThisFileDirectory)..\..\OpenTK.snk -netstandard" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Release'" />
-    <Exec Command="mono $(MSBuildThisFileDirectory)../Generator.Rewrite/bin/Debug/Rewrite.exe -a $(OutputPath)OpenTK.dll -debug --netstandard" Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Debug'" />
-    <Exec Command="mono $(MSBuildThisFileDirectory)../Generator.Rewrite/bin/Release/Rewrite.exe -a $(OutputPath)OpenTK.dll --netstandard" Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Release'" />
+    <Exec Command="$(MSBuildThisFileDirectory)..\Generator.Rewrite\bin\Debug\Rewrite.exe $(OutputPath)osuTK.dll $(MSBuildThisFileDirectory)..\..\osuTK.snk -debug -netstandard" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" />
+    <Exec Command="$(MSBuildThisFileDirectory)..\Generator.Rewrite\bin\Release\Rewrite.exe $(OutputPath)osuTK.dll $(MSBuildThisFileDirectory)..\..\osuTK.snk -netstandard" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Release'" />
+    <Exec Command="mono $(MSBuildThisFileDirectory)../Generator.Rewrite/bin/Debug/Rewrite.exe -a $(OutputPath)osuTK.dll -debug --netstandard" Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Debug'" />
+    <Exec Command="mono $(MSBuildThisFileDirectory)../Generator.Rewrite/bin/Release/Rewrite.exe -a $(OutputPath)osuTK.dll --netstandard" Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Release'" />
   </Target>
 </Project>

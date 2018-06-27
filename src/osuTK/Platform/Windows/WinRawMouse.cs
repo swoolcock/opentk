@@ -28,10 +28,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
-using OpenTK.Input;
-using OpenTK.Platform.Common;
+using osuTK.Input;
+using osuTK.Platform.Common;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     /// \internal
     /// <summary>
@@ -108,7 +108,7 @@ namespace OpenTK.Platform.Windows
                         string deviceClass = (string)regkey.GetValue("Class") as string;
                         if (deviceClass == null)
                         {
-                            // Added to address OpenTK issue 3198 with mouse on Windows 8
+                            // Added to address osuTK issue 3198 with mouse on Windows 8
                             string deviceClassGUID = (string)regkey.GetValue("ClassGUID");
                             RegistryKey classGUIDKey = Registry.LocalMachine.OpenSubKey(@"SYSTEM\CurrentControlSet\Control\Class\" + deviceClassGUID);
                             deviceClass = classGUIDKey != null ? (string)classGUIDKey.GetValue("Class") : string.Empty;

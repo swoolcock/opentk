@@ -2,7 +2,7 @@
 using CommandLine;
 using CommandLine.Text;
 
-namespace OpenTK.Convert
+namespace osuTK.Convert
 {
     /// <summary>
     /// A container class used by <see cref="CommandLine.Parser"/> to parse command line arguments.
@@ -26,10 +26,10 @@ namespace OpenTK.Convert
         public string OutputFile { get; set; }
 
         /// <summary>
-        /// Gets or sets a list of the Khronos XML files to parse into OpenTK XML. Remote resources in the form of URLs are supported.
+        /// Gets or sets a list of the Khronos XML files to parse into osuTK XML. Remote resources in the form of URLs are supported.
         /// </summary>
         [Option('i', "input-files",
-            HelpText = "A list of the Khronos XML files to parse into OpenTK XML. Remote resources in the form of URLs are supported.",
+            HelpText = "A list of the Khronos XML files to parse into osuTK XML. Remote resources in the form of URLs are supported.",
             Required = true)]
         public IEnumerable<string> InputFiles { get; set; }
 

@@ -28,10 +28,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Runtime.InteropServices;
-using OpenTK.Input;
+using osuTK.Input;
 using System.Text;
 
-namespace OpenTK.Platform.SDL2
+namespace osuTK.Platform.SDL2
 {
     internal class Sdl2NativeWindow : NativeWindowBase
     {

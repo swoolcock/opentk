@@ -1,12 +1,12 @@
 ﻿/* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK Team.
+ * Copyright (c) 2006-2008 the osuTK Team.
  * This notice may not be removed from any source distribution.
  * See license.txt for licensing detailed licensing details.
  */
 
 using System;
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     /// <summary>Describes an OS window.</summary>
     public interface IWindowInfo : IDisposable

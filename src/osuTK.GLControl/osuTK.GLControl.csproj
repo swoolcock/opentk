@@ -9,7 +9,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>OpenTK.GLControl</AssemblyName>
+    <AssemblyName>osuTK.GLControl</AssemblyName>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -18,7 +18,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>
     </AppDesignerFolder>
-    <RootNamespace>OpenTK.GLControl</RootNamespace>
+    <RootNamespace>osuTK.GLControl</RootNamespace>
     <StartArguments>
     </StartArguments>
     <FileUpgradeFlags>
@@ -50,7 +50,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>DEBUG;TRACE;</DefineConstants>
-    <DocumentationFile>bin\Debug\OpenTK.GLControl.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\osuTK.GLControl.xml</DocumentationFile>
     <DebugSymbols>True</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <Optimize>False</Optimize>
@@ -66,7 +66,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>TRACE;</DefineConstants>
-    <DocumentationFile>bin\Release\OpenTK.GLControl.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\osuTK.GLControl.xml</DocumentationFile>
     <FileAlignment>4096</FileAlignment>
     <Optimize>True</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -79,7 +79,7 @@
     <SignAssembly>True</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\..\OpenTK.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\osuTK.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -99,8 +99,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OpenTK\OpenTK.csproj">
-      <Name>OpenTK</Name>
+    <ProjectReference Include="..\osuTK\osuTK.csproj">
+      <Name>osuTK</Name>
       <Project>{A37A7E14-0000-0000-0000-000000000000}</Project>
       <Private>False</Private>
     </ProjectReference>
@@ -153,8 +153,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\OpenTK.snk">
-      <Link>OpenTK.snk</Link>
+    <None Include="..\..\osuTK.snk">
+      <Link>osuTK.snk</Link>
     </None>
     <None Include="paket.references" />
     <None Include="paket.template" />

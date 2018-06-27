@@ -7,7 +7,7 @@
 
 using System;
 
-namespace OpenTK.Graphics {
+namespace osuTK.Graphics {
     public enum GLVersion {
         ES1 = 1,
         ES2 = 2,

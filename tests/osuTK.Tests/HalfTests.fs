@@ -1,11 +1,11 @@
-namespace OpenTK.Tests
+namespace osuTK.Tests
 
 open Xunit
 open FsCheck
 open FsCheck.Xunit
 open System
 open System.Runtime.InteropServices
-open OpenTK
+open osuTK
 
 module Half =
     [<Fact>]

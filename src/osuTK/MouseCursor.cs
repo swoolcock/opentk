@@ -27,7 +27,7 @@
 
 using System;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Represents a predefined or custom mouse cursor.

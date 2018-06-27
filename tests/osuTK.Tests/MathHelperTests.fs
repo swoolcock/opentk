@@ -1,14 +1,14 @@
-﻿namespace OpenTK.Tests
+﻿namespace osuTK.Tests
 
 open Xunit
 open FsCheck
 open FsCheck.Xunit
 open System
-open OpenTK
-open OpenTK.Tests.Generators
+open osuTK
+open osuTK.Tests.Generators
 
 module MathHelper =
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module ``ApproximatelyEqual (delta)`` =
         /// This test ensures that approximately equal can never get it 'wrong' about the values.
         [<Property>]
@@ -56,7 +56,7 @@ module MathHelper =
             Assert.Equal(a,b)
             Assert.True(MathHelper.ApproximatelyEqual(a,b,0))
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module ``ApproximatelyEqual (single-precision epsilon)`` =
         //
         [<Fact>]
@@ -182,7 +182,7 @@ module MathHelper =
             Assert.NotApproximatelyEqualEpsilon(System.Single.Epsilon, 0.000000001f);
             Assert.NotApproximatelyEqualEpsilon(-System.Single.Epsilon, 0.000000001f);
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module ``ApproximatelyEqual (double-precision epsilon)`` =
         //
         [<Fact>]
@@ -308,7 +308,7 @@ module MathHelper =
             Assert.NotApproximatelyEqualEpsilon(System.Double.Epsilon, 0.000000001);
             Assert.NotApproximatelyEqualEpsilon(-System.Double.Epsilon, 0.000000001);
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module ``ApproximatelyEquivalent (tolerance diff)`` =
         [<Fact>]
         let ``ApproximatelyEquivalent correctly approximates equivalence where the difference falls below the tolerance``() =

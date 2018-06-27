@@ -25,10 +25,10 @@
 //
 
 using System;
-using OpenTK.Graphics;
-using OpenTK.Input;
+using osuTK.Graphics;
+using osuTK.Input;
 
-namespace OpenTK.Platform.Egl
+namespace osuTK.Platform.Egl
 {
     internal class EglAnglePlatformFactory : PlatformFactoryBase
     {

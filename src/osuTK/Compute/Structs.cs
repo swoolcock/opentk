@@ -30,7 +30,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace OpenTK.Compute
+namespace osuTK.Compute
 {
     struct Handle<T> : IEquatable<Handle<T>>, IComparable<Handle<T>>
     {

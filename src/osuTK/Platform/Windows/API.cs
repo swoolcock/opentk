@@ -31,7 +31,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Security;
-using OpenTK.Platform.Common;
+using osuTK.Platform.Common;
 
 /* TODO: Update the description of TimeBeginPeriod and other native methods. Update Timer. */
 
@@ -40,7 +40,7 @@ using OpenTK.Platform.Common;
 #pragma warning disable 0169    // field / method is never used.
 #pragma warning disable 0414    // field assigned but never used.
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     using HWND = System.IntPtr;
     using HINSTANCE = System.IntPtr;
@@ -76,7 +76,7 @@ namespace OpenTK.Platform.Windows
     using ATOM = System.Int32;
 
     using COLORREF = System.Int32;
-    using RECT = OpenTK.Platform.Windows.Win32Rectangle;
+    using RECT = osuTK.Platform.Windows.Win32Rectangle;
     using WNDPROC = System.IntPtr;
     using LPDEVMODE = DeviceMode;
     using HDEVNOTIFY = System.IntPtr;
@@ -94,7 +94,7 @@ namespace OpenTK.Platform.Windows
 
     /// \internal
     /// <summary>
-    /// For internal use by OpenTK only!
+    /// For internal use by osuTK only!
     /// Exposes useful native WINAPI methods and structures.
     /// </summary>
     internal static class API
@@ -1195,7 +1195,7 @@ namespace OpenTK.Platform.Windows
         /// <param name="Data">
         /// ointer to a buffer that contains the information specified by Command.
         /// If Command is RawInputDeviceInfoEnum.DEVICEINFO, set RawInputDeviceInfo.Size to sizeof(RawInputDeviceInfo)
-        /// before calling GetRawInputDeviceInfo. (This is done automatically in OpenTK)
+        /// before calling GetRawInputDeviceInfo. (This is done automatically in osuTK)
         /// </param>
         /// <param name="Size">
         /// Pointer to a variable that contains the size, in bytes, of the data in Data.
@@ -1245,7 +1245,7 @@ namespace OpenTK.Platform.Windows
         /// <param name="Data">
         /// ointer to a buffer that contains the information specified by Command.
         /// If Command is RawInputDeviceInfoEnum.DEVICEINFO, set RawInputDeviceInfo.Size to sizeof(RawInputDeviceInfo)
-        /// before calling GetRawInputDeviceInfo. (This is done automatically in OpenTK)
+        /// before calling GetRawInputDeviceInfo. (This is done automatically in osuTK)
         /// </param>
         /// <param name="Size">
         /// Pointer to a variable that contains the size, in bytes, of the data in Data.

@@ -24,9 +24,9 @@
 //
 
 
-namespace OpenTK.Audio
+namespace osuTK.Audio
 {
-    /// <summary>Represents exceptions related to an OpenTK.Audio device.</summary>
+    /// <summary>Represents exceptions related to an osuTK.Audio device.</summary>
     public class AudioDeviceException : AudioException
     {
         /// <summary>Constructs a new AudioDeviceException.</summary>

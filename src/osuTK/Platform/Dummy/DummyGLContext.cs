@@ -1,5 +1,5 @@
 /* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK Team.
+ * Copyright (c) 2006-2008 the osuTK Team.
  * This notice may not be removed from any source distribution.
  * See license.txt for licensing detailed licensing details.
  */
@@ -7,14 +7,14 @@
 using System;
 using System.Threading;
 
-using OpenTK.Graphics;
+using osuTK.Graphics;
 
-namespace OpenTK.Platform.Dummy
+namespace osuTK.Platform.Dummy
 {
     /// \internal
     /// <summary>
     /// An empty IGraphicsContext implementation to be used inside the Visual Studio designer.
-    /// This class supports OpenTK, and is not intended for use by OpenTK programs.
+    /// This class supports osuTK, and is not intended for use by osuTK programs.
     /// </summary>
     internal sealed class DummyGLContext : GraphicsContextBase
     {
@@ -82,13 +82,13 @@ namespace OpenTK.Platform.Dummy
         public override void LoadAll()
         {
             #if OPENGL
-            new OpenTK.Graphics.OpenGL.GL().LoadEntryPoints();
-            new OpenTK.Graphics.OpenGL4.GL().LoadEntryPoints();
+            new osuTK.Graphics.OpenGL.GL().LoadEntryPoints();
+            new osuTK.Graphics.OpenGL4.GL().LoadEntryPoints();
             #endif
             #if OPENGLES
-            new OpenTK.Graphics.ES11.GL().LoadEntryPoints();
-            new OpenTK.Graphics.ES20.GL().LoadEntryPoints();
-            new OpenTK.Graphics.ES30.GL().LoadEntryPoints();
+            new osuTK.Graphics.ES11.GL().LoadEntryPoints();
+            new osuTK.Graphics.ES20.GL().LoadEntryPoints();
+            new osuTK.Graphics.ES30.GL().LoadEntryPoints();
             #endif
         }
 

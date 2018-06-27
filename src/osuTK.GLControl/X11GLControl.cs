@@ -1,5 +1,5 @@
 ﻿/* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK Team.
+ * Copyright (c) 2006-2008 the osuTK Team.
  * This notice may not be removed from any source distribution.
  * See license.txt for licensing detailed licensing details.
  */
@@ -8,10 +8,10 @@ using System;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-using OpenTK.Graphics;
-using OpenTK.Platform;
+using osuTK.Graphics;
+using osuTK.Platform;
 
-namespace OpenTK
+namespace osuTK
 {
     internal class X11GLControl : IGLControl
     {

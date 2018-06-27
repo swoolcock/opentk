@@ -15,7 +15,7 @@ using System.Diagnostics;
 #pragma warning disable 0169    // field / method is never used.
 #pragma warning disable 0414    // field assigned but never used.
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     // using XID = System.Int32;
     using Window = System.IntPtr;

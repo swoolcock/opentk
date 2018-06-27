@@ -23,9 +23,9 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     internal static class WinKeyMap
     {

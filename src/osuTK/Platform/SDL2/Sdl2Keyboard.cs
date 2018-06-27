@@ -23,9 +23,9 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform.SDL2
+namespace osuTK.Platform.SDL2
 {
     internal class Sdl2Keyboard : IKeyboardDriver2
     {

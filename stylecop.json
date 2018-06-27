@@ -39,7 +39,7 @@
             "allowConsecutiveUsings" : false
         },
         "documentationRules" : {
-            "companyName" : "OpenTK",
+            "companyName" : "osuTK",
             "copyrightText" : "Copyright (c) {companyName}. All Rights Reserved.\r\nLicensed under the MIT License. See License.txt in the project root for license information.",
             "xmlHeader" : false,
             "documentInterfaces" : true,

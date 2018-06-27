@@ -23,7 +23,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     internal interface IDisplayDeviceDriver
     {

@@ -221,7 +221,7 @@ NextContour(tess, type)
 	param		tess		TesselatorObj in value
 	param		type		TessContour in value
 
-# Edited for OpenTK
+# Edited for osuTK
 NurbsCallback(nurb, which, CallBackFunc)
 	return		void
 	param		nurb		NurbsObj in value
@@ -320,7 +320,7 @@ PwlCurve(nurb, count, data, stride, type)
 	param		stride		Int32 in value
 	param		type		NurbsTrim in value
 
-# Edited for OpenTK
+# Edited for osuTK
 QuadricCallback(quad, which, CallBackFunc)
 	return		void
 	param		quad		QuadricObj in value
@@ -376,7 +376,7 @@ TessBeginPolygon(tess, data)
 	param		tess		TesselatorObj in value
 	param		data		VoidPointer in value
 
-# Edited for OpenTK -- safety reasons
+# Edited for osuTK -- safety reasons
 TessCallback(tess, which, CallBackFunc)
 	return		void
 	param		tess		TesselatorObj in value
@@ -404,14 +404,14 @@ TessProperty(tess, which, data)
 	param		which		TessParameter in value		# TessProperty in value
 	param		data		Float64 in value
 
-# Edited for OpenTK
+# Edited for osuTK
 TessVertex(tess, location, data)
 	return		void
 	param		tess		TesselatorObj in value
 	param		location	Float64 in array [3] # Float64 out array [3]
 	param		data		VoidPointer in value
 
-# Edited for OpenTK
+# Edited for osuTK
 TexFilterFuncSGI(target, filtertype, parms, n, weights)
 	return		Int32 out value
 	param		target		TextureTarget in value

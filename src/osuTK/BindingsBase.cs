@@ -27,7 +27,7 @@ using System;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Provides a common foundation for all flat API bindings and implements the extension loading interface.
@@ -73,7 +73,7 @@ namespace OpenTK
 
         /// <summary>
         /// Marshals a pointer to a null-terminated byte array to a new <c>System.String</c>.
-        /// This method supports OpenTK and is not intended to be called by user code.
+        /// This method supports osuTK and is not intended to be called by user code.
         /// </summary>
         /// <param name="ptr">A pointer to a null-terminated byte array.</param>
         /// <returns>

@@ -23,7 +23,7 @@
  // OTHER DEALINGS IN THE SOFTWARE.
  //
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     /// <summary>
     /// The available keyboard keys.

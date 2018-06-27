@@ -28,7 +28,7 @@
 using System;
 using System.Diagnostics;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     /// \internal
     /// <summary>

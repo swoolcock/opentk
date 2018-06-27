@@ -8,7 +8,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     internal partial class Wgl
     {

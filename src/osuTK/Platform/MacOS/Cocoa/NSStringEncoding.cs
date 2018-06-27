@@ -23,7 +23,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     internal enum NSStringEncoding : uint
     {

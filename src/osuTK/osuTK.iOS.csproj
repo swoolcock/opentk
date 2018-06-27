@@ -6,9 +6,9 @@
     <ProjectGuid>{88368190-E3DF-4EBE-ACAA-7B1779F376CA}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>OpenTK</RootNamespace>
+    <RootNamespace>osuTK</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>OpenTK</AssemblyName>
+    <AssemblyName>osuTK</AssemblyName>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <Deterministic>true</Deterministic>
@@ -25,7 +25,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>bin\Debug\iOS\OpenTK.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\iOS\osuTK.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,7 +37,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DebugSymbols>true</DebugSymbols>
     <DefineConstants>IPHONE;OPENGLES;OPENTK_1;OPENTK_1_1</DefineConstants>
-    <DocumentationFile>bin\Release\iOS\OpenTK.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\iOS\osuTK.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -224,10 +224,10 @@
     <Compile Include="Platform\MacOS\NS.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="OpenTK.dll.config">
+    <None Include="osuTK.dll.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="OpenTK.iOS.csproj.paket.template" />
+    <None Include="osuTK.iOS.csproj.paket.template" />
     <None Include="paket.references" />
   </ItemGroup>
   <ItemGroup>
@@ -247,10 +247,10 @@
   </Target>
   -->
   <Target Name="AfterBuild">
-    <Exec Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" Command="$(OutputPath)..\..\..\..\Generator.Rewrite\bin\Debug\Rewrite.exe --assembly $(OutputPath)OpenTK.dll --signing-key ..\..\OpenTK.snk --debug" />
-    <Exec Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Release'" Command="$(OutputPath)..\..\..\..\Generator.Rewrite\bin\Release\Rewrite.exe --assembly $(OutputPath)OpenTK.dll --signing-key ..\..\OpenTK.snk" />
-    <Exec Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Debug'" Command="mono $(OutputPath)../../../../Generator.Rewrite/bin/Debug/Rewrite.exe --assembly $(OutputPath)OpenTK.dll --signing-key ../../OpenTK.snk --debug" />
-    <Exec Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Release'" Command="mono $(OutputPath)../../../../Generator.Rewrite/bin/Release/Rewrite.exe --assembly $(OutputPath)OpenTK.dll --signing-key ../../OpenTK.snk" />
+    <Exec Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" Command="$(OutputPath)..\..\..\..\Generator.Rewrite\bin\Debug\Rewrite.exe --assembly $(OutputPath)osuTK.dll --signing-key ..\..\osuTK.snk --debug" />
+    <Exec Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Release'" Command="$(OutputPath)..\..\..\..\Generator.Rewrite\bin\Release\Rewrite.exe --assembly $(OutputPath)osuTK.dll --signing-key ..\..\osuTK.snk" />
+    <Exec Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Debug'" Command="mono $(OutputPath)../../../../Generator.Rewrite/bin/Debug/Rewrite.exe --assembly $(OutputPath)osuTK.dll --signing-key ../../osuTK.snk --debug" />
+    <Exec Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Release'" Command="mono $(OutputPath)../../../../Generator.Rewrite/bin/Release/Rewrite.exe --assembly $(OutputPath)osuTK.dll --signing-key ../../osuTK.snk" />
   </Target>
   <ItemGroup>
     <Analyzer Include="..\..\packages\StyleCop.Analyzers\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll">

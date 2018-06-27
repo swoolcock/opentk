@@ -27,23 +27,23 @@
 
 using System;
 using System.Collections.Generic;
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     /// \internal
     /// <summary>
-    /// Implements IGamePadDriver using OpenTK.Input.Joystick
+    /// Implements IGamePadDriver using osuTK.Input.Joystick
     /// and a gamepad-specific axis/button mapping.
     /// </summary>
     /// <remarks>
     /// <para>
-    /// This class supports OpenTK and is not meant to be accessed by user code.
+    /// This class supports osuTK and is not meant to be accessed by user code.
     /// </para>
     /// <para>
     /// To support gamepads on platforms that do not offer a gamepad-optimized API,
-    /// we need to use the generic OpenTK.Input.Joystick and implement a custom
-    /// mapping scheme to provide a stable mapping to OpenTK.Input.GamePad. This
+    /// we need to use the generic osuTK.Input.Joystick and implement a custom
+    /// mapping scheme to provide a stable mapping to osuTK.Input.GamePad. This
     /// class implements this mapping scheme.
     /// </para>
     /// </remarks>

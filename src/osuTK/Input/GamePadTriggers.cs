@@ -28,7 +28,7 @@
 
 using System;
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     /// <summary>
     /// Describes the state of a <see cref="GamePad"/> trigger buttons.
@@ -76,9 +76,9 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Returns a <see cref="System.String"/> that represents the current <see cref="OpenTK.Input.GamePadTriggers"/>.
+        /// Returns a <see cref="System.String"/> that represents the current <see cref="osuTK.Input.GamePadTriggers"/>.
         /// </summary>
-        /// <returns>A <see cref="System.String"/> that represents the current <see cref="OpenTK.Input.GamePadTriggers"/>.</returns>
+        /// <returns>A <see cref="System.String"/> that represents the current <see cref="osuTK.Input.GamePadTriggers"/>.</returns>
         public override string ToString()
         {
             return String.Format(
@@ -87,7 +87,7 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Serves as a hash function for a <see cref="OpenTK.Input.GamePadTriggers"/> object.
+        /// Serves as a hash function for a <see cref="osuTK.Input.GamePadTriggers"/> object.
         /// </summary>
         /// <returns>A hash code for this instance that is suitable for use in hashing algorithms and data structures such as a
         /// hash table.</returns>
@@ -98,11 +98,11 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Determines whether the specified <see cref="System.Object"/> is equal to the current <see cref="OpenTK.Input.GamePadTriggers"/>.
+        /// Determines whether the specified <see cref="System.Object"/> is equal to the current <see cref="osuTK.Input.GamePadTriggers"/>.
         /// </summary>
-        /// <param name="obj">The <see cref="System.Object"/> to compare with the current <see cref="OpenTK.Input.GamePadTriggers"/>.</param>
+        /// <param name="obj">The <see cref="System.Object"/> to compare with the current <see cref="osuTK.Input.GamePadTriggers"/>.</param>
         /// <returns><c>true</c> if the specified <see cref="System.Object"/> is equal to the current
-        /// <see cref="OpenTK.Input.GamePadTriggers"/>; otherwise, <c>false</c>.</returns>
+        /// <see cref="osuTK.Input.GamePadTriggers"/>; otherwise, <c>false</c>.</returns>
         public override bool Equals(object obj)
         {
             return
@@ -111,11 +111,11 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Determines whether the specified <see cref="OpenTK.Input.GamePadTriggers"/> is equal to the current <see cref="OpenTK.Input.GamePadTriggers"/>.
+        /// Determines whether the specified <see cref="osuTK.Input.GamePadTriggers"/> is equal to the current <see cref="osuTK.Input.GamePadTriggers"/>.
         /// </summary>
-        /// <param name="other">The <see cref="OpenTK.Input.GamePadTriggers"/> to compare with the current <see cref="OpenTK.Input.GamePadTriggers"/>.</param>
-        /// <returns><c>true</c> if the specified <see cref="OpenTK.Input.GamePadTriggers"/> is equal to the current
-        /// <see cref="OpenTK.Input.GamePadTriggers"/>; otherwise, <c>false</c>.</returns>
+        /// <param name="other">The <see cref="osuTK.Input.GamePadTriggers"/> to compare with the current <see cref="osuTK.Input.GamePadTriggers"/>.</param>
+        /// <returns><c>true</c> if the specified <see cref="osuTK.Input.GamePadTriggers"/> is equal to the current
+        /// <see cref="osuTK.Input.GamePadTriggers"/>; otherwise, <c>false</c>.</returns>
         public bool Equals(GamePadTriggers other)
         {
             return

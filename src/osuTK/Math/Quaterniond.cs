@@ -24,7 +24,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Xml.Serialization;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Represents a double-precision Quaternion.

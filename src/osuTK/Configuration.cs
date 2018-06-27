@@ -27,7 +27,7 @@ using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Provides information about the underlying OS and runtime.
@@ -42,14 +42,14 @@ namespace OpenTK
 
         private Configuration() { }
 
-        /// <summary>Gets a System.Boolean indicating whether OpenTK is running on a Windows platform.</summary>
+        /// <summary>Gets a System.Boolean indicating whether osuTK is running on a Windows platform.</summary>
         public static bool RunningOnWindows { get; private set; }
 
-        /// <summary>Gets a System.Boolean indicating whether OpenTK is running on an X11 platform.</summary>
+        /// <summary>Gets a System.Boolean indicating whether osuTK is running on an X11 platform.</summary>
         public static bool RunningOnX11 { get; private set; }
 
         /// <summary>
-        /// Gets a <see cref="System.Boolean"/> indicating whether OpenTK is running on a Unix platform.
+        /// Gets a <see cref="System.Boolean"/> indicating whether osuTK is running on a Unix platform.
         /// </summary>
         public static bool RunningOnUnix
         {
@@ -57,7 +57,7 @@ namespace OpenTK
         }
 
         /// <summary>
-        /// Gets a System.Boolean indicating whether OpenTK is running on the SDL2 backend.
+        /// Gets a System.Boolean indicating whether osuTK is running on the SDL2 backend.
         /// </summary>
         public static bool RunningOnSdl2
         {
@@ -65,20 +65,20 @@ namespace OpenTK
             private set;
         }
 
-        /// <summary>Gets a System.Boolean indicating whether OpenTK is running on the Linux kernel.</summary>
+        /// <summary>Gets a System.Boolean indicating whether osuTK is running on the Linux kernel.</summary>
         public static bool RunningOnLinux { get { return runningOnLinux; } }
 
-        /// <summary>Gets a System.Boolean indicating whether OpenTK is running on a MacOS platform.</summary>
+        /// <summary>Gets a System.Boolean indicating whether osuTK is running on a MacOS platform.</summary>
         public static bool RunningOnMacOS { get { return runningOnMacOS; } }
 
         /// <summary>
-        /// Gets a System.Boolean indicating whether OpenTK is running on the Mono runtime.
+        /// Gets a System.Boolean indicating whether osuTK is running on the Mono runtime.
         /// </summary>
         public static bool RunningOnMono { get; private set; }
 
         /// <summary>
         /// Gets a <c>System.Boolean</c> indicating whether
-        /// OpenTK is running on an Android device.
+        /// osuTK is running on an Android device.
         /// </summary>
         public static bool RunningOnAndroid
         {
@@ -246,7 +246,7 @@ namespace OpenTK
         {
             #if X11
             // Detect whether X is present.
-            try { return OpenTK.Platform.X11.API.DefaultDisplay != IntPtr.Zero; }
+            try { return osuTK.Platform.X11.API.DefaultDisplay != IntPtr.Zero; }
             catch { return false; }
             #else
             return false;

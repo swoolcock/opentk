@@ -24,7 +24,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Xml.Serialization;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Represents a 3D vector using three single-precision floating-point numbers.
@@ -1154,67 +1154,67 @@ namespace OpenTK
         }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the X and Y components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the X and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Xy { get { return new Vector2(X, Y); } set { X = value.X; Y = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the X and Z components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the X and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Xz { get { return new Vector2(X, Z); } set { X = value.X; Z = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the Y and X components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the Y and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Yx { get { return new Vector2(Y, X); } set { Y = value.X; X = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the Y and Z components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the Y and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Yz { get { return new Vector2(Y, Z); } set { Y = value.X; Z = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the Z and X components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the Z and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Zx { get { return new Vector2(Z, X); } set { Z = value.X; X = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the Z and Y components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the Z and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Zy { get { return new Vector2(Z, Y); } set { Z = value.X; Y = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the X, Z, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the X, Z, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Xzy { get { return new Vector3(X, Z, Y); } set { X = value.X; Z = value.Y; Y = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Y, X, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Y, X, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Yxz { get { return new Vector3(Y, X, Z); } set { Y = value.X; X = value.Y; Z = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Y, Z, and X components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Y, Z, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Yzx { get { return new Vector3(Y, Z, X); } set { Y = value.X; Z = value.Y; X = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Z, X, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Z, X, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Zxy { get { return new Vector3(Z, X, Y); } set { Z = value.X; X = value.Y; Y = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Z, Y, and X components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Z, Y, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Zyx { get { return new Vector3(Z, Y, X); } set { Z = value.X; Y = value.Y; X = value.Z; } }

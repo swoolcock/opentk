@@ -8,14 +8,14 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-using OpenTK.Graphics;
+using osuTK.Graphics;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     /// \internal
     /// <summary>
     /// Provides methods to create and control an opengl context on the Windows platform.
-    /// This class supports OpenTK, and is not intended for use by OpenTK programs.
+    /// This class supports osuTK, and is not intended for use by osuTK programs.
     /// </summary>
     internal sealed class WinGLContext : DesktopGraphicsContext
     {

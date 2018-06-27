@@ -30,7 +30,7 @@ using System.Xml;
 using System.Xml.Linq;
 using CommandLine;
 
-namespace OpenTK.Convert
+namespace osuTK.Convert
 {
     internal class EnumTokenComparer : IEqualityComparer<XNode>
     {

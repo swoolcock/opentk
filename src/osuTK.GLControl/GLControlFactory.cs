@@ -25,9 +25,9 @@
 
 using System;
 using System.Windows.Forms;
-using OpenTK.Graphics;
+using osuTK.Graphics;
 
-namespace OpenTK
+namespace osuTK
 {
     // Constructs GLControls.
     internal class GLControlFactory

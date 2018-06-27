@@ -12,10 +12,10 @@ using Android.Views;
 using Android.Runtime;
 using Javax.Microedition.Khronos.Egl;
 
-using OpenTK.Graphics;
-using OpenTK.Platform.Egl;
+using osuTK.Graphics;
+using osuTK.Platform.Egl;
 
-namespace OpenTK.Platform.Android {
+namespace osuTK.Platform.Android {
     internal class AndroidGraphicsContext : EglContext
     {
         public AndroidGraphicsContext(GraphicsMode mode, EglWindowInfo window, IGraphicsContext sharedContext,

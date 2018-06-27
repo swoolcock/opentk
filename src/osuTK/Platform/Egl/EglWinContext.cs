@@ -26,14 +26,14 @@
 //
 
 using System;
-using OpenTK.Graphics;
+using osuTK.Graphics;
 
-namespace OpenTK.Platform.Egl
+namespace osuTK.Platform.Egl
 {
     internal class EglWinContext : EglContext
     {
-        private IntPtr ES1 = OpenTK.Platform.Windows.Functions.LoadLibrary("libGLESv1_CM");
-        private IntPtr ES2 = OpenTK.Platform.Windows.Functions.LoadLibrary("libGLESv2");
+        private IntPtr ES1 = osuTK.Platform.Windows.Functions.LoadLibrary("libGLESv1_CM");
+        private IntPtr ES2 = osuTK.Platform.Windows.Functions.LoadLibrary("libGLESv2");
 
         public EglWinContext(GraphicsMode mode, EglWindowInfo window, IGraphicsContext sharedContext,
             int major, int minor, GraphicsContextFlags flags)

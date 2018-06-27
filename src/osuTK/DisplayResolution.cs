@@ -1,5 +1,5 @@
 /* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK team.
+ * Copyright (c) 2006-2008 the osuTK team.
  * This notice may not be removed.
  * See license.txt for licensing detailed licensing details.
  */
@@ -7,7 +7,7 @@
 using System;
 using System.Drawing;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>Contains information regarding a monitor's display resolution.</summary>
     public class DisplayResolution
@@ -51,7 +51,7 @@ namespace OpenTK
         /// <param name="height">The requested height in pixels.</param>
         /// <param name="bitsPerPixel">The requested bits per pixel in bits.</param>
         /// <param name="refreshRate">The requested refresh rate in hertz.</param>
-        /// <remarks>OpenTK will select the closest match between all available resolutions on the specified DisplayDevice.</remarks>
+        /// <remarks>osuTK will select the closest match between all available resolutions on the specified DisplayDevice.</remarks>
         ///
         public DisplayResolution(int width, int height, int bitsPerPixel, float refreshRate, DisplayDevice device)
         {

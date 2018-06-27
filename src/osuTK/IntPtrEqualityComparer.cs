@@ -26,7 +26,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OpenTK
+namespace osuTK
 {
     // Simple equality comparer to allow IntPtrs as keys in dictionaries
     // without causing boxing/garbage generation.

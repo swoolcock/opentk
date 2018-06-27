@@ -24,7 +24,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Xml.Serialization;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>Represents a 4D vector using four single-precision floating-point numbers.</summary>
     /// <remarks>
@@ -878,379 +878,379 @@ namespace OpenTK
         }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the X and Y components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the X and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Xy { get { return new Vector2(X, Y); } set { X = value.X; Y = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the X and Z components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the X and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Xz { get { return new Vector2(X, Z); } set { X = value.X; Z = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the X and W components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the X and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Xw { get { return new Vector2(X, W); } set { X = value.X; W = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the Y and X components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the Y and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Yx { get { return new Vector2(Y, X); } set { Y = value.X; X = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the Y and Z components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the Y and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Yz { get { return new Vector2(Y, Z); } set { Y = value.X; Z = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the Y and W components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the Y and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Yw { get { return new Vector2(Y, W); } set { Y = value.X; W = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the Z and X components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the Z and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Zx { get { return new Vector2(Z, X); } set { Z = value.X; X = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the Z and Y components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the Z and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Zy { get { return new Vector2(Z, Y); } set { Z = value.X; Y = value.Y; } }
 
         /// <summary>
-        /// Gets an OpenTK.Vector2 with the Z and W components of this instance.
+        /// Gets an osuTK.Vector2 with the Z and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Zw { get { return new Vector2(Z, W); } set { Z = value.X; W = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the W and X components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the W and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Wx { get { return new Vector2(W, X); } set { W = value.X; X = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the W and Y components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the W and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Wy { get { return new Vector2(W, Y); } set { W = value.X; Y = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector2 with the W and Z components of this instance.
+        /// Gets or sets an osuTK.Vector2 with the W and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector2 Wz { get { return new Vector2(W, Z); } set { W = value.X; Z = value.Y; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the X, Y, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the X, Y, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Xyz { get { return new Vector3(X, Y, Z); } set { X = value.X; Y = value.Y; Z = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the X, Y, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the X, Y, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Xyw { get { return new Vector3(X, Y, W); } set { X = value.X; Y = value.Y; W = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the X, Z, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the X, Z, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Xzy { get { return new Vector3(X, Z, Y); } set { X = value.X; Z = value.Y; Y = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the X, Z, and W components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the X, Z, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Xzw { get { return new Vector3(X, Z, W); } set { X = value.X; Z = value.Y; W = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the X, W, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the X, W, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Xwy { get { return new Vector3(X, W, Y); } set { X = value.X; W = value.Y; Y = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the X, W, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the X, W, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Xwz { get { return new Vector3(X, W, Z); } set { X = value.X; W = value.Y; Z = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Y, X, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Y, X, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Yxz { get { return new Vector3(Y, X, Z); } set { Y = value.X; X = value.Y; Z = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Y, X, and W components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Y, X, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Yxw { get { return new Vector3(Y, X, W); } set { Y = value.X; X = value.Y; W = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Y, Z, and X components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Y, Z, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Yzx { get { return new Vector3(Y, Z, X); } set { Y = value.X; Z = value.Y; X = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Y, Z, and W components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Y, Z, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Yzw { get { return new Vector3(Y, Z, W); } set { Y = value.X; Z = value.Y; W = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Y, W, and X components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Y, W, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Ywx { get { return new Vector3(Y, W, X); } set { Y = value.X; W = value.Y; X = value.Z; } }
 
         /// <summary>
-        /// Gets an OpenTK.Vector3 with the Y, W, and Z components of this instance.
+        /// Gets an osuTK.Vector3 with the Y, W, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Ywz { get { return new Vector3(Y, W, Z); } set { Y = value.X; W = value.Y; Z = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Z, X, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Z, X, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Zxy { get { return new Vector3(Z, X, Y); } set { Z = value.X; X = value.Y; Y = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Z, X, and W components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Z, X, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Zxw { get { return new Vector3(Z, X, W); } set { Z = value.X; X = value.Y; W = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Z, Y, and X components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Z, Y, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Zyx { get { return new Vector3(Z, Y, X); } set { Z = value.X; Y = value.Y; X = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Z, Y, and W components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Z, Y, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Zyw { get { return new Vector3(Z, Y, W); } set { Z = value.X; Y = value.Y; W = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Z, W, and X components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Z, W, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Zwx { get { return new Vector3(Z, W, X); } set { Z = value.X; W = value.Y; X = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the Z, W, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the Z, W, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Zwy { get { return new Vector3(Z, W, Y); } set { Z = value.X; W = value.Y; Y = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the W, X, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the W, X, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Wxy { get { return new Vector3(W, X, Y); } set { W = value.X; X = value.Y; Y = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the W, X, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the W, X, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Wxz { get { return new Vector3(W, X, Z); } set { W = value.X; X = value.Y; Z = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the W, Y, and X components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the W, Y, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Wyx { get { return new Vector3(W, Y, X); } set { W = value.X; Y = value.Y; X = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the W, Y, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the W, Y, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Wyz { get { return new Vector3(W, Y, Z); } set { W = value.X; Y = value.Y; Z = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the W, Z, and X components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the W, Z, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Wzx { get { return new Vector3(W, Z, X); } set { W = value.X; Z = value.Y; X = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector3 with the W, Z, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector3 with the W, Z, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector3 Wzy { get { return new Vector3(W, Z, Y); } set { W = value.X; Z = value.Y; Y = value.Z; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the X, Y, W, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the X, Y, W, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Xywz { get { return new Vector4(X, Y, W, Z); } set { X = value.X; Y = value.Y; W = value.Z; Z = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the X, Z, Y, and W components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the X, Z, Y, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Xzyw { get { return new Vector4(X, Z, Y, W); } set { X = value.X; Z = value.Y; Y = value.Z; W = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the X, Z, W, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the X, Z, W, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Xzwy { get { return new Vector4(X, Z, W, Y); } set { X = value.X; Z = value.Y; W = value.Z; Y = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the X, W, Y, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the X, W, Y, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Xwyz { get { return new Vector4(X, W, Y, Z); } set { X = value.X; W = value.Y; Y = value.Z; Z = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the X, W, Z, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the X, W, Z, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Xwzy { get { return new Vector4(X, W, Z, Y); } set { X = value.X; W = value.Y; Z = value.Z; Y = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Y, X, Z, and W components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Y, X, Z, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Yxzw { get { return new Vector4(Y, X, Z, W); } set { Y = value.X; X = value.Y; Z = value.Z; W = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Y, X, W, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Y, X, W, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Yxwz { get { return new Vector4(Y, X, W, Z); } set { Y = value.X; X = value.Y; W = value.Z; Z = value.W; } }
 
         /// <summary>
-        /// Gets an OpenTK.Vector4 with the Y, Y, Z, and W components of this instance.
+        /// Gets an osuTK.Vector4 with the Y, Y, Z, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Yyzw { get { return new Vector4(Y, Y, Z, W); } set { X = value.X; Y = value.Y; Z = value.Z; W = value.W; } }
 
         /// <summary>
-        /// Gets an OpenTK.Vector4 with the Y, Y, W, and Z components of this instance.
+        /// Gets an osuTK.Vector4 with the Y, Y, W, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Yywz { get { return new Vector4(Y, Y, W, Z); } set { X = value.X; Y = value.Y; W = value.Z; Z = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Y, Z, X, and W components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Y, Z, X, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Yzxw { get { return new Vector4(Y, Z, X, W); } set { Y = value.X; Z = value.Y; X = value.Z; W = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Y, Z, W, and X components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Y, Z, W, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Yzwx { get { return new Vector4(Y, Z, W, X); } set { Y = value.X; Z = value.Y; W = value.Z; X = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Y, W, X, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Y, W, X, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Ywxz { get { return new Vector4(Y, W, X, Z); } set { Y = value.X; W = value.Y; X = value.Z; Z = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Y, W, Z, and X components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Y, W, Z, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Ywzx { get { return new Vector4(Y, W, Z, X); } set { Y = value.X; W = value.Y; Z = value.Z; X = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Z, X, Y, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Z, X, Y, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Zxyw { get { return new Vector4(Z, X, Y, W); } set { Z = value.X; X = value.Y; Y = value.Z; W = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Z, X, W, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Z, X, W, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Zxwy { get { return new Vector4(Z, X, W, Y); } set { Z = value.X; X = value.Y; W = value.Z; Y = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Z, Y, X, and W components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Z, Y, X, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Zyxw { get { return new Vector4(Z, Y, X, W); } set { Z = value.X; Y = value.Y; X = value.Z; W = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Z, Y, W, and X components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Z, Y, W, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Zywx { get { return new Vector4(Z, Y, W, X); } set { Z = value.X; Y = value.Y; W = value.Z; X = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Z, W, X, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Z, W, X, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Zwxy { get { return new Vector4(Z, W, X, Y); } set { Z = value.X; W = value.Y; X = value.Z; Y = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the Z, W, Y, and X components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the Z, W, Y, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Zwyx { get { return new Vector4(Z, W, Y, X); } set { Z = value.X; W = value.Y; Y = value.Z; X = value.W; } }
 
         /// <summary>
-        /// Gets an OpenTK.Vector4 with the Z, W, Z, and Y components of this instance.
+        /// Gets an osuTK.Vector4 with the Z, W, Z, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Zwzy { get { return new Vector4(Z, W, Z, Y); } set { X = value.X; W = value.Y; Z = value.Z; Y = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the W, X, Y, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the W, X, Y, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Wxyz { get { return new Vector4(W, X, Y, Z); } set { W = value.X; X = value.Y; Y = value.Z; Z = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the W, X, Z, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the W, X, Z, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Wxzy { get { return new Vector4(W, X, Z, Y); } set { W = value.X; X = value.Y; Z = value.Z; Y = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the W, Y, X, and Z components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the W, Y, X, and Z components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Wyxz { get { return new Vector4(W, Y, X, Z); } set { W = value.X; Y = value.Y; X = value.Z; Z = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the W, Y, Z, and X components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the W, Y, Z, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Wyzx { get { return new Vector4(W, Y, Z, X); } set { W = value.X; Y = value.Y; Z = value.Z; X = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the W, Z, X, and Y components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the W, Z, X, and Y components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Wzxy { get { return new Vector4(W, Z, X, Y); } set { W = value.X; Z = value.Y; X = value.Z; Y = value.W; } }
 
         /// <summary>
-        /// Gets or sets an OpenTK.Vector4 with the W, Z, Y, and X components of this instance.
+        /// Gets or sets an osuTK.Vector4 with the W, Z, Y, and X components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Wzyx { get { return new Vector4(W, Z, Y, X); } set { W = value.X; Z = value.Y; Y = value.Z; X = value.W; } }
 
         /// <summary>
-        /// Gets an OpenTK.Vector4 with the W, Z, Y, and W components of this instance.
+        /// Gets an osuTK.Vector4 with the W, Z, Y, and W components of this instance.
         /// </summary>
         [XmlIgnore]
         public Vector4 Wzyw { get { return new Vector4(W, Z, Y, W); } set { X = value.X; Z = value.Y; Y = value.Z; W = value.W; } }

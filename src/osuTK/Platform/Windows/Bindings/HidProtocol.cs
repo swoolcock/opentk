@@ -28,9 +28,9 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Security;
-using OpenTK.Platform.Common;
+using osuTK.Platform.Common;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     internal class HidProtocol
     {

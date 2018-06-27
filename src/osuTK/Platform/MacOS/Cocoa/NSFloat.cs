@@ -29,10 +29,10 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     // NSFloat is defined as float on 32bit systems and double on 64bit.
-    // We have to account for this peculiarity in order to run OpenTK on
+    // We have to account for this peculiarity in order to run osuTK on
     // 64bit Mac platforms.
     // We do this by adding implicit conversions between IntPtr and float/double.
     // Note that this conversion is against C# best practices, as it can lose information.

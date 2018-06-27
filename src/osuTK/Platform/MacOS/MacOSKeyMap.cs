@@ -25,7 +25,7 @@
 
 //  Created by Erik Ylvisaker on 3/17/08.
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     using Input;
 

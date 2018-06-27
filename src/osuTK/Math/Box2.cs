@@ -3,7 +3,7 @@
 // file 'License.txt', which is part of this source code package.
 using System;
 using System.Runtime.InteropServices;
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Defines a 2d box (rectangle).
@@ -34,8 +34,8 @@ namespace OpenTK
         /// <summary>
         /// Constructs a new Box2 with the specified dimensions.
         /// </summary>
-        /// <param name="topLeft">An OpenTK.Vector2 describing the top-left corner of the Box2.</param>
-        /// <param name="bottomRight">An OpenTK.Vector2 describing the bottom-right corner of the Box2.</param>
+        /// <param name="topLeft">An osuTK.Vector2 describing the top-left corner of the Box2.</param>
+        /// <param name="bottomRight">An osuTK.Vector2 describing the bottom-right corner of the Box2.</param>
         public Box2(Vector2 topLeft, Vector2 bottomRight)
         {
             Left = topLeft.X;
@@ -66,7 +66,7 @@ namespace OpenTK
         /// <param name="left">The position of the left boundary.</param>
         /// <param name="right">The position of the right boundary.</param>
         /// <param name="bottom">The position of the bottom boundary.</param>
-        /// <returns>A new OpenTK.Box2 with the specfied dimensions.</returns>
+        /// <returns>A new osuTK.Box2 with the specfied dimensions.</returns>
         public static Box2 FromTLRB(float top, float left, float right, float bottom)
         {
             return new Box2(left, top, right, bottom);
@@ -79,7 +79,7 @@ namespace OpenTK
         /// <param name="left">The position of the left boundary.</param>
         /// <param name="width">The width of the box.</param>
         /// <param name="height">The height of the box.</param>
-        /// <returns>A new OpenTK.Box2 with the specfied dimensions.</returns>
+        /// <returns>A new osuTK.Box2 with the specfied dimensions.</returns>
         public static Box2 FromDimensions(float left, float top, float width, float height)
         {
             return new Box2(left, top, left + width, top + height);
@@ -90,7 +90,7 @@ namespace OpenTK
         /// </summary>
         /// <param name="position">The position of the top left corner.</param>
         /// <param name="size">The size of the box.</param>
-        /// <returns>A new OpenTK.Box2 with the specfied dimensions.</returns>
+        /// <returns>A new osuTK.Box2 with the specfied dimensions.</returns>
         public static Box2 FromDimensions(Vector2 position, Vector2 size)
         {
             return FromDimensions(position.X, position.Y, size.X, size.Y);

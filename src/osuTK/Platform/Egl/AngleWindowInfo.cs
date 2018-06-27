@@ -1,8 +1,8 @@
 ﻿using System;
-using OpenTK.Graphics;
-using OpenTK.Platform.Windows;
+using osuTK.Graphics;
+using osuTK.Platform.Windows;
 
-namespace OpenTK.Platform.Egl
+namespace osuTK.Platform.Egl
 {
     using EGLSurface = IntPtr;
     /// <summary>

@@ -27,9 +27,9 @@
 
 using System;
 using System.Diagnostics;
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     internal class X11KeyMap
     {

@@ -24,10 +24,10 @@
 //
 
 using System;
-using OpenTK.Graphics;
-using OpenTK.Platform.MacOS;
+using osuTK.Graphics;
+using osuTK.Platform.MacOS;
 
-namespace OpenTK.Platform.Egl
+namespace osuTK.Platform.Egl
 {
     internal class EglMacPlatformFactory : MacOSFactory
     {

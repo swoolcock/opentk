@@ -23,24 +23,24 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-using OpenTK.Graphics;
-using OpenTK.Platform.X11;
+using osuTK.Graphics;
+using osuTK.Platform.X11;
 
-namespace OpenTK.Platform.Egl
+namespace osuTK.Platform.Egl
 {
     internal class EglX11PlatformFactory : X11Factory
     {
         public override IGraphicsContext CreateGLContext(GraphicsMode mode, IWindowInfo window, IGraphicsContext shareContext, bool directRendering, int major, int minor, GraphicsContextFlags flags)
         {
             X11WindowInfo x11_win = (X11WindowInfo)window;
-            EglWindowInfo egl_win = new OpenTK.Platform.Egl.EglWindowInfo(x11_win.Handle, Egl.GetDisplay(x11_win.Display));
+            EglWindowInfo egl_win = new osuTK.Platform.Egl.EglWindowInfo(x11_win.Handle, Egl.GetDisplay(x11_win.Display));
             return new EglUnixContext(mode, egl_win, shareContext, major, minor, flags);
         }
 
         public override IGraphicsContext CreateGLContext(ContextHandle handle, IWindowInfo window, IGraphicsContext shareContext, bool directRendering, int major, int minor, GraphicsContextFlags flags)
         {
             X11WindowInfo x11_win = (X11WindowInfo)window;
-            EglWindowInfo egl_win = new OpenTK.Platform.Egl.EglWindowInfo(x11_win.Handle, Egl.GetDisplay(x11_win.Display));
+            EglWindowInfo egl_win = new osuTK.Platform.Egl.EglWindowInfo(x11_win.Handle, Egl.GetDisplay(x11_win.Display));
             return new EglUnixContext(handle, egl_win, shareContext, major, minor, flags);
         }
 

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     /// <summary>
     /// The <see cref="NSAutoreleasePool"/> class is a wrapper around the native objective-C NSAutoreleasePool.

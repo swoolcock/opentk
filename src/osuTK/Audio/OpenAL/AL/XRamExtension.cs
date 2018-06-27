@@ -3,13 +3,13 @@
  * Spec: ?
  * Copyright (c) 2008 Christoph Brandtner and Stefanos Apostolopoulos
  * See license.txt for license details (MIT)
- * http://www.OpenTK.net */
+ * http://www.osuTK.net */
 
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace OpenTK.Audio.OpenAL
+namespace osuTK.Audio.OpenAL
 {
 
     ///<summary>

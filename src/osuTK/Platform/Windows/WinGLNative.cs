@@ -27,15 +27,15 @@ using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
-using OpenTK.Input;
+using osuTK.Input;
 using System.Drawing;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     /// \internal
     /// <summary>
     /// Drives GameWindow on Windows.
-    /// This class supports OpenTK, and is not intended for use by OpenTK programs.
+    /// This class supports osuTK, and is not intended for use by osuTK programs.
     /// </summary>
     internal sealed class WinGLNative : NativeWindowBase
     {

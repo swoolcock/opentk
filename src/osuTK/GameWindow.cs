@@ -26,10 +26,10 @@
 using System;
 using System.Diagnostics;
 using System.Threading;
-using OpenTK.Graphics;
-using OpenTK.Platform;
+using osuTK.Graphics;
+using osuTK.Platform;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// The GameWindow class contains cross-platform methods to create and render on an OpenGL
@@ -95,25 +95,25 @@ namespace OpenTK
 
         /// <summary>Constructs a new GameWindow with sensible default attributes.</summary>
         public GameWindow()
-            : this(640, 480, GraphicsMode.Default, "OpenTK Game Window", 0, DisplayDevice.Default) { }
+            : this(640, 480, GraphicsMode.Default, "osuTK Game Window", 0, DisplayDevice.Default) { }
 
         /// <summary>Constructs a new GameWindow with the specified attributes.</summary>
         /// <param name="width">The width of the GameWindow in pixels.</param>
         /// <param name="height">The height of the GameWindow in pixels.</param>
         public GameWindow(int width, int height)
-            : this(width, height, GraphicsMode.Default, "OpenTK Game Window", 0, DisplayDevice.Default) { }
+            : this(width, height, GraphicsMode.Default, "osuTK Game Window", 0, DisplayDevice.Default) { }
 
         /// <summary>Constructs a new GameWindow with the specified attributes.</summary>
         /// <param name="width">The width of the GameWindow in pixels.</param>
         /// <param name="height">The height of the GameWindow in pixels.</param>
-        /// <param name="mode">The OpenTK.Graphics.GraphicsMode of the GameWindow.</param>
+        /// <param name="mode">The osuTK.Graphics.GraphicsMode of the GameWindow.</param>
         public GameWindow(int width, int height, GraphicsMode mode)
-            : this(width, height, mode, "OpenTK Game Window", 0, DisplayDevice.Default) { }
+            : this(width, height, mode, "osuTK Game Window", 0, DisplayDevice.Default) { }
 
         /// <summary>Constructs a new GameWindow with the specified attributes.</summary>
         /// <param name="width">The width of the GameWindow in pixels.</param>
         /// <param name="height">The height of the GameWindow in pixels.</param>
-        /// <param name="mode">The OpenTK.Graphics.GraphicsMode of the GameWindow.</param>
+        /// <param name="mode">The osuTK.Graphics.GraphicsMode of the GameWindow.</param>
         /// <param name="title">The title of the GameWindow.</param>
         public GameWindow(int width, int height, GraphicsMode mode, string title)
             : this(width, height, mode, title, 0, DisplayDevice.Default) { }
@@ -121,7 +121,7 @@ namespace OpenTK
         /// <summary>Constructs a new GameWindow with the specified attributes.</summary>
         /// <param name="width">The width of the GameWindow in pixels.</param>
         /// <param name="height">The height of the GameWindow in pixels.</param>
-        /// <param name="mode">The OpenTK.Graphics.GraphicsMode of the GameWindow.</param>
+        /// <param name="mode">The osuTK.Graphics.GraphicsMode of the GameWindow.</param>
         /// <param name="title">The title of the GameWindow.</param>
         /// <param name="options">GameWindow options regarding window appearance and behavior.</param>
         public GameWindow(int width, int height, GraphicsMode mode, string title, GameWindowFlags options)
@@ -130,10 +130,10 @@ namespace OpenTK
         /// <summary>Constructs a new GameWindow with the specified attributes.</summary>
         /// <param name="width">The width of the GameWindow in pixels.</param>
         /// <param name="height">The height of the GameWindow in pixels.</param>
-        /// <param name="mode">The OpenTK.Graphics.GraphicsMode of the GameWindow.</param>
+        /// <param name="mode">The osuTK.Graphics.GraphicsMode of the GameWindow.</param>
         /// <param name="title">The title of the GameWindow.</param>
         /// <param name="options">GameWindow options regarding window appearance and behavior.</param>
-        /// <param name="device">The OpenTK.Graphics.DisplayDevice to construct the GameWindow in.</param>
+        /// <param name="device">The osuTK.Graphics.DisplayDevice to construct the GameWindow in.</param>
         public GameWindow(int width, int height, GraphicsMode mode, string title, GameWindowFlags options, DisplayDevice device)
             : this(width, height, mode, title, options, device, 1, 0, GraphicsContextFlags.Default)
         { }
@@ -141,10 +141,10 @@ namespace OpenTK
         /// <summary>Constructs a new GameWindow with the specified attributes.</summary>
         /// <param name="width">The width of the GameWindow in pixels.</param>
         /// <param name="height">The height of the GameWindow in pixels.</param>
-        /// <param name="mode">The OpenTK.Graphics.GraphicsMode of the GameWindow.</param>
+        /// <param name="mode">The osuTK.Graphics.GraphicsMode of the GameWindow.</param>
         /// <param name="title">The title of the GameWindow.</param>
         /// <param name="options">GameWindow options regarding window appearance and behavior.</param>
-        /// <param name="device">The OpenTK.Graphics.DisplayDevice to construct the GameWindow in.</param>
+        /// <param name="device">The osuTK.Graphics.DisplayDevice to construct the GameWindow in.</param>
         /// <param name="major">The major version for the OpenGL GraphicsContext.</param>
         /// <param name="minor">The minor version for the OpenGL GraphicsContext.</param>
         /// <param name="flags">The GraphicsContextFlags version for the OpenGL GraphicsContext.</param>
@@ -156,10 +156,10 @@ namespace OpenTK
         /// <summary>Constructs a new GameWindow with the specified attributes.</summary>
         /// <param name="width">The width of the GameWindow in pixels.</param>
         /// <param name="height">The height of the GameWindow in pixels.</param>
-        /// <param name="mode">The OpenTK.Graphics.GraphicsMode of the GameWindow.</param>
+        /// <param name="mode">The osuTK.Graphics.GraphicsMode of the GameWindow.</param>
         /// <param name="title">The title of the GameWindow.</param>
         /// <param name="options">GameWindow options regarding window appearance and behavior.</param>
-        /// <param name="device">The OpenTK.Graphics.DisplayDevice to construct the GameWindow in.</param>
+        /// <param name="device">The osuTK.Graphics.DisplayDevice to construct the GameWindow in.</param>
         /// <param name="major">The major version for the OpenGL GraphicsContext.</param>
         /// <param name="minor">The minor version for the OpenGL GraphicsContext.</param>
         /// <param name="flags">The GraphicsContextFlags version for the OpenGL GraphicsContext.</param>
@@ -172,10 +172,10 @@ namespace OpenTK
         /// <summary>Constructs a new GameWindow with the specified attributes.</summary>
         /// <param name="width">The width of the GameWindow in pixels.</param>
         /// <param name="height">The height of the GameWindow in pixels.</param>
-        /// <param name="mode">The OpenTK.Graphics.GraphicsMode of the GameWindow.</param>
+        /// <param name="mode">The osuTK.Graphics.GraphicsMode of the GameWindow.</param>
         /// <param name="title">The title of the GameWindow.</param>
         /// <param name="options">GameWindow options regarding window appearance and behavior.</param>
-        /// <param name="device">The OpenTK.Graphics.DisplayDevice to construct the GameWindow in.</param>
+        /// <param name="device">The osuTK.Graphics.DisplayDevice to construct the GameWindow in.</param>
         /// <param name="major">The major version for the OpenGL GraphicsContext.</param>
         /// <param name="minor">The minor version for the OpenGL GraphicsContext.</param>
         /// <param name="flags">The GraphicsContextFlags version for the OpenGL GraphicsContext.</param>
@@ -238,7 +238,7 @@ namespace OpenTK
         /// </summary>
         /// <remarks>
         /// <para>Override if you are not using <see cref="GameWindow.Run()"/>.</para>
-        /// <para>If you override this method, place a call to base.Exit(), to ensure proper OpenTK shutdown.</para>
+        /// <para>If you override this method, place a call to base.Exit(), to ensure proper osuTK shutdown.</para>
         /// </remarks>
         public virtual void Exit()
         {
@@ -508,8 +508,8 @@ namespace OpenTK
         /// <summary>
         /// Gets a value indicating whether the shutdown sequence has been initiated
         /// for this window, by calling GameWindow.Exit() or hitting the 'close' button.
-        /// If this property is true, it is no longer safe to use any OpenTK.Input or
-        /// OpenTK.Graphics.OpenGL functions or properties.
+        /// If this property is true, it is no longer safe to use any osuTK.Input or
+        /// osuTK.Graphics.OpenGL functions or properties.
         /// </summary>
         public bool IsExiting
         {
@@ -881,7 +881,7 @@ namespace OpenTK
         /// <remarks>
         /// You will typically wish to update your viewport whenever
         /// the window is resized. See the
-        /// <see cref="OpenTK.Graphics.OpenGL.GL.Viewport(int, int, int, int)"/> method.
+        /// <see cref="osuTK.Graphics.OpenGL.GL.Viewport(int, int, int, int)"/> method.
         /// </remarks>
         protected override void OnResize(EventArgs e)
         {

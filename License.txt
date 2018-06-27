@@ -14,7 +14,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Third parties
 
 
-OpenTK.Platform.Windows and OpenTK.Platform.X11 include portions of the Mono class library. These portions are covered by the following license:
+osuTK.Platform.Windows and osuTK.Platform.X11 include portions of the Mono class library. These portions are covered by the following license:
 
 Copyright (c) 2004 Novell, Inc.
 
@@ -26,7 +26,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 
-OpenTK.Compatibility includes portions of the Tao Framework library (Tao.OpenGl, Tao.OpenAl and Tao.Platform.Windows.SimpleOpenGlControl). These portions are covered by the following license:
+osuTK.Compatibility includes portions of the Tao Framework library (Tao.OpenGl, Tao.OpenAl and Tao.Platform.Windows.SimpleOpenGlControl). These portions are covered by the following license:
 
 Copyright �2003-2007 Tao Framework Team
 http://www.taoframework.com
@@ -40,7 +40,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 
-OpenTK.Half offers Half-to-Single and Single-to-Half conversions based on OpenEXR source code, which is covered by the following license:
+osuTK.Half offers Half-to-Single and Single-to-Half conversions based on OpenEXR source code, which is covered by the following license:
 
 Copyright (c) 2002, Industrial Light & Magic, a division of Lucas Digital Ltd. LLC. All rights reserved.
 

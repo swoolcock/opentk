@@ -28,7 +28,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     internal class DL
     {

@@ -26,7 +26,7 @@ using System.IO;
 using System.Net;
 using System.Xml.Linq;
 
-namespace OpenTK.Convert
+namespace osuTK.Convert
 {
     // The base class for a parser.
     internal abstract class XmlParser

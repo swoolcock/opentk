@@ -31,10 +31,10 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Threading;
-using OpenTK.Graphics;
-using OpenTK.Input;
+using osuTK.Graphics;
+using osuTK.Input;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     internal class CocoaNativeWindow : NativeWindowBase
     {
@@ -180,7 +180,7 @@ namespace OpenTK.Platform.MacOS
 
             // Create the window class
             int unique_id = Interlocked.Increment(ref UniqueId);
-            windowClass = Class.AllocateClass("OpenTK_GameWindow" + unique_id, "NSWindow");
+            windowClass = Class.AllocateClass("osuTK_GameWindow" + unique_id, "NSWindow");
             Class.RegisterMethod(windowClass, WindowKeyDownHandler, "keyDown:", "v@:@");
             Class.RegisterMethod(windowClass, WindowDidResizeHandler, "windowDidResize:", "v@:@");
             Class.RegisterMethod(windowClass, WindowDidMoveHandler, "windowDidMove:", "v@:@");
@@ -199,7 +199,7 @@ namespace OpenTK.Platform.MacOS
 
             Class.RegisterClass(windowClass);
 
-            IntPtr viewClass = Class.AllocateClass("OpenTK_NSView" + unique_id, "NSView");
+            IntPtr viewClass = Class.AllocateClass("osuTK_NSView" + unique_id, "NSView");
             Class.RegisterMethod(viewClass, ResetCursorRectsHandler, "resetCursorRects", "v@:");
             Class.RegisterClass(viewClass);
 
@@ -591,18 +591,18 @@ namespace OpenTK.Platform.MacOS
 
         private KeyModifiers GetModifiers(NSEventModifierMask mask)
         {
-            OpenTK.Input.KeyModifiers modifiers = 0;
+            osuTK.Input.KeyModifiers modifiers = 0;
             if ((mask & NSEventModifierMask.ControlKeyMask) != 0)
             {
-                modifiers |= OpenTK.Input.KeyModifiers.Control;
+                modifiers |= osuTK.Input.KeyModifiers.Control;
             }
             if ((mask & NSEventModifierMask.ShiftKeyMask) != 0)
             {
-                modifiers |= OpenTK.Input.KeyModifiers.Shift;
+                modifiers |= osuTK.Input.KeyModifiers.Shift;
             }
             if ((mask & NSEventModifierMask.AlternateKeyMask) != 0)
             {
-                modifiers |= OpenTK.Input.KeyModifiers.Alt;
+                modifiers |= osuTK.Input.KeyModifiers.Alt;
             }
             return modifiers;
         }
@@ -778,7 +778,7 @@ namespace OpenTK.Platform.MacOS
                             // Only raise wheel events when the user has actually scrolled
                             if (dx != 0 || dy != 0)
                             {
-                                // Note: OpenTK follows the win32 convention, where
+                                // Note: osuTK follows the win32 convention, where
                                 // (+h, +v) = (right, up). MacOS reports (+h, +v) = (left, up)
                                 // so we need to flip the horizontal scroll direction.
                                 OnMouseWheel(-dx, dy, isPrecise);

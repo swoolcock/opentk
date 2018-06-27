@@ -26,10 +26,10 @@
 using System;
 using System.Diagnostics;
 
-namespace OpenTK.Graphics
+namespace osuTK.Graphics
 {
     /// <summary>
-    /// Implements BindingsBase for the OpenTK.Graphics namespace (OpenGL and OpenGL|ES).
+    /// Implements BindingsBase for the osuTK.Graphics namespace (OpenGL and OpenGL|ES).
     /// </summary>
     public abstract class GraphicsBindingsBase : BindingsBase
     {

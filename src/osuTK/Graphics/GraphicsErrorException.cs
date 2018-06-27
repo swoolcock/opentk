@@ -1,4 +1,4 @@
-﻿namespace OpenTK.Graphics
+﻿namespace osuTK.Graphics
 {
     /// <summary>
     /// Identifies a specific OpenGL or OpenGL|ES error. Such exceptions are only thrown

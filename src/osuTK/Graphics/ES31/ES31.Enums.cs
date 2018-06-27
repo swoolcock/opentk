@@ -27,7 +27,7 @@
 
 using System;
 
-namespace OpenTK.Graphics.ES31
+namespace osuTK.Graphics.ES31
 {
     /// <summary>
     /// Not used directly.

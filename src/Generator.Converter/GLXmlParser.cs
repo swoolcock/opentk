@@ -30,7 +30,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-namespace OpenTK.Convert
+namespace osuTK.Convert
 {
     internal static class Extension
     {
@@ -234,7 +234,7 @@ namespace OpenTK.Convert
 
         private IEnumerable<XElement> ParseFunctions(XDocument input)
         {
-            //  Go through the list of commands and build OpenTK functions out of those.
+            //  Go through the list of commands and build osuTK functions out of those.
             // Every function has a number of attributes that define which API version and
             // category (see above) they belong to.
             // It also includes information about the return type and parameters. These

@@ -30,10 +30,10 @@ using System.Runtime.InteropServices;
 #if !(ANDROID || IPHONE || MINIMAL)
 using Microsoft.Win32;
 #endif
-using OpenTK.Input;
-using OpenTK.Platform.Common;
+using osuTK.Input;
+using osuTK.Platform.Common;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     internal sealed class WinRawKeyboard : IKeyboardDriver2
     {
@@ -104,7 +104,7 @@ namespace OpenTK.Platform.Windows
 
                         string deviceDesc = (string)regkey.GetValue("DeviceDesc");
                         string deviceClass = (string)regkey.GetValue("Class");
-                        string deviceClassGUID = (string)regkey.GetValue("ClassGUID"); // for windows 8 support via OpenTK issue 3198
+                        string deviceClassGUID = (string)regkey.GetValue("ClassGUID"); // for windows 8 support via osuTK issue 3198
 
                         // making a guess at backwards compatability. Not sure what older windows returns in these cases...
                         if (deviceClass == null || deviceClass.Equals(string.Empty)){

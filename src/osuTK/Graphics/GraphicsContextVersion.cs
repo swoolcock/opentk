@@ -25,7 +25,7 @@
 
 using System;
 
-namespace OpenTK.Graphics
+namespace osuTK.Graphics
 {
     /// <summary>
     /// Defines the version information of a GraphicsContext.

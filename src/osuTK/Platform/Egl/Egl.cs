@@ -25,14 +25,14 @@
 
 using System;
 using System.Runtime.InteropServices;
-using OpenTK.Graphics;
+using osuTK.Graphics;
 
 // ReSharper disable InconsistentNaming
 // ReSharper disable UnusedMember.Global
 
 #pragma warning disable 1591 // Missing XML comments
 
-namespace OpenTK.Platform.Egl
+namespace osuTK.Platform.Egl
 {
     using EGLNativeDisplayType = IntPtr;
     using EGLNativeWindowType = IntPtr;

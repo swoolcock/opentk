@@ -1,15 +1,15 @@
-﻿namespace OpenTK.Tests
+﻿namespace osuTK.Tests
 
 open Xunit
 open FsCheck
 open FsCheck.Xunit
 open System
 open System.Runtime.InteropServices
-open OpenTK
-open OpenTK.Tests.Generators
+open osuTK
+open osuTK.Tests.Generators
 
 module Vector2 =
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Constructors =
         //
         [<Property>]
@@ -24,7 +24,7 @@ module Vector2 =
             Assert.Equal(x,v.X)
             Assert.Equal(y,v.Y)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Clamping =
         //
         [<Property>]
@@ -47,7 +47,7 @@ module Vector2 =
             Assert.Equal(expX, res.X)
             Assert.Equal(expY, res.Y)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Length =
         //
         [<Property>]
@@ -76,7 +76,7 @@ module Vector2 =
 
             Assert.Equal(lsq, v.LengthSquared)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Distance =
         [<Property>]
         let ``Distance(a, b) = (b - a).Length`` (a : Vector2, b : Vector2) =
@@ -86,7 +86,7 @@ module Vector2 =
         let ``DistanceSquared(a, b) = (b - a).LengthSquared`` (a : Vector2, b : Vector2) =
             Assert.ApproximatelyEqual(Vector2.DistanceSquared(a, b), (b - a).LengthSquared)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module ``Unit vectors and perpendicularity`` =
         //
         [<Property>]
@@ -103,7 +103,7 @@ module Vector2 =
 
             Assert.Equal(perp, v.PerpendicularLeft)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Indexing =
         //
         [<Property>]
@@ -137,7 +137,7 @@ module Vector2 =
 
             (fun() -> v.[2] |> ignore) |> Assert.ThrowsIndexExn
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module ``Simple Properties`` =
         //
         [<Property>]
@@ -150,7 +150,7 @@ module Vector2 =
             //
             Assert.True(a.Length >= 0.0f)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Addition =
         //
         [<Property>]
@@ -187,7 +187,7 @@ module Vector2 =
 
             Assert.ApproximatelyEquivalent(v1, sum)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Multiplication =
         //
         [<Property>]
@@ -238,7 +238,7 @@ module Vector2 =
             Assert.Equal(a.X * f,r.X)
             Assert.Equal(a.Y * f,r.Y)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Subtraction =
         //
         [<Property>]
@@ -263,7 +263,7 @@ module Vector2 =
 
             Assert.ApproximatelyEquivalent(v1, sum)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Division =
         //
         [<Property>]
@@ -306,7 +306,7 @@ module Vector2 =
 
                 Assert.ApproximatelyEquivalent(v1, sum)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Negation =
         //
         [<Property>]
@@ -316,7 +316,7 @@ module Vector2 =
             Assert.Equal(-x, vNeg.X)
             Assert.Equal(-y, vNeg.Y)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Equality =
         //
         [<Property>]
@@ -347,7 +347,7 @@ module Vector2 =
             Assert.True(equality)
             Assert.False(inequalityByOtherType)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Swizzling =
         //
         [<Property>]
@@ -358,7 +358,7 @@ module Vector2 =
             let v1yx = v1.Yx;
             Assert.Equal(v2, v1yx);
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Interpolation =
         //
         [<Property>]
@@ -385,7 +385,7 @@ module Vector2 =
             let vRes = Vector2.BaryCentric(ref a, ref b, ref c, u, v)
             Assert.Equal(r, vRes)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module ``Vector products`` =
         //
         [<Property>]
@@ -406,7 +406,7 @@ module Vector2 =
             let vRes = Vector2.PerpDot(ref a, ref b)
             Assert.Equal(perpDot, vRes)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Normalization =
         //
         [<Property>]
@@ -478,7 +478,7 @@ module Vector2 =
 
             Assert.ApproximatelyEquivalent(norm, Vector2.NormalizeFast(a));
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module ``Magnitude min and max`` =
         //
         [<Property>]
@@ -545,7 +545,7 @@ module Vector2 =
                     let v2LongerThanv1 = l2 > l1
                     Assert.True(v2LongerThanv1)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module ``Component min and max`` =
         //
         [<Property>]
@@ -580,7 +580,7 @@ module Vector2 =
             Assert.True(isComponentLargest vMax.X v1.X v2.X)
             Assert.True(isComponentLargest vMax.Y v1.Y v2.Y)
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Transformation =
         //
         [<Property>]
@@ -603,7 +603,7 @@ module Vector2 =
 
             Assert.ApproximatelyEquivalent(transformedVector, Vector2.Transform(ref v, ref q))
 
-    [<Properties(Arbitrary = [| typeof<OpenTKGen> |])>]
+    [<Properties(Arbitrary = [| typeof<osuTKGen> |])>]
     module Serialization =
         //
         [<Property>]

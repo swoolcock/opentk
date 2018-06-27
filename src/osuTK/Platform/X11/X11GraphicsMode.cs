@@ -1,5 +1,5 @@
 /* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK Team.
+ * Copyright (c) 2006-2008 the osuTK Team.
  * This notice may not be removed from any source distribution.
  * See license.txt for licensing detailed licensing details.
  */
@@ -9,9 +9,9 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-using OpenTK.Graphics;
+using osuTK.Graphics;
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     internal class X11GraphicsMode
     {
@@ -85,7 +85,7 @@ namespace OpenTK.Platform.X11
             Glx.GetConfig(display, ref info, GLXAttribute.STEREO, out st);
 
             // Note: Glx.GetConfig return buffers = 0 (false) or 1 (true).
-            // OpenTK expects buffers = 1 (single-) or 2 (double-buffering),
+            // osuTK expects buffers = 1 (single-) or 2 (double-buffering),
             // so increase the GLX value by one.
             return new GraphicsMode(info.VisualID, new ColorFormat(r, g, b, a), depth, stencil, samples,
                 new ColorFormat(ar, ag, ab, aa), buffers + 1, st != 0);

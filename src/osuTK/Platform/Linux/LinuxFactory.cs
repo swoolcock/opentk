@@ -28,13 +28,13 @@
 using System;
 using System.Diagnostics;
 using System.IO;
-using OpenTK.Graphics;
-using OpenTK.Input;
-using OpenTK.Platform.Egl;
+using osuTK.Graphics;
+using osuTK.Input;
+using osuTK.Platform.Egl;
 
-namespace OpenTK.Platform.Linux
+namespace osuTK.Platform.Linux
 {
-    using Egl = OpenTK.Platform.Egl.Egl;
+    using Egl = osuTK.Platform.Egl.Egl;
 
     // Linux KMS platform
     internal class LinuxFactory : PlatformFactoryBase
@@ -73,8 +73,8 @@ namespace OpenTK.Platform.Linux
             // Query all GPUs until we find one that has a connected display.
             // This is necessary in multi-gpu systems, where only one GPU
             // can output a signal.
-            // Todo: allow OpenTK to drive multiple GPUs
-            // Todo: allow OpenTK to run on an offscreen GPU
+            // Todo: allow osuTK to drive multiple GPUs
+            // Todo: allow osuTK to run on an offscreen GPU
             // Todo: allow the user to pick a GPU
             int fd = 0;
             gbm_device = IntPtr.Zero;
@@ -229,7 +229,7 @@ namespace OpenTK.Platform.Linux
             }
         }
 
-        public override OpenTK.Input.IGamePadDriver CreateGamePadDriver()
+        public override osuTK.Input.IGamePadDriver CreateGamePadDriver()
         {
             return new MappedGamePadDriver();
         }

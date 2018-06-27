@@ -24,9 +24,9 @@
  //
 
 using System.Diagnostics;
-using OpenTK.Graphics;
+using osuTK.Graphics;
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     // Provides the foundation for all desktop IGraphicsContext implementations.
     internal abstract class EmbeddedGraphicsContext : GraphicsContextBase
@@ -36,9 +36,9 @@ namespace OpenTK.Platform
             Stopwatch time = Stopwatch.StartNew();
 
             #if OPENGLES
-            new OpenTK.Graphics.ES11.GL().LoadEntryPoints();
-            new OpenTK.Graphics.ES20.GL().LoadEntryPoints();
-            new OpenTK.Graphics.ES30.GL().LoadEntryPoints();
+            new osuTK.Graphics.ES11.GL().LoadEntryPoints();
+            new osuTK.Graphics.ES20.GL().LoadEntryPoints();
+            new osuTK.Graphics.ES30.GL().LoadEntryPoints();
             #endif
 
             Debug.Print("Bindings loaded in {0} ms.", time.Elapsed.TotalMilliseconds);

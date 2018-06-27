@@ -26,7 +26,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace OpenTK.Platform.SDL2
+namespace osuTK.Platform.SDL2
 {
     internal class Sdl2DisplayDeviceDriver : DisplayDeviceBase
     {

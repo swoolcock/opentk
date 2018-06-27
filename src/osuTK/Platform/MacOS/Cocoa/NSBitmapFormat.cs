@@ -27,7 +27,7 @@
 
 using System;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     [Flags]
     internal enum NSBitmapFormat : uint

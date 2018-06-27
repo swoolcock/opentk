@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2B11AAEB-D8AC-4356-938F-532D720E0C30}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>OpenTK.Tests.Generators</RootNamespace>
-    <AssemblyName>OpenTK.Tests.Generators</AssemblyName>
+    <RootNamespace>osuTK.Tests.Generators</RootNamespace>
+    <AssemblyName>osuTK.Tests.Generators</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,9 +47,9 @@
     <Compile Include="Generators.fs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\OpenTK\OpenTK.csproj">
+    <ProjectReference Include="..\..\src\osuTK\osuTK.csproj">
       <Project>{a37a7e14-0000-0000-0000-000000000000}</Project>
-      <Name>OpenTK</Name>
+      <Name>osuTK</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

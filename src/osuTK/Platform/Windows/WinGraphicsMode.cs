@@ -28,9 +28,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-using OpenTK.Graphics;
+using osuTK.Graphics;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     internal class WinGraphicsMode : IGraphicsMode
     {
@@ -63,7 +63,7 @@ namespace OpenTK.Platform.Windows
             GraphicsMode created_mode = ChoosePixelFormatARB(Device, mode);
 
             // If ChoosePixelFormatARB failed, iterate through all acceleration types in turn (ICD, MCD, None)
-            // This should fix issue #2224, which causes OpenTK to fail on VMs without hardware acceleration.
+            // This should fix issue #2224, which causes osuTK to fail on VMs without hardware acceleration.
             created_mode = created_mode ?? ChoosePixelFormatPFD(Device, mode, AccelerationType.ICD);
             created_mode = created_mode ?? ChoosePixelFormatPFD(Device, mode, AccelerationType.MCD);
             created_mode = created_mode ?? ChoosePixelFormatPFD(Device, mode, AccelerationType.None);

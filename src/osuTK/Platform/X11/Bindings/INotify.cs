@@ -1,6 +1,6 @@
-﻿namespace OpenTK.Platform.X11.Bindings
+﻿namespace osuTK.Platform.X11.Bindings
 {
-    // Fully implemented but not currently used by OpenTK
+    // Fully implemented but not currently used by osuTK
     // See System.IO.FileSystemWatcher for a cross-platform alternative
 #if false
     class INotify

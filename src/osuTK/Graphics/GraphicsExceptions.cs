@@ -1,12 +1,12 @@
 ﻿/* Licensed under the MIT/X11 license.
- * Copyright (c) 2006-2008 the OpenTK team.
+ * Copyright (c) 2006-2008 the osuTK team.
  * This notice may not be removed.
  * See license.txt for licensing detailed licensing details.
  */
 
 using System;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>Represents errors related to Graphics operations.</summary>
     public class GraphicsException : Exception

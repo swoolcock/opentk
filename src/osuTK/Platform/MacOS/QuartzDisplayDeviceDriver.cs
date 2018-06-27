@@ -27,9 +27,9 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
-using OpenTK.Platform.MacOS.Carbon;
+using osuTK.Platform.MacOS.Carbon;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     internal sealed class QuartzDisplayDeviceDriver : DisplayDeviceBase
     {
@@ -39,7 +39,7 @@ namespace OpenTK.Platform.MacOS
         {
             lock (display_lock)
             {
-                // To minimize the need to add static methods to OpenTK.Graphics.DisplayDevice
+                // To minimize the need to add static methods to osuTK.Graphics.DisplayDevice
                 // we only allow settings to be set through its constructor.
                 // Thus, we save all necessary parameters in temporary variables
                 // and construct the device when every needed detail is available.

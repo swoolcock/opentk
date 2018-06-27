@@ -29,9 +29,9 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     // Common base class for all INativeWindow implementations
     internal abstract class NativeWindowBase : INativeWindow

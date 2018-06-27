@@ -22,7 +22,7 @@ Please provide a description of the actual behavior you observe.
 
 * Operating system
 * SDL or Native backend
-* What version of OpenTK (Installer, NuGet, Source Code)
+* What version of osuTK (Installer, NuGet, Source Code)
 * What runtime (.NET Framework, CoreCLR, Mono)
 * Workarounds (if any)
 

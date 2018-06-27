@@ -2,7 +2,7 @@ using Xunit;
 using System;
 using System.Collections.Generic;
 
-namespace OpenTK.Tests.Math.Helpers
+namespace osuTK.Tests.Math.Helpers
 {
 
 	/// <summary>

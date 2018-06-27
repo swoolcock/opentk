@@ -28,7 +28,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Diagnostics;
 
-namespace OpenTK.Graphics.OpenGL4
+namespace osuTK.Graphics.OpenGL4
 {
     // Used in debug-mode only, for automatic OpenGL error-checking.
     //

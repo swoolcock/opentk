@@ -3,7 +3,7 @@
  * Spec: http://www.openal.org/openal_webstf/specs/OpenAL11Specification.pdf
  * Copyright (c) 2008 Christoph Brandtner and Stefanos Apostolopoulos
  * See license.txt for license details
- * http://www.OpenTK.net */
+ * http://www.osuTK.net */
 
 using System;
 using System.Runtime.InteropServices;
@@ -59,7 +59,7 @@ typedef void ALvoid;
  * void
 */
 
-namespace OpenTK.Audio.OpenAL
+namespace osuTK.Audio.OpenAL
 {
     /// <summary>
     /// Provides access to the OpenAL 1.1 flat API.

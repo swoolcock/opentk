@@ -11,7 +11,7 @@ namespace Bind.ES
         {
             Settings.DefaultOutputPath = Path.Combine(
                 Settings.DefaultOutputPath, "../ES31");
-            Settings.DefaultOutputNamespace = "OpenTK.Graphics.ES31";
+            Settings.DefaultOutputNamespace = "osuTK.Graphics.ES31";
             Settings.DefaultImportsFile = "ES31.Core.cs";
             Settings.DefaultDelegatesFile = "ES31.Delegates.cs";
             Settings.DefaultEnumsFile = "ES31.Enums.cs";
@@ -25,7 +25,7 @@ namespace Bind.ES
             Profile = "gles2";
             Version = "2.0|3.0|3.1";
 
-            // For compatibility with OpenTK 1.0 and Xamarin, generate
+            // For compatibility with osuTK 1.0 and Xamarin, generate
             // overloads using the "All" enum in addition to strongly-typed enums.
             // This can be disabled by passing "-o:-keep_untyped_enums" as a cmdline parameter.
             Settings.DefaultCompatibility |= Settings.Legacy.KeepUntypedEnums;

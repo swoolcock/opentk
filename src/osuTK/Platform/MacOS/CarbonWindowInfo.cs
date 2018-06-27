@@ -25,7 +25,7 @@
 
 using System;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     /// \internal
     /// <summary>

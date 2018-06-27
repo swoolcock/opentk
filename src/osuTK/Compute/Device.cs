@@ -23,7 +23,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-namespace OpenTK.Compute
+namespace osuTK.Compute
 {
 
 }

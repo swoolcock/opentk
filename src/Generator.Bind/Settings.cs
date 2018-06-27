@@ -19,8 +19,8 @@ namespace Bind
         }
 
         public string DefaultInputPath = "src/Generator.Bind/Specifications";
-        public string DefaultOutputPath = "src/OpenTK/Graphics/OpenGL";
-        public string DefaultOutputNamespace = "OpenTK.Graphics.OpenGL";
+        public string DefaultOutputPath = "src/osuTK/Graphics/OpenGL";
+        public string DefaultOutputNamespace = "osuTK.Graphics.OpenGL";
         public string DefaultDocPath = "src/Generator.Bind/Specifications/Docs";
         public string DefaultFallbackDocPath = "src/Generator.Bind/Specifications/Docs/GL";
         public string DefaultLicenseFile = "License.txt";
@@ -218,7 +218,7 @@ namespace Bind
             }
         }
 
-        public string WindowsGDI = "OpenTK.Platform.Windows.API";
+        public string WindowsGDI = "osuTK.Platform.Windows.API";
 
         public Settings Clone()
         {

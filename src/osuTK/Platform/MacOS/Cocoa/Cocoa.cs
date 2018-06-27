@@ -28,7 +28,7 @@
 using System.Runtime.InteropServices;
 using System;
 
-namespace OpenTK.Platform.MacOS
+namespace osuTK.Platform.MacOS
 {
     internal static class Cocoa
     {

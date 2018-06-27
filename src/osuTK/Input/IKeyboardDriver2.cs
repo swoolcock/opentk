@@ -1,18 +1,18 @@
-﻿namespace OpenTK.Input
+﻿namespace osuTK.Input
 {
     internal interface IKeyboardDriver2
     {
         /// <summary>
-        /// Retrieves the combined <see cref="OpenTK.Input.KeyboardState"/> for all keyboard devices.
+        /// Retrieves the combined <see cref="osuTK.Input.KeyboardState"/> for all keyboard devices.
         /// </summary>
-        /// <returns>An <see cref="OpenTK.Input.KeyboardState"/> structure containing the combined state for all keyboard devices.</returns>
+        /// <returns>An <see cref="osuTK.Input.KeyboardState"/> structure containing the combined state for all keyboard devices.</returns>
         KeyboardState GetState();
 
         /// <summary>
-        /// Retrieves the <see cref="OpenTK.Input.KeyboardState"/> for the specified keyboard device.
+        /// Retrieves the <see cref="osuTK.Input.KeyboardState"/> for the specified keyboard device.
         /// </summary>
         /// <param name="index">The index of the keyboard device.</param>
-        /// <returns>An <see cref="OpenTK.Input.KeyboardState"/> structure containing the state of the keyboard device.</returns>
+        /// <returns>An <see cref="osuTK.Input.KeyboardState"/> structure containing the state of the keyboard device.</returns>
         KeyboardState GetState(int index);
 
         /// <summary>

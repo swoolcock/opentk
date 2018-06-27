@@ -3,14 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace OpenTK.Rewrite
+namespace osuTK.Rewrite
 {
     /// This is based on the Mono.Cecil BaseAssemblyResolver. But with
     /// additions to GetCorlib but with some extra code to check for -api
     /// directories which we're added by mono in the 4.4 release. Without this
     /// we can end up adding assembly references to mscorlib 4.0 even though
-    /// OpenTK is compiled for 2.0.
-    internal sealed class OpenTKAssemblyResolver : IAssemblyResolver
+    /// osuTK is compiled for 2.0.
+    internal sealed class osuTKAssemblyResolver : IAssemblyResolver
     {
         static readonly bool on_mono = Type.GetType("Mono.Runtime") != null;
 
@@ -18,7 +18,7 @@ namespace OpenTK.Rewrite
 
         List<string> gac_paths;
 
-        public OpenTKAssemblyResolver()
+        public osuTKAssemblyResolver()
         {
             directories = new List<string>(2) { ".", "bin" };
         }

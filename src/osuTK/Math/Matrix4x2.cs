@@ -22,7 +22,7 @@ SOFTWARE.
 
 using System;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Represents a 4x2 matrix.

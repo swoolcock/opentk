@@ -28,7 +28,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace OpenTK.Platform.Linux
+namespace osuTK.Platform.Linux
 {
     internal class Kms
     {

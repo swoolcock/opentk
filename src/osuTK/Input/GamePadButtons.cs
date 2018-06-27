@@ -27,7 +27,7 @@
 
 using System;
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     /// <summary>
     /// Describes the <see cref="ButtonState"/> of <see cref="GamePad"/> <see cref="Buttons"/>.
@@ -37,7 +37,7 @@ namespace OpenTK.Input
         private Buttons buttons;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="OpenTK.Input.GamePadButtons"/> structure.
+        /// Initializes a new instance of the <see cref="osuTK.Input.GamePadButtons"/> structure.
         /// </summary>
         /// <param name="state">A bitmask containing the button state.</param>
         public GamePadButtons(Buttons state)
@@ -164,9 +164,9 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Returns a <see cref="System.String"/> that represents the current <see cref="OpenTK.Input.GamePadButtons"/>.
+        /// Returns a <see cref="System.String"/> that represents the current <see cref="osuTK.Input.GamePadButtons"/>.
         /// </summary>
-        /// <returns>A <see cref="System.String"/> that represents the current <see cref="OpenTK.Input.GamePadButtons"/>.</returns>
+        /// <returns>A <see cref="System.String"/> that represents the current <see cref="osuTK.Input.GamePadButtons"/>.</returns>
         public override string ToString()
         {
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
@@ -223,7 +223,7 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Serves as a hash function for a <see cref="OpenTK.Input.GamePadButtons"/> object.
+        /// Serves as a hash function for a <see cref="osuTK.Input.GamePadButtons"/> object.
         /// </summary>
         /// <returns>A hash code for this instance that is suitable for use in hashing algorithms and data structures such as a
         /// hash table.</returns>
@@ -233,11 +233,11 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Determines whether the specified <see cref="System.Object"/> is equal to the current <see cref="OpenTK.Input.GamePadButtons"/>.
+        /// Determines whether the specified <see cref="System.Object"/> is equal to the current <see cref="osuTK.Input.GamePadButtons"/>.
         /// </summary>
-        /// <param name="obj">The <see cref="System.Object"/> to compare with the current <see cref="OpenTK.Input.GamePadButtons"/>.</param>
+        /// <param name="obj">The <see cref="System.Object"/> to compare with the current <see cref="osuTK.Input.GamePadButtons"/>.</param>
         /// <returns><c>true</c> if the specified <see cref="System.Object"/> is equal to the current
-        /// <see cref="OpenTK.Input.GamePadButtons"/>; otherwise, <c>false</c>.</returns>
+        /// <see cref="osuTK.Input.GamePadButtons"/>; otherwise, <c>false</c>.</returns>
         public override bool Equals(object obj)
         {
             return
@@ -246,11 +246,11 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Determines whether the specified <see cref="OpenTK.Input.GamePadButtons"/> is equal to the current <see cref="OpenTK.Input.GamePadButtons"/>.
+        /// Determines whether the specified <see cref="osuTK.Input.GamePadButtons"/> is equal to the current <see cref="osuTK.Input.GamePadButtons"/>.
         /// </summary>
-        /// <param name="other">The <see cref="OpenTK.Input.GamePadButtons"/> to compare with the current <see cref="OpenTK.Input.GamePadButtons"/>.</param>
-        /// <returns><c>true</c> if the specified <see cref="OpenTK.Input.GamePadButtons"/> is equal to the current
-        /// <see cref="OpenTK.Input.GamePadButtons"/>; otherwise, <c>false</c>.</returns>
+        /// <param name="other">The <see cref="osuTK.Input.GamePadButtons"/> to compare with the current <see cref="osuTK.Input.GamePadButtons"/>.</param>
+        /// <returns><c>true</c> if the specified <see cref="osuTK.Input.GamePadButtons"/> is equal to the current
+        /// <see cref="osuTK.Input.GamePadButtons"/>; otherwise, <c>false</c>.</returns>
         public bool Equals(GamePadButtons other)
         {
             return buttons == other.buttons;

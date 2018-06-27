@@ -3,12 +3,12 @@
  * Spec: Effects Extension Guide.pdf (bundled with OpenAL SDK)
  * Copyright (c) 2008 Christoph Brandtner and Stefanos Apostolopoulos
  * See license.txt for license details
- * http://www.OpenTK.net */
+ * http://www.osuTK.net */
 
 using System;
 
 
-namespace OpenTK.Audio.OpenAL
+namespace osuTK.Audio.OpenAL
 {
     public partial class EffectsExtension
     {

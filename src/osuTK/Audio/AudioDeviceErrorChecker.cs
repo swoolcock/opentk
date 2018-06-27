@@ -24,9 +24,9 @@
 //
 
 using System;
-using OpenTK.Audio.OpenAL;
+using osuTK.Audio.OpenAL;
 
-namespace OpenTK.Audio
+namespace osuTK.Audio
 {
     internal struct AudioDeviceErrorChecker : IDisposable
     {

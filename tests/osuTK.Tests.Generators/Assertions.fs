@@ -1,10 +1,10 @@
-﻿namespace OpenTK.Tests.Generators
+﻿namespace osuTK.Tests.Generators
 
 open Xunit
 open FsCheck
 open FsCheck.Xunit
 open System
-open OpenTK
+open osuTK
 
 [<AutoOpen>]
 module public AssertHelpers =

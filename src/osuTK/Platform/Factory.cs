@@ -26,7 +26,7 @@
 using System;
 using System.Diagnostics;
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     using Graphics;
     using Input;

@@ -26,9 +26,9 @@
 
 using System;
 
-namespace OpenTK.Audio
+namespace osuTK.Audio
 {
-    /// <summary>Represents exceptions related to the OpenTK.Audio subsystem.</summary>
+    /// <summary>Represents exceptions related to the osuTK.Audio subsystem.</summary>
     public class AudioException : Exception
     {
         /// <summary>Constructs a new AudioException.</summary>

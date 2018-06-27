@@ -25,7 +25,7 @@
 
 using System.Collections.Generic;
 
-namespace OpenTK.Graphics
+namespace osuTK.Graphics
 {
     internal sealed class GraphicsModeComparer : IComparer<GraphicsMode>
     {

@@ -25,7 +25,7 @@
 
 using System;
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     /// <summary>
     /// Defines the interface for a GameWindow.

@@ -28,9 +28,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
-using OpenTK.Input;
+using osuTK.Input;
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     internal sealed class XI2MouseKeyboard : IKeyboardDriver2, IMouseDriver2, IDisposable
     {
@@ -573,7 +573,7 @@ namespace OpenTK.Platform.X11
                 d.State.Y = (int)Math.Round(y);
             }
 
-            // Note: OpenTK follows the windows scrolling convention where
+            // Note: osuTK follows the windows scrolling convention where
             // (+h, +v) = (right, up). XI2 uses (+h, +v) = (right, down)
             // instead, so we need to flip the vertical offset.
             d.State.SetScrollRelative((float)h, (float)(-v));

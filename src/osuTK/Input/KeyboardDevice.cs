@@ -4,7 +4,7 @@
 
 using System;
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     /// <summary>
     /// Represents a keyboard device and provides methods to query its status.
@@ -105,23 +105,23 @@ namespace OpenTK.Input
         }
 
         /// <summary>
-        /// Retrieves the combined <see cref="OpenTK.Input.KeyboardState"/> for all keyboard devices.
-        /// This method is equivalent to <see cref="OpenTK.Input.Keyboard.GetState()"/>.
+        /// Retrieves the combined <see cref="osuTK.Input.KeyboardState"/> for all keyboard devices.
+        /// This method is equivalent to <see cref="osuTK.Input.Keyboard.GetState()"/>.
         /// </summary>
-        /// <returns>An <see cref="OpenTK.Input.KeyboardState"/> structure containing the combined state for all keyboard devices.</returns>
-        /// <seealso cref="OpenTK.Input.Keyboard.GetState()"/>
+        /// <returns>An <see cref="osuTK.Input.KeyboardState"/> structure containing the combined state for all keyboard devices.</returns>
+        /// <seealso cref="osuTK.Input.Keyboard.GetState()"/>
         public KeyboardState GetState()
         {
             return Keyboard.GetState();
         }
 
         /// <summary>
-        /// Retrieves the <see cref="OpenTK.Input.KeyboardState"/> for the specified keyboard device.
-        /// This method is equivalent to <see cref="OpenTK.Input.Keyboard.GetState(int)"/>.
+        /// Retrieves the <see cref="osuTK.Input.KeyboardState"/> for the specified keyboard device.
+        /// This method is equivalent to <see cref="osuTK.Input.Keyboard.GetState(int)"/>.
         /// </summary>
         /// <param name="index">The index of the keyboard device.</param>
-        /// <returns>An <see cref="OpenTK.Input.KeyboardState"/> structure containing the combined state for all keyboard devices.</returns>
-        /// <seealso cref="OpenTK.Input.Keyboard.GetState(int)"/>
+        /// <returns>An <see cref="osuTK.Input.KeyboardState"/> structure containing the combined state for all keyboard devices.</returns>
+        /// <seealso cref="osuTK.Input.Keyboard.GetState(int)"/>
         public KeyboardState GetState(int index)
         {
             return Keyboard.GetState(index);

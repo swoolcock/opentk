@@ -26,10 +26,10 @@
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using OpenTK.Graphics;
-using OpenTK.Input;
+using osuTK.Graphics;
+using osuTK.Input;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
     internal class WinFactory : PlatformFactoryBase
     {
@@ -47,7 +47,7 @@ namespace OpenTK.Platform.Windows
         {
             if (System.Environment.OSVersion.Version.Major <= 4)
             {
-                throw new PlatformNotSupportedException("OpenTK requires Windows XP or higher");
+                throw new PlatformNotSupportedException("osuTK requires Windows XP or higher");
             }
 
             // Dynamically load opengl32.dll in order to use the extension loading capabilities of Wgl.
@@ -106,17 +106,17 @@ namespace OpenTK.Platform.Windows
             };
         }
 
-        public override OpenTK.Input.IKeyboardDriver2 CreateKeyboardDriver()
+        public override osuTK.Input.IKeyboardDriver2 CreateKeyboardDriver()
         {
             return RawInputDriver.KeyboardDriver;
         }
 
-        public override OpenTK.Input.IMouseDriver2 CreateMouseDriver()
+        public override osuTK.Input.IMouseDriver2 CreateMouseDriver()
         {
             return RawInputDriver.MouseDriver;
         }
 
-        public override OpenTK.Input.IGamePadDriver CreateGamePadDriver()
+        public override osuTK.Input.IGamePadDriver CreateGamePadDriver()
         {
             return new MappedGamePadDriver();
         }

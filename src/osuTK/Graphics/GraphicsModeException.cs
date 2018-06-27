@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OpenTK.Graphics
+namespace osuTK.Graphics
 {
     /// <summary>
     /// Represents errors related to unavailable graphics parameters.

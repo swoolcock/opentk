@@ -1,8 +1,8 @@
-﻿namespace OpenTK.Tests.Generators
+﻿namespace osuTK.Tests.Generators
 
 open FsCheck
 open System
-open OpenTK
+open osuTK
 
 [<AutoOpen>]
 module private Generators =
@@ -64,7 +64,7 @@ module private Generators =
         |> Gen.map Matrix4
         |> Arb.fromGen
 
-type public OpenTKGen =
+type public osuTKGen =
     static member Single() = single
     static member float32() = single
     static member Double() = double

@@ -26,9 +26,9 @@
 //
 
 using System;
-using OpenTK.Platform.Egl;
+using osuTK.Platform.Egl;
 
-namespace OpenTK.Platform.Linux
+namespace osuTK.Platform.Linux
 {
     internal class LinuxWindowInfo : EglWindowInfo
     {

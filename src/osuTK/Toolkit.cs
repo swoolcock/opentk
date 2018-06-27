@@ -24,13 +24,13 @@
 //
 
 using System;
-using OpenTK.Platform;
+using osuTK.Platform;
 using System.Diagnostics;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
-    /// Provides static methods to manage an OpenTK application.
+    /// Provides static methods to manage an osuTK application.
     /// </summary>
     public sealed class Toolkit : IDisposable
     {
@@ -50,17 +50,17 @@ namespace OpenTK
         }
 
         /// <summary>
-        /// Initializes OpenTK with default options.
+        /// Initializes osuTK with default options.
         /// </summary>
         /// <remarks>
         /// <para>
-        /// You *must* call this method if you are combining OpenTK with a
+        /// You *must* call this method if you are combining osuTK with a
         /// third-party windowing toolkit (e.g. GTK#). In this case, this should be the
         /// first method called by your application:
         /// <code>
         /// static void Main()
         /// {
-        ///     using (OpenTK.Toolkit.Init())
+        ///     using (osuTK.Toolkit.Init())
         ///     {
         ///      ...
         ///     }
@@ -69,14 +69,14 @@ namespace OpenTK
         /// </para>
         /// <para>
         /// The reason is that some toolkits do not configure the underlying platform
-        /// correctly or configure it in a way that is incompatible with OpenTK.
-        /// Calling this method first ensures that OpenTK is given the chance to
+        /// correctly or configure it in a way that is incompatible with osuTK.
+        /// Calling this method first ensures that osuTK is given the chance to
         /// initialize itself and configure the platform correctly.
         /// </para>
         /// </remarks>
         /// <returns>
         /// An IDisposable instance that you can use to dispose of the resources
-        /// consumed by OpenTK.
+        /// consumed by osuTK.
         /// </returns>
         public static Toolkit Init()
         {
@@ -84,18 +84,18 @@ namespace OpenTK
         }
 
         /// <summary>
-        /// Initializes OpenTK with the specified options. Use this method
-        /// to influence the OpenTK.Platform implementation that will be used.
+        /// Initializes osuTK with the specified options. Use this method
+        /// to influence the osuTK.Platform implementation that will be used.
         /// </summary>
         /// <remarks>
         /// <para>
-        /// You *must* call this method if you are combining OpenTK with a
+        /// You *must* call this method if you are combining osuTK with a
         /// third-party windowing toolkit (e.g. GTK#). In this case, this should be the
         /// first method called by your application:
         /// <code>
         /// static void Main()
         /// {
-        ///     using (OpenTK.Toolkit.Init())
+        ///     using (osuTK.Toolkit.Init())
         ///     {
         ///      ...
         ///     }
@@ -104,8 +104,8 @@ namespace OpenTK
         /// </para>
         /// <para>
         /// The reason is that some toolkits do not configure the underlying platform
-        /// correctly or configure it in a way that is incompatible with OpenTK.
-        /// Calling this method first ensures that OpenTK is given the chance to
+        /// correctly or configure it in a way that is incompatible with osuTK.
+        /// Calling this method first ensures that osuTK is given the chance to
         /// initialize itself and configure the platform correctly.
         /// </para>
         /// </remarks>
@@ -113,7 +113,7 @@ namespace OpenTK
         /// containing the desired options.</param>
         /// <returns>
         /// An IDisposable instance that you can use to dispose of the resources
-        /// consumed by OpenTK.
+        /// consumed by osuTK.
         /// </returns>
         public static Toolkit Init(ToolkitOptions options)
         {

@@ -9,7 +9,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>OpenTK</AssemblyName>
+    <AssemblyName>osuTK</AssemblyName>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -18,7 +18,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>
     </AppDesignerFolder>
-    <RootNamespace>OpenTK</RootNamespace>
+    <RootNamespace>osuTK</RootNamespace>
     <StartArguments>
     </StartArguments>
     <FileUpgradeFlags>
@@ -49,7 +49,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>DEBUG;TRACE;WIN32;CARBON;X11;SDL2;OPENGL;OPENGLES</DefineConstants>
-    <DocumentationFile>bin\Debug\OpenTK.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\osuTK.xml</DocumentationFile>
     <FileAlignment>4096</FileAlignment>
     <Optimize>False</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
@@ -65,7 +65,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>TRACE;WIN32;CARBON;X11;SDL2;OPENGL;OPENGLES</DefineConstants>
-    <DocumentationFile>bin\Release\OpenTK.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\osuTK.xml</DocumentationFile>
     <FileAlignment>4096</FileAlignment>
     <Optimize>True</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -79,7 +79,7 @@
     <SignAssembly>True</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\..\OpenTK.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\osuTK.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -647,13 +647,13 @@
     <Compile Include="Audio\OpenAL\AL\ALEnums.cs">
       <SubType>Code</SubType>
     </Compile>
-    <None Include="..\..\OpenTK.snk">
-      <Link>OpenTK.snk</Link>
+    <None Include="..\..\osuTK.snk">
+      <Link>osuTK.snk</Link>
     </None>
     <Compile Include="Platform\X11\X11Keyboard.cs" />
     <Compile Include="Platform\X11\X11Mouse.cs" />
     <Compile Include="Input\ButtonState.cs" />
-    <EmbeddedResource Include="OpenTK.dll.config">
+    <EmbeddedResource Include="osuTK.dll.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <Compile Include="Platform\MacOS\HIDInput.cs" />
@@ -776,7 +776,7 @@
     <Compile Include="Platform\Linux\DefaultCursor.cs" />
     <Compile Include="Platform\Linux\Bindings\Kms.cs" />
     <Compile Include="Input\FileDropEventArgs.cs" />
-    <None Include="OpenTK.csproj.paket.template" />
+    <None Include="osuTK.csproj.paket.template" />
     <None Include="paket.references" />
     <Compile Include="Platform\MacOS\Cocoa\NSDragOperation.cs" />
     <Compile Include="Platform\MacOS\CoreVideo.cs" />
@@ -797,10 +797,10 @@
     </PostBuildEvent>
   </PropertyGroup>
   <Target Name="AfterBuild">
-    <Exec Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" Command="$(OutputPath)..\..\..\Generator.Rewrite\bin\Debug\Rewrite.exe --assembly $(OutputPath)OpenTK.dll --signing-key ..\..\OpenTK.snk --debug" />
-    <Exec Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Release'" Command="$(OutputPath)..\..\..\Generator.Rewrite\bin\Release\Rewrite.exe --assembly $(OutputPath)OpenTK.dll --signing-key ..\..\OpenTK.snk" />
-    <Exec Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Debug'" Command="mono $(OutputPath)../../../Generator.Rewrite/bin/Debug/Rewrite.exe --assembly $(OutputPath)OpenTK.dll --signing-key ../../OpenTK.snk --debug" />
-    <Exec Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Release'" Command="mono $(OutputPath)../../../Generator.Rewrite/bin/Release/Rewrite.exe --assembly $(OutputPath)OpenTK.dll --signing-key ../../OpenTK.snk" />
+    <Exec Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" Command="$(OutputPath)..\..\..\Generator.Rewrite\bin\Debug\Rewrite.exe --assembly $(OutputPath)osuTK.dll --signing-key ..\..\osuTK.snk --debug" />
+    <Exec Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Release'" Command="$(OutputPath)..\..\..\Generator.Rewrite\bin\Release\Rewrite.exe --assembly $(OutputPath)osuTK.dll --signing-key ..\..\osuTK.snk" />
+    <Exec Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Debug'" Command="mono $(OutputPath)../../../Generator.Rewrite/bin/Debug/Rewrite.exe --assembly $(OutputPath)osuTK.dll --signing-key ../../osuTK.snk --debug" />
+    <Exec Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Release'" Command="mono $(OutputPath)../../../Generator.Rewrite/bin/Release/Rewrite.exe --assembly $(OutputPath)osuTK.dll --signing-key ../../osuTK.snk" />
   </Target>
   <ProjectExtensions>
     <MonoDevelop>

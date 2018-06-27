@@ -3,11 +3,11 @@
  * Spec: http://www.openal.org/openal_webstf/specs/OpenAL11Specification.pdf
  * Copyright (c) 2008 Christoph Brandtner and Stefanos Apostolopoulos
  * See license.txt for license details
- * http://www.OpenTK.net */
+ * http://www.osuTK.net */
 
 using System;
 
-namespace OpenTK.Audio.OpenAL
+namespace osuTK.Audio.OpenAL
 {
     /// <summary>
     /// Defines available context attributes.
@@ -58,7 +58,7 @@ namespace OpenTK.Audio.OpenAL
     }
 
     /// <summary>
-    /// Defines available parameters for <see cref="OpenTK.Audio.OpenAL.Alc.GetString(IntPtr, AlcGetString)"/>.
+    /// Defines available parameters for <see cref="osuTK.Audio.OpenAL.Alc.GetString(IntPtr, AlcGetString)"/>.
     /// </summary>
     public enum AlcGetString : int
     {

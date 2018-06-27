@@ -23,7 +23,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Defines <see cref="DisplayDevice"/> indices.

@@ -29,7 +29,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace OpenTK.Platform.X11
+namespace osuTK.Platform.X11
 {
     internal sealed class X11DisplayDevice : DisplayDeviceBase
     {

@@ -25,7 +25,7 @@
 // THE SOFTWARE.
 //
 
-namespace OpenTK.Input
+namespace osuTK.Input
 {
     /// <summary>
     /// Defines available Joystick hats.

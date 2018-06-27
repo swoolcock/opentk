@@ -1,5 +1,5 @@
 ﻿
-namespace OpenTK.Rewrite
+namespace osuTK.Rewrite
 {
     internal class CountAttribute
     {

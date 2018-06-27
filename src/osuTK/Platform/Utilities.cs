@@ -5,9 +5,9 @@
 using System;
 using System.Reflection;
 using System.Diagnostics;
-using OpenTK.Graphics;
+using osuTK.Graphics;
 
-namespace OpenTK.Platform
+namespace osuTK.Platform
 {
     namespace MacOS
     {
@@ -219,7 +219,7 @@ namespace OpenTK.Platform
         public static IWindowInfo CreateX11WindowInfo(IntPtr display, int screen, IntPtr windowHandle, IntPtr rootWindow, IntPtr visualInfo)
         {
             #if X11
-            Platform.X11.X11WindowInfo window = new OpenTK.Platform.X11.X11WindowInfo();
+            Platform.X11.X11WindowInfo window = new osuTK.Platform.X11.X11WindowInfo();
             window.Display = display;
             window.Screen = screen;
             window.Handle = windowHandle;
@@ -239,7 +239,7 @@ namespace OpenTK.Platform
         public static IWindowInfo CreateWindowsWindowInfo(IntPtr windowHandle)
         {
             #if WIN32
-            return new OpenTK.Platform.Windows.WinWindowInfo(windowHandle, null);
+            return new osuTK.Platform.Windows.WinWindowInfo(windowHandle, null);
             #else
             return new Dummy.DummyWindowInfo();
             #endif
@@ -272,9 +272,9 @@ namespace OpenTK.Platform
         /// <param name="yOffset">The Y offset for the GL viewport</param>
         /// <returns>A new IWindowInfo instance.</returns>
         public static IWindowInfo CreateMacOSCarbonWindowInfo(IntPtr windowHandle, bool ownHandle, bool isControl,
-            OpenTK.Platform.MacOS.GetInt xOffset, OpenTK.Platform.MacOS.GetInt yOffset)
+            osuTK.Platform.MacOS.GetInt xOffset, osuTK.Platform.MacOS.GetInt yOffset)
         {
-            return new OpenTK.Platform.MacOS.CarbonWindowInfo(windowHandle, false, isControl, xOffset, yOffset);
+            return new osuTK.Platform.MacOS.CarbonWindowInfo(windowHandle, false, isControl, xOffset, yOffset);
         }
         #endif
 
@@ -287,7 +287,7 @@ namespace OpenTK.Platform
         public static IWindowInfo CreateMacOSWindowInfo(IntPtr windowHandle)
         {
             #if CARBON
-            return new OpenTK.Platform.MacOS.CocoaWindowInfo(windowHandle);
+            return new osuTK.Platform.MacOS.CocoaWindowInfo(windowHandle);
             #else
             return new Dummy.DummyWindowInfo();
             #endif
@@ -302,7 +302,7 @@ namespace OpenTK.Platform
         public static IWindowInfo CreateMacOSWindowInfo(IntPtr windowHandle, IntPtr viewHandle)
         {
             #if CARBON
-            return new OpenTK.Platform.MacOS.CocoaWindowInfo(windowHandle, viewHandle);
+            return new osuTK.Platform.MacOS.CocoaWindowInfo(windowHandle, viewHandle);
             #else
             return new Dummy.DummyWindowInfo();
             #endif
@@ -325,7 +325,7 @@ namespace OpenTK.Platform
         public static IWindowInfo CreateSdl2WindowInfo(IntPtr windowHandle)
         {
             #if SDL2
-            return new OpenTK.Platform.SDL2.Sdl2WindowInfo(
+            return new osuTK.Platform.SDL2.Sdl2WindowInfo(
                 windowHandle, null);
             #else
             return new Dummy.DummyWindowInfo();

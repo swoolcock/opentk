@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Reflection;
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
     /// Checks whether the specified type parameter is a blittable value type.

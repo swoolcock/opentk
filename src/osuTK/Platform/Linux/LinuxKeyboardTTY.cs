@@ -25,7 +25,7 @@
 // THE SOFTWARE.
 //
 
-namespace OpenTK.Platform.Linux
+namespace osuTK.Platform.Linux
 {
     // Todo: this has terrible side-effects on process exit
     // (the keyboard remains tied up.) We need to find a

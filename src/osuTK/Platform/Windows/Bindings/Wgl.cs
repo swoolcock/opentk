@@ -27,7 +27,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Security;
 
-namespace OpenTK.Platform.Windows
+namespace osuTK.Platform.Windows
 {
 #pragma warning disable 3019
 #pragma warning disable 1591

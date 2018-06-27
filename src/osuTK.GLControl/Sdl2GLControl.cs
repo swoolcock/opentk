@@ -25,10 +25,10 @@
 
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using OpenTK.Graphics;
-using OpenTK.Platform;
+using osuTK.Graphics;
+using osuTK.Platform;
 
-namespace OpenTK
+namespace osuTK
 {
     internal class Sdl2GLControl : IGLControl
     {

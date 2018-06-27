@@ -30,7 +30,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 
-namespace OpenTK.Platform.Linux
+namespace osuTK.Platform.Linux
 {
     // Stores platform-specific information about a display
     internal class LinuxDisplay

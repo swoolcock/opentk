@@ -7,7 +7,7 @@
 
 using System;
 
-namespace OpenTK.Platform.Android
+namespace osuTK.Platform.Android
 {
     internal class AndroidDisplayDeviceDriver : IDisplayDeviceDriver
     {

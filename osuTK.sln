@@ -9,13 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Convert", "src\Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Rewrite", "src\Generator.Rewrite\Generator.Rewrite.csproj", "{C426C9D1-8857-4E52-BAC7-4C05EE6070AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK.Android", "src\OpenTK\OpenTK.Android.csproj", "{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.Android", "src\osuTK\osuTK.Android.csproj", "{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK.iOS", "src\OpenTK\OpenTK.iOS.csproj", "{88368190-E3DF-4EBE-ACAA-7B1779F376CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.iOS", "src\osuTK\osuTK.iOS.csproj", "{88368190-E3DF-4EBE-ACAA-7B1779F376CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK.GLControl", "src\OpenTK.GLControl\OpenTK.GLControl.csproj", "{A625BE88-0000-0000-0000-000000000000}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.GLControl", "src\osuTK.GLControl\osuTK.GLControl.csproj", "{A625BE88-0000-0000-0000-000000000000}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK.GLWidget", "src\OpenTK.GLWidget\OpenTK.GLWidget.csproj", "{A625BE87-0000-0000-0000-000000000000}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.GLWidget", "src\osuTK.GLWidget\osuTK.GLWidget.csproj", "{A625BE87-0000-0000-0000-000000000000}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1857BB8E-1A35-4EBF-9F6D-685F11DC025B}"
 EndProject
@@ -33,15 +33,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{5EEE
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OpenTK.Tests", "tests\OpenTK.Tests\OpenTK.Tests.fsproj", "{6801C263-ADDA-4A7B-979D-649BCB5A1DF7}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "osuTK.Tests", "tests\osuTK.Tests\osuTK.Tests.fsproj", "{6801C263-ADDA-4A7B-979D-649BCB5A1DF7}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OpenTK.Tests.Integration", "tests\OpenTK.Tests.Integration\OpenTK.Tests.Integration.fsproj", "{522D9279-3ED6-475F-867A-6AE69A53C24A}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "osuTK.Tests.Integration", "tests\osuTK.Tests.Integration\osuTK.Tests.Integration.fsproj", "{522D9279-3ED6-475F-867A-6AE69A53C24A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK.Tests.Math", "tests\OpenTK.Tests.Math\OpenTK.Tests.Math.csproj", "{C2B07CD9-B388-4FC3-AF31-C648F7EA904E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.Tests.Math", "tests\osuTK.Tests.Math\osuTK.Tests.Math.csproj", "{C2B07CD9-B388-4FC3-AF31-C648F7EA904E}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OpenTK.Tests.Generators", "tests\OpenTK.Tests.Generators\OpenTK.Tests.Generators.fsproj", "{2B11AAEB-D8AC-4356-938F-532D720E0C30}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "osuTK.Tests.Generators", "tests\osuTK.Tests.Generators\osuTK.Tests.Generators.fsproj", "{2B11AAEB-D8AC-4356-938F-532D720E0C30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK.NS20", "src\OpenTK\OpenTK.NS20.csproj", "{071FF8A5-47A2-4591-B8B5-A7BE11EE358B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.NS20", "src\osuTK\osuTK.NS20.csproj", "{071FF8A5-47A2-4591-B8B5-A7BE11EE358B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

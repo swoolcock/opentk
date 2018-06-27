@@ -23,29 +23,29 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-namespace OpenTK
+namespace osuTK
 {
     /// <summary>
-    /// Enumerates options regarding OpenTK.Platform
+    /// Enumerates options regarding osuTK.Platform
     /// implementations.
     /// </summary>
     public enum PlatformBackend
     {
         /// <summary>
-        /// Select the optimal OpenTK.Platform implementation
+        /// Select the optimal osuTK.Platform implementation
         /// for the current operating system. This is the default
         /// option.
         /// </summary>
         Default = 0,
         /// <summary>
-        /// Prefer native OpenTK.Platform implementations.
+        /// Prefer native osuTK.Platform implementations.
         /// Platform abstractions such as SDL will not be considered,
         /// even if available. Use this if you need support for multiple
         /// mice or keyboards.
         /// </summary>
         PreferNative,
         /// <summary>
-        /// Prefer an X11 OpenTK.Platform implementation,
+        /// Prefer an X11 osuTK.Platform implementation,
         /// even if a different implementation is available. This option
         /// allows you to use X11 on Windows or Mac OS X when an
         /// X11 server is installed.
@@ -54,7 +54,7 @@ namespace OpenTK
     }
 
     /// <summary>
-    /// Contains configuration options for OpenTK.
+    /// Contains configuration options for osuTK.
     /// <see cref="Toolkit.Init(ToolkitOptions)"/>
     /// </summary>
     public class ToolkitOptions
@@ -67,7 +67,7 @@ namespace OpenTK
 
         /// <summary>
         /// Get or set the desired <c>PlatformBackend</c>
-        /// for the OpenTK.Platform implementation.
+        /// for the osuTK.Platform implementation.
         /// </summary>
         public PlatformBackend Backend { get; set; }
 

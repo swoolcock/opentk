@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OpenTK.Graphics
+namespace osuTK.Graphics
 {
     /// <summary>
     /// Thrown when an operation that required GraphicsContext is performed, when no

@@ -1,7 +1,7 @@
 ### Purpose of this PR
 
 * Description of feature/change.
-* Which part of OpenTK does this affect (Math, OpenGL, Platform, Input, etc).
+* Which part of osuTK does this affect (Math, OpenGL, Platform, Input, etc).
 * Links to screenshots, design docs, user docs, etc.
 
 ### Testing status

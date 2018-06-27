@@ -1,13 +1,13 @@
 ﻿using FsCheck.Xunit;
-using OpenTK.Tests.Generators;
+using osuTK.Tests.Generators;
 using Xunit;
 using Assert = Xunit.Assert;
 
-namespace OpenTK.Tests.Math
+namespace osuTK.Tests.Math
 {
     public class BezierCurveTests
     {
-        [Properties(Arbitrary = new[] { typeof(OpenTKGen) })]
+        [Properties(Arbitrary = new[] { typeof(osuTKGen) })]
         public class Constructor
         {
             [Property]
