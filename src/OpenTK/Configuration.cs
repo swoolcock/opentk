@@ -92,22 +92,6 @@ namespace OpenTK
             }
         }
 
-        /// <summary>
-        /// Gets a <c>System.Boolean</c> indicating whether
-        /// OpenTK is running on an Android device.
-        /// </summary>
-        public static bool RunningOnIOS
-        {
-            get
-            {
-#if IPHONE
-                return true;
-#else
-                return false;
-#endif
-            }
-        }
-
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
         private struct utsname
         {
