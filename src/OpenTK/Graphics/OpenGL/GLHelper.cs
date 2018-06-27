@@ -93,26 +93,6 @@ namespace OpenTK.Graphics.OpenGL
         /// Set the RGB values of the current color.
         /// </summary>
         /// <param name="color">The color to set.</param>
-        public static void Color3(Color color)
-        {
-            GL.Color3(color.R, color.G, color.B);
-        }
-
-        /// <summary>
-        /// [requires: v1.0][deprecated: v3.2]
-        /// Set the current color.
-        /// </summary>
-        /// <param name="color">The color to set.</param>
-        public static void Color4(Color color)
-        {
-            GL.Color4(color.R, color.G, color.B, color.A);
-        }
-
-        /// <summary>
-        /// [requires: v1.0][deprecated: v3.2]
-        /// Set the RGB values of the current color.
-        /// </summary>
-        /// <param name="color">The color to set.</param>
         public static void Color3(Vector3 color)
         {
             GL.Color3(color.X, color.Y, color.Z);
@@ -143,29 +123,9 @@ namespace OpenTK.Graphics.OpenGL
         /// Specify clear values for the color buffers.
         /// </summary>
         /// <param name="color">The color to set as the clear value.</param>
-        public static void ClearColor(Color color)
-        {
-            GL.ClearColor(color.R / 255.0f, color.G / 255.0f, color.B / 255.0f, color.A / 255.0f);
-        }
-
-        /// <summary>
-        /// [requires: v1.0]
-        /// Specify clear values for the color buffers.
-        /// </summary>
-        /// <param name="color">The color to set as the clear value.</param>
         public static void ClearColor(Color4 color)
         {
             GL.ClearColor(color.R, color.G, color.B, color.A);
-        }
-
-        /// <summary>
-        /// [requires: v1.4 or ARB_imaging|VERSION_1_4]
-        /// Set the blend color.
-        /// </summary>
-        /// <param name="color">The blend color to set.</param>
-        public static void BlendColor(Color color)
-        {
-            GL.BlendColor(color.R / 255.0f, color.G / 255.0f, color.B / 255.0f, color.A / 255.0f);
         }
 
         /// <summary>
@@ -343,7 +303,7 @@ namespace OpenTK.Graphics.OpenGL
         {
             GL.TexCoord2(v.X, v.Y);
         }
-        
+
         /// <summary>
         /// [requires: v1.0][deprecated: v3.2]
         /// Set the current texture coordinates.
@@ -2180,8 +2140,8 @@ namespace OpenTK.Graphics.OpenGL
         /// Set the current texture coordinates.
         /// </summary>
         /// <param name="target">
-        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is 
-        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i 
+        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is
+        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i
         /// ranges from 0 to MaxTextureCoords - 1, which is an implementation-dependent value.
         /// </param>
         /// <param name="v">
@@ -2197,8 +2157,8 @@ namespace OpenTK.Graphics.OpenGL
         /// Set the current texture coordinates.
         /// </summary>
         /// <param name="target">
-        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is 
-        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i 
+        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is
+        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i
         /// ranges from 0 to MaxTextureCoords - 1, which is an implementation-dependent value.
         /// </param>
         /// <param name="v">
@@ -2214,8 +2174,8 @@ namespace OpenTK.Graphics.OpenGL
         /// Set the current texture coordinates.
         /// </summary>
         /// <param name="target">
-        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is 
-        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i 
+        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is
+        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i
         /// ranges from 0 to MaxTextureCoords - 1, which is an implementation-dependent value.
         /// </param>
         /// <param name="v">
@@ -2324,8 +2284,8 @@ namespace OpenTK.Graphics.OpenGL
         /// Set the current texture coordinates.
         /// </summary>
         /// <param name="target">
-        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is 
-        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i 
+        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is
+        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i
         /// ranges from 0 to MaxTextureCoords - 1, which is an implementation-dependent value.
         /// </param>
         /// <param name="v">
@@ -2341,8 +2301,8 @@ namespace OpenTK.Graphics.OpenGL
         /// Set the current texture coordinates.
         /// </summary>
         /// <param name="target">
-        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is 
-        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i 
+        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is
+        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i
         /// ranges from 0 to MaxTextureCoords - 1, which is an implementation-dependent value.
         /// </param>
         /// <param name="v">
@@ -2358,8 +2318,8 @@ namespace OpenTK.Graphics.OpenGL
         /// Set the current texture coordinates.
         /// </summary>
         /// <param name="target">
-        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is 
-        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i 
+        /// Specifies the texture unit whose coordinates should be modified. The number of texture units is
+        /// implementation dependent, but must be at least two. Symbolic constant must be one of Texture, where i
         /// ranges from 0 to MaxTextureCoords - 1, which is an implementation-dependent value.
         /// </param>
         /// <param name="v">
@@ -2430,11 +2390,11 @@ namespace OpenTK.Graphics.OpenGL
         /// Specifies the number of coordinates per vertex. Must be 2, 3, or 4. The initial value is 4.
         /// </param>
         /// <param name="type">
-        /// Specifies the data type of each coordinate in the array. Symbolic constants Short, Int, Float, or Double 
+        /// Specifies the data type of each coordinate in the array. Symbolic constants Short, Int, Float, or Double
         /// are accepted. The initial value is Float.
         /// </param>
         /// <param name="stride">
-        /// Specifies the byte offset between consecutive vertices. If stride is 0, the vertices are understood to 
+        /// Specifies the byte offset between consecutive vertices. If stride is 0, the vertices are understood to
         /// be tightly packed in the array. The initial value is 0.
         /// </param>
         /// <param name="offset">
@@ -2450,11 +2410,11 @@ namespace OpenTK.Graphics.OpenGL
         /// Define an array of normals.
         /// </summary>
         /// <param name="type">
-        /// Specifies the data type of each coordinate in the array. Symbolic constants Byte, Short, Int, Float, and 
+        /// Specifies the data type of each coordinate in the array. Symbolic constants Byte, Short, Int, Float, and
         /// Double are accepted. The initial value is Float.
         /// </param>
         /// <param name="stride">
-        /// Specifies the byte offset between consecutive normals. If stride is 0, the normals are understood to be 
+        /// Specifies the byte offset between consecutive normals. If stride is 0, the normals are understood to be
         /// tightly packed in the array. The initial value is 0.
         /// </param>
         /// <param name="offset">[length: type,stride]
@@ -2470,11 +2430,11 @@ namespace OpenTK.Graphics.OpenGL
         /// Define an array of color indexes.
         /// </summary>
         /// <param name="type">
-        /// Specifies the data type of each color index in the array. Symbolic constants UnsignedByte, Short, Int, 
+        /// Specifies the data type of each color index in the array. Symbolic constants UnsignedByte, Short, Int,
         /// Float, and Double are accepted. The initial value is Float.
         /// </param>
         /// <param name="stride">
-        /// Specifies the byte offset between consecutive color indexes. If stride is 0, the color indexes are 
+        /// Specifies the byte offset between consecutive color indexes. If stride is 0, the color indexes are
         /// understood to be tightly packed in the array. The initial value is 0.
         /// </param>
         /// <param name="offset">
@@ -2493,11 +2453,11 @@ namespace OpenTK.Graphics.OpenGL
         /// Specifies the number of components per color. Must be 3 or 4. The initial value is 4.
         /// </param>
         /// <param name="type">
-        /// Specifies the data type of each color component in the array. Symbolic constants Byte, UnsignedByte, Short, 
+        /// Specifies the data type of each color component in the array. Symbolic constants Byte, UnsignedByte, Short,
         /// UnsignedShort, Int, UnsignedInt, Float, and Double are accepted. The initial value is Float.
         /// </param>
         /// <param name="stride">
-        /// Specifies the byte offset between consecutive colors. If stride is 0, the colors are understood to be 
+        /// Specifies the byte offset between consecutive colors. If stride is 0, the colors are understood to be
         /// tightly packed in the array. The initial value is 0.
         /// </param>
         /// <param name="offset">
@@ -2513,11 +2473,11 @@ namespace OpenTK.Graphics.OpenGL
         /// Define an array of fog coordinates.
         /// </summary>
         /// <param name="type">
-        /// Specifies the data type of each fog coordinate. Symbolic constants Float, or Double are accepted. 
+        /// Specifies the data type of each fog coordinate. Symbolic constants Float, or Double are accepted.
         /// The initial value is Float.
         /// </param>
         /// <param name="stride">
-        /// Specifies the byte offset between consecutive fog coordinates. If stride is 0, the array elements are 
+        /// Specifies the byte offset between consecutive fog coordinates. If stride is 0, the array elements are
         /// understood to be tightly packed. The initial value is 0.
         /// </param>
         /// <param name="offset">
@@ -2552,11 +2512,11 @@ namespace OpenTK.Graphics.OpenGL
         /// Specifies the number of coordinates per array element. Must be 1, 2, 3, or 4. The initial value is 4.
         /// </param>
         /// <param name="type">
-        /// Specifies the data type of each texture coordinate. Symbolic constants Short, Int, Float, or Double are 
+        /// Specifies the data type of each texture coordinate. Symbolic constants Short, Int, Float, or Double are
         /// accepted. The initial value is Float.
         /// </param>
         /// <param name="stride">
-        /// Specifies the byte offset between consecutive texture coordinate sets. If stride is 0, the array 
+        /// Specifies the byte offset between consecutive texture coordinate sets. If stride is 0, the array
         /// elements are understood to be tightly packed. The initial value is 0.
         /// </param>
         /// <param name="offset">
@@ -2575,27 +2535,27 @@ namespace OpenTK.Graphics.OpenGL
         /// Specifies the index of the generic vertex attribute to be modified.
         /// </param>
         /// <param name="size">
-        /// Specifies the number of components per generic vertex attribute. Must be 1, 2, 3, 4. Additionally, the 
+        /// Specifies the number of components per generic vertex attribute. Must be 1, 2, 3, 4. Additionally, the
         /// symbolic constant Bgra is accepted by glVertexAttribPointer. The initial value is 4.
         /// </param>
         /// <param name="type">
-        /// Specifies the data type of each component in the array. The symbolic constants Byte, UnsignedByte, Short, 
-        /// UnsignedShort, Int, and UnsignedInt are accepted by glVertexAttribPointer and glVertexAttribIPointer. 
-        /// Additionally HalfFloat, Float, Double, Fixed, Int2101010Rev, UnsignedInt2101010Rev and 
-        /// UnsignedInt10F11F11FRev are accepted by glVertexAttribPointer. Double is also accepted by 
-        /// glVertexAttribLPointer and is the only token accepted by the type parameter for that function. 
+        /// Specifies the data type of each component in the array. The symbolic constants Byte, UnsignedByte, Short,
+        /// UnsignedShort, Int, and UnsignedInt are accepted by glVertexAttribPointer and glVertexAttribIPointer.
+        /// Additionally HalfFloat, Float, Double, Fixed, Int2101010Rev, UnsignedInt2101010Rev and
+        /// UnsignedInt10F11F11FRev are accepted by glVertexAttribPointer. Double is also accepted by
+        /// glVertexAttribLPointer and is the only token accepted by the type parameter for that function.
         /// The initial value is Float.
         /// </param>
         /// <param name="normalized">
-        /// For glVertexAttribPointer, specifies whether fixed-point data values should be normalized (True) or 
+        /// For glVertexAttribPointer, specifies whether fixed-point data values should be normalized (True) or
         /// converted directly as fixed-point values (False) when they are accessed.
         /// </param>
         /// <param name="stride">
-        /// Specifies the byte offset between consecutive generic vertex attributes. If stride is 0, the generic vertex 
+        /// Specifies the byte offset between consecutive generic vertex attributes. If stride is 0, the generic vertex
         /// attributes are understood to be tightly packed in the array. The initial value is 0.
         /// </param>
         /// <param name="offset">
-        /// Specifies the first component of the first generic vertex attribute in the array in the data store of the 
+        /// Specifies the first component of the first generic vertex attribute in the array in the data store of the
         /// buffer currently bound to the ArrayBuffer target. The initial value is 0.
         /// </param>
         public static void VertexAttribPointer(int index, int size, VertexAttribPointerType type, bool normalized, int stride, int offset)
@@ -2776,7 +2736,7 @@ namespace OpenTK.Graphics.OpenGL
         /// Set the viewport. This function assumes a lower left corner of (0, 0).
         /// </summary>
         /// <param name="size">
-        /// Specifies the width and height of the viewport. When a GL context is first attached to a window, 
+        /// Specifies the width and height of the viewport. When a GL context is first attached to a window,
         /// width and height are set to the dimensions of that window.
         /// </param>
         public static void Viewport(Size size)
@@ -2792,7 +2752,7 @@ namespace OpenTK.Graphics.OpenGL
         /// Specifies the lower left corner of the viewport.
         /// </param>
         /// <param name="size">
-        /// Specifies the width and height of the viewport. When a GL context is first attached to a window, 
+        /// Specifies the width and height of the viewport. When a GL context is first attached to a window,
         /// width and height are set to the dimensions of that window.
         /// </param>
         public static void Viewport(Point location, Size size)
@@ -2805,7 +2765,7 @@ namespace OpenTK.Graphics.OpenGL
         /// Set the viewport.
         /// </summary>
         /// <param name="rectangle">
-        /// Specifies the lower left corner, as well as the width and height of the viewport. When a GL context is 
+        /// Specifies the lower left corner, as well as the width and height of the viewport. When a GL context is
         /// first attached to a window, width and height are set to the dimensions of that window.
         /// </param>
         public static void Viewport(Rectangle rectangle)
@@ -2821,34 +2781,9 @@ namespace OpenTK.Graphics.OpenGL
         /// Specifies a texture environment. May be TextureEnv, TextureFilterControl or PointSprite.
         /// </param>
         /// <param name="pname">
-        /// Specifies the symbolic name of a single-valued texture environment parameter. May be either TextureEnvMode, 
-        /// TextureLodBias, CombineRgb, CombineAlpha, Src0Rgb, Src1Rgb, Src2Rgb, Src0Alpha, Src1Alpha, Src2Alpha, 
-        /// Operand0Rgb, Operand1Rgb, Operand2Rgb, Operand0Alpha, Operand1Alpha, Operand2Alpha, RgbScale, AlphaScale, 
-        /// or CoordReplace.
-        /// </param>
-        /// <param name="color">
-        /// Specifies the color to apply.
-        /// </param>
-        public static void TexEnv(TextureEnvTarget target, TextureEnvParameter pname, Color color)
-        {
-            Color4 c = new Color4(color.R, color.G, color.B, color.A);
-            unsafe
-            {
-                TexEnv(target, pname, &c.R);
-            }
-        }
-
-        /// <summary>
-        /// [requires: v1.0][deprecated: v3.2]
-        /// Set texture environment parameters.
-        /// </summary>
-        /// <param name="target">
-        /// Specifies a texture environment. May be TextureEnv, TextureFilterControl or PointSprite.
-        /// </param>
-        /// <param name="pname">
-        /// Specifies the symbolic name of a single-valued texture environment parameter. May be either TextureEnvMode, 
-        /// TextureLodBias, CombineRgb, CombineAlpha, Src0Rgb, Src1Rgb, Src2Rgb, Src0Alpha, Src1Alpha, Src2Alpha, 
-        /// Operand0Rgb, Operand1Rgb, Operand2Rgb, Operand0Alpha, Operand1Alpha, Operand2Alpha, RgbScale, AlphaScale, 
+        /// Specifies the symbolic name of a single-valued texture environment parameter. May be either TextureEnvMode,
+        /// TextureLodBias, CombineRgb, CombineAlpha, Src0Rgb, Src1Rgb, Src2Rgb, Src0Alpha, Src1Alpha, Src2Alpha,
+        /// Operand0Rgb, Operand1Rgb, Operand2Rgb, Operand0Alpha, Operand1Alpha, Operand2Alpha, RgbScale, AlphaScale,
         /// or CoordReplace.
         /// </param>
         /// <param name="color">

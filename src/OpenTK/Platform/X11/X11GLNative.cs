@@ -1332,7 +1332,6 @@ namespace OpenTK.Platform.X11
                     for (int y = 0; y < bitmap.Height; y++)
                         for (int x = 0; x < bitmap.Width; x++)
                         {
-                            data[index++] = (IntPtr)bitmap.GetPixel(x, y).ToArgb();
                         }
 
                     using (new XLock(window.Display))

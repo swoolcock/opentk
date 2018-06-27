@@ -59,7 +59,7 @@ namespace OpenTK.Platform.X11
 
         [DllImport("libX11", EntryPoint = "XCreateWindow")]
         public extern static IntPtr XCreateWindow(IntPtr display, IntPtr parent, int x, int y, int width, int height, int border_width, int depth, int xclass, IntPtr visual, IntPtr valuemask, ref XSetWindowAttributes attributes);
-        
+
         [DllImport("libX11", EntryPoint = "XCreateWindow")]
         public unsafe extern static IntPtr XCreateWindow(IntPtr display, IntPtr parent, int x, int y, int width, int height, int border_width, int depth, int xclass, IntPtr visual, IntPtr valuemask, XSetWindowAttributes* attributes);
 
@@ -600,11 +600,6 @@ namespace OpenTK.Platform.X11
                 {
                     byte bit = (byte)(1 << (msbfirst ? (7 - (x & 7)) : (x & 7)));
                     int offset = y * stride + (x >> 3);
-
-                    if (image.GetPixel(x, y).A >= 128)
-                    {
-                        mask[offset] |= bit;
-                    }
                 }
             }
 

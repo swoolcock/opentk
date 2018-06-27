@@ -30,7 +30,7 @@ namespace Microsoft.Win32
     {
         public static readonly RegistryKey LocalMachine = new RegistryKey();
     }
-    
+
     internal sealed class SystemEvents
     {
         public static event EventHandler DisplaySettingsChanged;
@@ -103,11 +103,6 @@ namespace OpenTK
         public int Width { get { return width; } }
         public int Height { get { return height; } }
 
-        public Color GetPixel(int x, int y)
-        {
-            return new Color();
-        }
-
         internal void UnlockBits(BitmapData data)
         {
         }
@@ -134,7 +129,7 @@ namespace OpenTK
         public int Height { get; private set; }
         public int Stride { get; private set; }
     }
-    
+
     internal enum ImageLockMode
     {
         ReadOnly,
@@ -142,12 +137,12 @@ namespace OpenTK
         ReadWrite,
         UserInputBuffer
     }
-    
+
     internal enum PixelFormat
     {
         Format32bppArgb = 2498570
     }
-    
+
     internal enum ImageFormat
     {
         Png
@@ -158,7 +153,7 @@ namespace OpenTK
 namespace OpenTK.Minimal
 {
     using System.Drawing;
-    
+
     internal sealed class Graphics : IDisposable
     {
         public static Graphics FromImage(Image img)
