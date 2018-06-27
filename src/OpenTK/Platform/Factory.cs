@@ -127,7 +127,6 @@ namespace OpenTK.Platform
                 Angle = new Egl.EglAnglePlatformFactory(Embedded);
 #endif
             }
-#endif
             else
             {
                 Embedded = new UnsupportedPlatform();
