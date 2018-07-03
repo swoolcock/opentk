@@ -26,6 +26,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 
 namespace osuTK
 {
@@ -284,6 +285,32 @@ namespace osuTK
                 }
             }
             return null;
+        }
+
+        /// <summary> 
+        /// Gets the <see cref="DisplayDevice"/> that has the largest intersecting area with a specific <see cref="Rectangle"/> structure. 
+        /// </summary> 
+        /// <param name="bounds">The <see cref="Rectangle"/> (usually window bounds) for which we want to find the <see cref="DisplayDevice"/>.</param> 
+        /// <returns>A <see cref="DisplayDevice"/> that contains the biggest part of the specified <see cref="Rectangle"/> out of all available devices.</returns> 
+        public static DisplayDevice FromRectangle(Rectangle bounds)
+        {
+            DisplayDevice result = null;
+            int biggestArea = 0;
+            foreach (var device in implementation.AvailableDevices.Where(d => d.Bounds.IntersectsWith(bounds)))
+            {
+                Rectangle windowPortionOnScreen = device.Bounds;
+                windowPortionOnScreen.Intersect(bounds);
+
+                int windowPortionArea = windowPortionOnScreen.Width * windowPortionOnScreen.Height;
+
+                if (windowPortionArea > biggestArea)
+                {
+                    biggestArea = windowPortionArea;
+                    result = device;
+                }
+            }
+
+            return result;
         }
 
         private DisplayResolution FindResolution(int width, int height, int bitsPerPixel, float refreshRate)
