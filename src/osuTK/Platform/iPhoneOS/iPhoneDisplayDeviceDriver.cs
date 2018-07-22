@@ -30,5 +30,7 @@ namespace osuTK.Platform.iPhoneOS
         {
             return false;
         }
+
+        public List<DisplayDevice> AvailableDevices { get; } = new List<DisplayDevice>();
     }
 }
