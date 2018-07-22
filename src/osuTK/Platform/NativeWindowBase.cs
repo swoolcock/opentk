@@ -340,7 +340,7 @@ namespace osuTK.Platform
 
         public abstract Point PointToScreen(Point point);
 
-        public abstract Icon Icon { get; set; }
+//        public abstract Icon Icon { get; set; }
 
         public abstract string Title { get; set; }
 

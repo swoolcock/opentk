@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Rewrite", "src\Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.Android", "src\osuTK\osuTK.Android.csproj", "{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.iOS", "src\osuTK\osuTK.iOS.csproj", "{88368190-E3DF-4EBE-ACAA-7B1779F376CA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.GLControl", "src\osuTK.GLControl\osuTK.GLControl.csproj", "{A625BE88-0000-0000-0000-000000000000}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.GLWidget", "src\osuTK.GLWidget\osuTK.GLWidget.csproj", "{A625BE87-0000-0000-0000-000000000000}"
@@ -43,6 +41,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "osuTK.Tests.Generators", "t
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.NS20", "src\osuTK\osuTK.NS20.csproj", "{071FF8A5-47A2-4591-B8B5-A7BE11EE358B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.iOS", "src\osuTK\osuTK.iOS.csproj", "{A888EA95-3F01-4C27-83F9-9A840F31F198}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,10 +65,6 @@ Global
 		{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{88368190-E3DF-4EBE-ACAA-7B1779F376CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88368190-E3DF-4EBE-ACAA-7B1779F376CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88368190-E3DF-4EBE-ACAA-7B1779F376CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88368190-E3DF-4EBE-ACAA-7B1779F376CA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A625BE88-0000-0000-0000-000000000000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A625BE88-0000-0000-0000-000000000000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A625BE88-0000-0000-0000-000000000000}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -97,6 +93,10 @@ Global
 		{071FF8A5-47A2-4591-B8B5-A7BE11EE358B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{071FF8A5-47A2-4591-B8B5-A7BE11EE358B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{071FF8A5-47A2-4591-B8B5-A7BE11EE358B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A888EA95-3F01-4C27-83F9-9A840F31F198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A888EA95-3F01-4C27-83F9-9A840F31F198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A888EA95-3F01-4C27-83F9-9A840F31F198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A888EA95-3F01-4C27-83F9-9A840F31F198}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

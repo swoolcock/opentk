@@ -38,7 +38,7 @@ namespace osuTK
         /// <summary>
         /// Gets or sets the <see cref="System.Drawing.Icon"/> of the window.
         /// </summary>
-        Icon Icon { get; set; }
+//        Icon Icon { get; set; }
 
         /// <summary>
         /// Gets or sets the title of the window.

@@ -89,6 +89,12 @@ namespace osuTK.Platform
                 // using the same API.
                 Embedded = Default;
             }
+#if IPHONE
+            else if (Configuration.RunningOnIOS)
+            {
+                Embedded = new iPhoneOS.iPhoneFactory();
+            }
+#else
             else if (Egl.Egl.IsSupported)
             {
                 if (Configuration.RunningOnLinux)
@@ -127,6 +133,7 @@ namespace osuTK.Platform
                 Angle = new Egl.EglAnglePlatformFactory(Embedded);
 #endif
             }
+#endif
             else
             {
                 Embedded = new UnsupportedPlatform();

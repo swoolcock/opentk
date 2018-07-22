@@ -24,7 +24,6 @@
  //
 
 using System;
-using osuTK.Platform.Windows;
 
 namespace osuTK.Input
 {

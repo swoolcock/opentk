@@ -291,19 +291,19 @@ namespace osuTK
         /// <summary>
         /// Gets or sets the System.Drawing.Icon for this GameWindow.
         /// </summary>
-        public Icon Icon
-        {
-            get
-            {
-                EnsureUndisposed();
-                return implementation.Icon;
-            }
-            set
-            {
-                EnsureUndisposed();
-                implementation.Icon = value;
-            }
-        }
+//        public Icon Icon
+//        {
+//            get
+//            {
+//                EnsureUndisposed();
+//                return implementation.Icon;
+//            }
+//            set
+//            {
+//                EnsureUndisposed();
+//                implementation.Icon = value;
+//            }
+//        }
 
         /// <summary>
         /// Gets or sets a <see cref="System.Drawing.Point"/> structure that contains the location of this window on the desktop.
