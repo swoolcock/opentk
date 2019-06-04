@@ -300,9 +300,9 @@ namespace osuTK.Platform.MacOS
                     
                     case CGEventType.TapDisabledByTimeout:
                     case CGEventType.TapDisabledByUserInput:
-                    {
-                        CG.EventTapEnable(MouseEventTap, true);
-                    }
+                        {
+                            CG.EventTapEnable(MouseEventTap, true);
+                        }
                         break;
                 }
             }
