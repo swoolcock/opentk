@@ -91,8 +91,6 @@ let runtimeProjects =
             -- "**/osuTK.Tests.fsproj"
             -- "**/osuTK.Tests.Math.csproj"
             -- "**/osuTK.Tests.Integration.fsproj"
-
-    !! "src/osuTK/osuTK.NS20.csproj"
     -- "src/Generator.*/**.csproj"
 //    |> xamarinFilter
 
