@@ -1,5 +1,6 @@
 image: Visual Studio 2017
 build_script:
+  - cmd: dotnet restore
   - cmd: nuget restore
   - cmd: build.cmd
 after_build:
