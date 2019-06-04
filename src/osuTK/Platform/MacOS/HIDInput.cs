@@ -297,6 +297,13 @@ namespace osuTK.Platform.MacOS
                             CursorState[b] = false;
                         }
                         break;
+                    
+                    case CGEventType.TapDisabledByTimeout:
+                    case CGEventType.TapDisabledByUserInput:
+                    {
+                        CG.EventTapEnable(MouseEventTap, true);
+                    }
+                        break;
                 }
             }
             catch (Exception e)

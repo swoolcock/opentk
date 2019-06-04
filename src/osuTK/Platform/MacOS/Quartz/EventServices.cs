@@ -52,6 +52,9 @@ namespace osuTK.Platform.MacOS
             [MarshalAs(UnmanagedType.FunctionPtr)]
             EventTapCallBack callback,
             IntPtr refcon);
+        
+        [DllImport(lib, EntryPoint = "CGEventTapEnable")]
+        internal static extern CFMachPortRef EventTapEnable(CFMachPortRef tap, bool enable);
 
         [DllImport(lib, EntryPoint = "CGEventGetDoubleValueField")]
         internal static extern double EventGetDoubleValueField(
