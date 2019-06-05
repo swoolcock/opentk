@@ -163,6 +163,8 @@ namespace osuTK.Rewrite
 
         private string GetNetstandardRefPath()
         {
+            Console.WriteLine("Retrieving ref lib path");
+
             var process = Process.Start(new ProcessStartInfo
             {
                 FileName = "dotnet",
@@ -170,11 +172,11 @@ namespace osuTK.Rewrite
                 RedirectStandardOutput = true
             });
 
-            process.WaitForExit();
-
             var match = Regex.Match(process.StandardOutput.ReadToEnd(), @"Base Path:(.*)$", RegexOptions.Multiline);
 
             var res = Path.Combine(match.Groups[1].Value.Trim(), "ref");
+
+            Console.WriteLine($"Found ref lib path: {res}");
 
             return res;
         }
