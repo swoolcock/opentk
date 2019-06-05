@@ -97,7 +97,7 @@ let runtimeProjects =
 //    |> xamarinFilter
 
 let activeProjects =
-    Seq.concat [buildProjects; runtimeProjects]
+    Seq.concat [runtimeProjects]
 
 
 // Generate assembly info files with the right version & up-to-date information
