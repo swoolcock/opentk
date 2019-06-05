@@ -16,9 +16,11 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 using CommandLine;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
@@ -80,8 +82,6 @@ namespace osuTK.Rewrite
             read_params.ReadSymbols = true;
             read_params.ReadWrite = true;
             write_params.WriteSymbols = true;
-
-
 
             if (Options.NETStandard)
             {
@@ -162,7 +162,24 @@ namespace osuTK.Rewrite
         }
 
         private string GetNetstandardRefPath()
-         => Path.Combine(SettingsUtility.GetGlobalPackagesFolder(Settings.LoadDefaultSettings(null)), "netstandard.library", "2.0.0", "build", "netstandard2.0", "ref");
+        {
+            var process = Process.Start( new ProcessStartInfo
+            {
+                FileName = "dotnet",
+                Arguments = "--list-sdks",
+                RedirectStandardOutput = true
+            });
+
+            process.WaitForExit();
+
+            var sdkList = process.StandardOutput.ReadToEnd();
+
+            Console.WriteLine($"Found SDKs:\n{sdkList}");
+
+            var matches = Regex.Match(sdkList, @"(2\.2\.(?:\d+)) \[(.*)\]");
+
+            return Path.Combine(matches.Groups[2].Value, matches.Groups[1].Value, "ref");
+        }
 
         private void Rewrite(TypeDefinition type)
         {
