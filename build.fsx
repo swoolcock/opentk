@@ -46,9 +46,6 @@ let copyright = "Copyright (c) 2006 - 2016 Stefanos Apostolopoulos <stapostol@gm
 // File system information
 let solutionFile  = "osuTK.sln"
 
-// Pattern specifying assemblies to be tested using NUnit
-let testAssemblies = "tests/**/bin/Release/*Tests*.dll"
-
 // Git configuration (used for publishing documentation in gh-pages branch)
 // The profile where the project is posted
 let gitOwner = "opentk"
@@ -88,9 +85,6 @@ let runtimeProjects =
             f
         else
             f
-            -- "**/osuTK.Tests.fsproj"
-            -- "**/osuTK.Tests.Math.csproj"
-            -- "**/osuTK.Tests.Integration.fsproj"
 
     !! "src/osuTK/osuTK.NS20.csproj"
     -- "src/Generator.*/**.csproj"
@@ -177,18 +171,6 @@ Target "Build" (fun _ ->
 )
 
 // --------------------------------------------------------------------------------------
-// Run the unit tests using test runner
-
-Target "RunTests" (fun _ ->
-    !! testAssemblies
-    |> xUnit2 (fun p ->
-        { p with
-            ShadowCopy = true
-            TimeOut = TimeSpan.FromMinutes 2.
-            XmlOutputPath = Some "TestResults.xml" })
-)
-
-// --------------------------------------------------------------------------------------
 // Build a NuGet package
 
 Target "NuGet" (fun _ ->
@@ -221,7 +203,6 @@ Target "All" DoNothing
   ==> "GenerateBindings"
   ==> "Build"
   ==> "CopyBinaries"
-//  ==> "RunTests"
   ==> "All"
 
 "All"
