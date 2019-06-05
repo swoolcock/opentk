@@ -9,35 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Convert", "src\Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Rewrite", "src\Generator.Rewrite\Generator.Rewrite.csproj", "{C426C9D1-8857-4E52-BAC7-4C05EE6070AB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1857BB8E-1A35-4EBF-9F6D-685F11DC025B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{F1A57014-71CE-4032-A652-01B7E35E14DB}"
-	ProjectSection(SolutionItems) = preProject
-		paket.dependencies = paket.dependencies
-		paket.lock = paket.lock
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{5EEEC96B-BD2F-45B0-935D-19E9E6D7D969}"
-	ProjectSection(SolutionItems) = preProject
-		build.fsx = build.fsx
-		README.md = README.md
-		RELEASE_NOTES.md = RELEASE_NOTES.md
-		.gitignore = .gitignore
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.NS20", "src\osuTK\osuTK.NS20.csproj", "{71896DEF-4479-4264-A3C2-706AC824FB16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.Android", "src\osuTK.Android\osuTK.Android.csproj", "{ADAE6EC9-5E86-4922-AC09-90F7CE8008A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.iOS", "src\osuTK.iOS\osuTK.iOS.csproj", "{41D0EF74-194E-4B0B-910D-440A7A38DFBD}"
-EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osuTK.Tests", "tests\osuTK.Tests\osuTK.Tests.fsproj", "{B224D67F-5AD9-40EF-8A86-39EF77918E55}"
-EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osuTK.Tests.Integration", "tests\osuTK.Tests.Integration\osuTK.Tests.Integration.fsproj", "{3054D936-0E95-47D7-A71D-EC984B6C1420}"
-EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osuTK.Tests.Math", "tests\osuTK.Tests.Math\osuTK.Tests.Math.csproj", "{BCE02464-86F5-4A78-9B9B-7C8E3D27CAC1}"
-EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osuTK.Tests.Generators", "tests\osuTK.Tests.Generators\osuTK.Tests.Generators.fsproj", "{17538280-A5BE-4973-8714-8F97A464E518}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,22 +45,6 @@ Global
 		{41D0EF74-194E-4B0B-910D-440A7A38DFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41D0EF74-194E-4B0B-910D-440A7A38DFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41D0EF74-194E-4B0B-910D-440A7A38DFBD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B224D67F-5AD9-40EF-8A86-39EF77918E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B224D67F-5AD9-40EF-8A86-39EF77918E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B224D67F-5AD9-40EF-8A86-39EF77918E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B224D67F-5AD9-40EF-8A86-39EF77918E55}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3054D936-0E95-47D7-A71D-EC984B6C1420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3054D936-0E95-47D7-A71D-EC984B6C1420}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3054D936-0E95-47D7-A71D-EC984B6C1420}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3054D936-0E95-47D7-A71D-EC984B6C1420}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BCE02464-86F5-4A78-9B9B-7C8E3D27CAC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCE02464-86F5-4A78-9B9B-7C8E3D27CAC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCE02464-86F5-4A78-9B9B-7C8E3D27CAC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCE02464-86F5-4A78-9B9B-7C8E3D27CAC1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{17538280-A5BE-4973-8714-8F97A464E518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{17538280-A5BE-4973-8714-8F97A464E518}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{17538280-A5BE-4973-8714-8F97A464E518}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{17538280-A5BE-4973-8714-8F97A464E518}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79F16DF9-0C9F-46DC-B83D-F9D8A28F1C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{79F16DF9-0C9F-46DC-B83D-F9D8A28F1C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79F16DF9-0C9F-46DC-B83D-F9D8A28F1C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -98,9 +58,5 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B224D67F-5AD9-40EF-8A86-39EF77918E55} = {1857BB8E-1A35-4EBF-9F6D-685F11DC025B}
-		{3054D936-0E95-47D7-A71D-EC984B6C1420} = {1857BB8E-1A35-4EBF-9F6D-685F11DC025B}
-		{BCE02464-86F5-4A78-9B9B-7C8E3D27CAC1} = {1857BB8E-1A35-4EBF-9F6D-685F11DC025B}
-		{17538280-A5BE-4973-8714-8F97A464E518} = {1857BB8E-1A35-4EBF-9F6D-685F11DC025B}
 	EndGlobalSection
 EndGlobal
