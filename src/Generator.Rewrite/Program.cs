@@ -18,10 +18,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using CommandLine;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 using Mono.Cecil.Rocks;
+using NuGet.Configuration;
 
 namespace osuTK.Rewrite
 {
@@ -79,20 +81,7 @@ namespace osuTK.Rewrite
             read_params.ReadWrite = true;
             write_params.WriteSymbols = true;
 
-            if (!String.IsNullOrEmpty(Options.StrongNameKey) && File.Exists(Options.StrongNameKey))
-            {
-                string absoluteKeyFilePath = Path.GetFullPath(Options.StrongNameKey);
 
-                using (var fs = new FileStream(absoluteKeyFilePath, FileMode.Open, FileAccess.Read))
-                {
-                    var keypair = new System.Reflection.StrongNameKeyPair(fs);
-                    write_params.StrongNameKeyPair = keypair;
-                }
-            }
-            else
-            {
-                Console.Error.WriteLine("No keyfile specified or keyfile missing.");
-            }
 
             if (Options.NETStandard)
             {
@@ -173,16 +162,7 @@ namespace osuTK.Rewrite
         }
 
         private string GetNetstandardRefPath()
-        {
-            string dir = Environment.CurrentDirectory;
-            while (!Directory.Exists(Path.Combine(dir, "packages")) && !string.IsNullOrEmpty(dir))
-                dir = dir.Substring(0, dir.LastIndexOf(Path.DirectorySeparatorChar));
-
-            if (string.IsNullOrEmpty(dir))
-                return string.Empty;
-
-            return Path.Combine(dir, "packages", "NETStandard.Library.2.0.1", "build", "netstandard2.0", "ref");
-        }
+         => Path.Combine(SettingsUtility.GetGlobalPackagesFolder(Settings.LoadDefaultSettings(null)), "netstandard.library", "2.0.0", "build", "netstandard2.0", "ref");
 
         private void Rewrite(TypeDefinition type)
         {
