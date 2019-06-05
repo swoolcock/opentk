@@ -1,5 +1,6 @@
 image: Visual Studio 2017
 build_script:
+  - cmd: dotnet run --project src/Generator.Bind/Generator.Bind.csproj -c:Release
   - cmd: dotnet pack src/osuTK/osuTK.NS20.csproj -c:Release --include-symbols /p:Version=%APPVEYOR_BUILD_VERSION%
   - cmd: msbuild /t:pack src/osuTK.iOS/osuTK.iOS.csproj /p:Configuration=Release /p:IncludeSymbols=True /p:Version=%APPVEYOR_BUILD_VERSION%
   - cmd: msbuild /t:pack src/osuTK.Android/osuTK.Android.csproj /p:Configuration=Release /p:IncludeSymbols=True /p:Version=%APPVEYOR_BUILD_VERSION%

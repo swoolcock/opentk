@@ -16,23 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- Reference projects without resolving their frameworks -->
+    <!-- Reference without resolving netcoreapp framework -->
     <ProjectReference Include="$(MSBuildThisFileDirectory)../Generator.Rewrite/Generator.Rewrite.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
     </ProjectReference>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)../Generator.Bind/Generator.Bind.csproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
-    </ProjectReference>
   </ItemGroup>
-
-  <Target Name="Bind" BeforeTargets="AfterResolveReferences" Condition="!Exists('$(MSBuildThisFileDirectory)../../.bindingsGenerated')">
-    <Message Text="Binding..." Importance="high" />
-    <Exec Command="dotnet $(MSBuildThisFileDirectory)../Generator.Bind/bin/$(Configuration)/netcoreapp2.2/Bind.dll" WorkingDirectory="$(MSBuildThisFileDirectory)../../" />
-    <Touch Files="$(MSBuildThisFileDirectory)../../.bindingsGenerated" AlwaysCreate="true" />
-    <Sleep Milliseconds="3000" />
-  </Target>
 
   <Target Name="Rewrite" AfterTargets="PostBuildEvent">
     <Message Text="Rewriting..." Importance="high" />
