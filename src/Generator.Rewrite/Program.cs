@@ -163,22 +163,20 @@ namespace osuTK.Rewrite
 
         private string GetNetstandardRefPath()
         {
-            var process = Process.Start( new ProcessStartInfo
+            var process = Process.Start(new ProcessStartInfo
             {
                 FileName = "dotnet",
-                Arguments = "--list-sdks",
+                Arguments = "--info",
                 RedirectStandardOutput = true
             });
 
             process.WaitForExit();
 
-            var sdkList = process.StandardOutput.ReadToEnd();
+            var match = Regex.Match(process.StandardOutput.ReadToEnd(), @"Base Path:(.*)$", RegexOptions.Multiline);
 
-            Console.WriteLine($"Found SDKs:\n{sdkList}");
+            var res = Path.Combine(match.Groups[1].Value.Trim(), "ref");
 
-            var matches = Regex.Match(sdkList, @"(2\.2\.(?:\d+)) \[(.*)\]");
-
-            return Path.Combine(matches.Groups[2].Value, matches.Groups[1].Value, "ref");
+            return res;
         }
 
         private void Rewrite(TypeDefinition type)
