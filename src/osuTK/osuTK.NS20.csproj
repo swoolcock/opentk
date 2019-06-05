@@ -7,19 +7,26 @@
     <RootNamespace>osuTK</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
     <DefineConstants>$(DefineConstants);WIN32;CARBON;X11;SDL2;OPENGL;OPENGLES;MINIMAL</DefineConstants>
+    <NoWarn>3021</NoWarn> <!-- CLSCompliant not necessary -->
   </PropertyGroup>
+
   <ItemGroup>
-    <None Include="..\..\osuTK.snk">
-      <Link>osuTK.snk</Link>
-    </None>
     <EmbeddedResource Include="osuTK.dll.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="$(MSBuildThisFileDirectory)..\Generator.Rewrite\bin\Debug\Rewrite.exe -a $(OutputPath)osuTK.dll -k $(MSBuildThisFileDirectory)..\..\osuTK.snk --debug --netstandard" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" />
-    <Exec Command="$(MSBuildThisFileDirectory)..\Generator.Rewrite\bin\Release\Rewrite.exe -a $(OutputPath)osuTK.dll -k $(MSBuildThisFileDirectory)..\..\osuTK.snk --netstandard" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Release'" />
-    <Exec Command="mono $(MSBuildThisFileDirectory)../Generator.Rewrite/bin/Debug/Rewrite.exe -a $(OutputPath)osuTK.dll --debug --netstandard" Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Debug'" />
-    <Exec Command="mono $(MSBuildThisFileDirectory)../Generator.Rewrite/bin/Release/Rewrite.exe -a $(OutputPath)osuTK.dll --netstandard" Condition="$(OS) != 'Windows_NT' and $(Configuration) == 'Release'" />
+
+  <ItemGroup>
+    <!-- Reference without resolving netcoreapp framework -->
+    <ProjectReference Include="$(MSBuildThisFileDirectory)../Generator.Rewrite/Generator.Rewrite.csproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
+    </ProjectReference>
+  </ItemGroup>
+
+  <Target Name="Rewrite" AfterTargets="PostBuildEvent">
+    <Message Text="Rewriting..." Importance="high" />
+    <Exec Command="dotnet $(MSBuildThisFileDirectory)../Generator.Rewrite/bin/$(Configuration)/netcoreapp2.2/Rewrite.dll -a $(OutputPath)osuTK.dll --debug --netstandard" Condition="$(Configuration) == 'Debug'" />
+    <Exec Command="dotnet $(MSBuildThisFileDirectory)../Generator.Rewrite/bin/$(Configuration)/netcoreapp2.2/Rewrite.dll -a $(OutputPath)osuTK.dll --netstandard" Condition="$(Configuration) == 'Release'" />
   </Target>
 </Project>

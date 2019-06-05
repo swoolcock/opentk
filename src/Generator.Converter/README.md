@@ -5,9 +5,9 @@ This is a simple tool to convert Khronos XML to osuTK XML files.
 ### Usage
 ```
 Converting local files:
-  Convert.exe --input-files gl.xml --output-file signatures.xml --prefix gl
+  dotnet run --input-files gl.xml --output-file signatures.xml --prefix gl
 Converting latest remote specification:
-  Convert.exe --input-files https://raw.githubusercontent.com/KhronosGroup/OpenGL-Registry/master/xml/gl.xml --output-file signatures.xml --prefix gl
+  dotnet run --input-files https://raw.githubusercontent.com/KhronosGroup/OpenGL-Registry/master/xml/gl.xml --output-file signatures.xml --prefix gl
 
   -p, --prefix         Required. (Default: gl) The prefix to remove from parsed functions and constants.
 
@@ -19,6 +19,3 @@ Converting latest remote specification:
 
   --version            Display version information.
 ```
-### Support
-
-If you encounter a bug, please file an issue report at the osuTK [issue tracker](http://github.com/opentk/opentk/issues).
