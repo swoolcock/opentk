@@ -605,6 +605,22 @@ namespace osuTK.Platform.X11
                 case XKey.KP_Enter:
                     return Key.KeypadEnter;
 
+                case XKey.XF86AudioLowerVolume:
+                    return Key.VolumeDown;
+                case XKey.XF86AudioRaiseVolume:
+                    return Key.VolumeUp;
+                case XKey.XF86AudioMute:
+                    return Key.Mute;
+
+                case XKey.XF86AudioPrev:
+                    return Key.TrackPrevious;
+                case XKey.XF86AudioPlay:
+                case XKey.XF86AudioPause:
+                    return Key.PlayPause;
+                case XKey.XF86AudioNext:
+                    return Key.TrackNext;
+
+
                 default:
                     return Key.Unknown;
             }
