@@ -203,6 +203,19 @@ namespace osuTK.Platform.Windows
                     case Key.ControlRight: key = Key.ControlLeft; break;
                     case Key.ShiftLeft: is_valid = false; break;
                 }
+
+                //since media keys don't have a scancode, they need to be checked against using Windows API VirtualKeys
+                switch (vkey)
+                {
+                    case VirtualKeys.VOLUME_DOWN: key = Key.VolumeDown; break;
+                    case VirtualKeys.VOLUME_UP: key = Key.VolumeUp; break;
+                    case VirtualKeys.VOLUME_MUTE: key = Key.Mute; break;
+
+                    case VirtualKeys.MEDIA_NEXT_TRACK: key = Key.TrackNext; break;
+                    case VirtualKeys.MEDIA_PLAY_PAUSE: key = Key.PlayPause; break;
+                    case VirtualKeys.MEDIA_PREV_TRACK: key = Key.TrackPrevious; break;
+                    case VirtualKeys.MEDIA_STOP: key = Key.Stop; break;
+                }
             }
 
             if (extended1)
