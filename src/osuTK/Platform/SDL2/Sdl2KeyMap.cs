@@ -292,6 +292,23 @@ namespace osuTK.Platform.SDL2
                 case Code.RIGHT:
                     return Key.Right;
 
+                // Media keys
+                case Code.VOLUMEDOWN:
+                    return Key.VolumeDown;
+                case Code.VOLUMEUP:
+                    return Key.VolumeUp;
+                case Code.AUDIOMUTE:
+                    return Key.Mute;
+
+                case Code.AUDIONEXT:
+                    return Key.TrackNext;
+                case Code.AUDIOPREV:
+                    return Key.TrackPrevious;
+                case Code.AUDIOPLAY:
+                    return Key.PlayPause;
+                case Code.AUDIOSTOP:
+                    return Key.Stop;
+
                 default:
                     return Key.Unknown;
             }
