@@ -29,6 +29,9 @@ namespace osuTK.Platform.MacOS
 {
     //
     // http://web.archive.org/web/20100501161453/http://www.classicteck.com/rbarticles/mackeyboard.php
+    // also see the following links for media keys
+    // https://stackoverflow.com/a/16125341
+    // https://developer.apple.com/documentation/appkit/1535851-function-key_unicodes/nsf7functionkey?language=objc
 
     internal enum MacOSKeyCode
     {
@@ -143,7 +146,13 @@ namespace osuTK.Platform.MacOS
         Left = 123,
         Right = 124,
 
+        VolumeUp = 72,
+        VolumeDown = 73,
+        VolumeMute = 74,
 
+        MediaPrevious = 63_242,
+        MediaPlayPause = 63_243,
+        MediaNext = 63_244,
     }
     [Flags]
     internal enum MacOSKeyModifiers
