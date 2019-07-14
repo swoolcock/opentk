@@ -214,6 +214,7 @@ namespace osuTK.Input
         Mail,
         Browser,
         Messenger,
+        */
 
         // Multimedia keys
         Mute,
@@ -222,7 +223,7 @@ namespace osuTK.Input
         VolumeUp,
         VolumeDown,
         TrackPrevious,
-        TrackNext,*/
+        TrackNext,
 
         // Keypad keys
         /// <summary>The keypad 0 key.</summary>

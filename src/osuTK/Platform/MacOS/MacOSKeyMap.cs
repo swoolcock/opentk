@@ -248,6 +248,18 @@ namespace osuTK.Platform.MacOS
                     return Key.Y;
                 case MacOSKeyCode.Z:
                     return Key.Z;
+                case MacOSKeyCode.VolumeDown:
+                    return Key.VolumeDown;
+                case MacOSKeyCode.VolumeUp:
+                    return Key.VolumeUp;
+                case MacOSKeyCode.VolumeMute:
+                    return Key.Mute;
+                case MacOSKeyCode.MediaPrevious:
+                    return Key.TrackPrevious;
+                case MacOSKeyCode.MediaPlayPause:
+                    return Key.PlayPause;
+                case MacOSKeyCode.MediaNext:
+                    return Key.TrackNext;
 
                 default:
                     return Key.Unknown;

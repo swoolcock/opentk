@@ -1604,16 +1604,16 @@ namespace osuTK.Platform.MacOS
             Key.Unknown, /* Help */
             Key.Menu, /* Menu */
             Key.Unknown, /* Select */
-            Key.Unknown, /* Stop */
+            Key.Stop, /* Stop */
             Key.Unknown, /* Again */
             Key.Unknown, /* Undo */
             Key.Unknown, /* Cut */
             Key.Unknown, /* Copy */
             Key.Unknown, /* Paste */
             Key.Unknown, /* Find */
-            Key.Unknown, /* Mute */
-            Key.Unknown, /* Volume Up */
-            Key.Unknown, /* Volume Down */
+            Key.Mute, /* Mute */
+            Key.VolumeUp, /* Volume Up */
+            Key.VolumeDown, /* Volume Down */
             Key.CapsLock, /* Locking Caps Lock */
             Key.NumLock, /* Locking Num Lock */
             Key.ScrollLock, /* Locking Scroll Lock */

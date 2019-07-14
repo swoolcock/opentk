@@ -169,9 +169,9 @@ namespace osuTK.Platform.Linux
             Key.Delete,
             // 112-119
             Key.Unknown, // macro
-            Key.Unknown, // mute
-            Key.Unknown, // volumedown
-            Key.Unknown, // volumeup
+            Key.Mute, // mute
+            Key.VolumeDown, // volumedown
+            Key.VolumeUp, // volumeup
             Key.Unknown, // power
             Key.Unknown, // kpequal
             Key.Unknown, // kpplusminus
@@ -186,7 +186,7 @@ namespace osuTK.Platform.Linux
             Key.WinRight,
             Key.Unknown, // compose
             // 128-135
-            Key.Unknown, // stop
+            Key.Stop, // stop
             Key.Unknown, // again
             Key.Unknown, // props
             Key.Unknown, // undo
@@ -225,9 +225,9 @@ namespace osuTK.Platform.Linux
             Key.Unknown, // close cd
             Key.Unknown, // eject cd
             Key.Unknown, // eject/close cd
-            Key.Unknown, // next song
-            Key.Unknown, // play/pause
-            Key.Unknown, // previous song
+            Key.TrackNext, // next song
+            Key.PlayPause, // play/pause
+            Key.TrackPrevious, // previous song
             Key.Unknown, // stop cd
             Key.Unknown, // record
             // 168-175
