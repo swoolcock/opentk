@@ -216,15 +216,6 @@ namespace osuTK.Input
         Messenger,
         */
 
-        // Multimedia keys
-        Mute,
-        PlayPause,
-        Stop,
-        VolumeUp,
-        VolumeDown,
-        TrackPrevious,
-        TrackNext,
-
         // Keypad keys
         /// <summary>The keypad 0 key.</summary>
         Keypad0,
@@ -373,6 +364,23 @@ namespace osuTK.Input
         BackSlash,
         /// <summary>The secondary backslash key.</summary>
         NonUSBackSlash,
+
+        // Multimedia keys
+        /// <summary> The mute media key. </summary>
+        Mute,
+        /// <summary> The play / pause media key. </summary>
+        PlayPause,
+        /// <summary> The stop media key. </summary>
+        Stop,
+        /// <summary> The volume up media key. </summary>
+        VolumeUp,
+        /// <summary> The volume down media key. </summary>
+        VolumeDown,
+        /// <summary> The previous track media key. </summary>
+        TrackPrevious,
+        /// <summary> The next track media key. </summary>
+        TrackNext,
+
         /// <summary>Indicates the last available keyboard key.</summary>
         LastKey
     }
