@@ -367,7 +367,7 @@ namespace osuTK.Input
 
         // Multimedia keys
         /// <summary> The mute media key. </summary>
-        Mute,
+        Mute = 256,
         /// <summary> The play / pause media key. </summary>
         PlayPause,
         /// <summary> The stop media key. </summary>
