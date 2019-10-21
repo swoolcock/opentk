@@ -71,7 +71,7 @@ namespace osuTK.Input
         /// </summary>
         Button7,
         /// <summary>
-        /// The eigth extra mouse button.
+        /// The eighth extra mouse button.
         /// </summary>
         Button8,
         /// <summary>
@@ -81,6 +81,46 @@ namespace osuTK.Input
         /// <summary>
         /// Indicates the last available mouse button.
         /// </summary>
-        LastButton
+        LastButton,
+        /// <summary>
+        /// Indicates the first touch pointer.
+        /// </summary>
+        Touch1,
+        /// <summary>
+        /// Indicates the second touch pointer.
+        /// </summary>
+        Touch2,
+        /// <summary>
+        /// Indicates the third touch pointer.
+        /// </summary>
+        Touch3,
+        /// <summary>
+        /// Indicates the fourth touch pointer.
+        /// </summary>
+        Touch4,
+        /// <summary>
+        /// Indicates the fifth touch pointer.
+        /// </summary>
+        Touch5,
+        /// <summary>
+        /// Indicates the sixth touch pointer.
+        /// </summary>
+        Touch6,
+        /// <summary>
+        /// Indicates the seventh touch pointer.
+        /// </summary>
+        Touch7,
+        /// <summary>
+        /// Indicates the eighth touch pointer.
+        /// </summary>
+        Touch8,
+        /// <summary>
+        /// Indicates the ninth touch pointer.
+        /// </summary>
+        Touch9,
+        /// <summary> 
+        /// Indicates the tenth touch pointer.
+        /// </summary>
+        Touch10,
     }
 }
