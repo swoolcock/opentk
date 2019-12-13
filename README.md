@@ -3,7 +3,7 @@ osuTK
 
 > ### Note about this fork
 >
-> This fork is maintained mainly for compatibility purposes for [osu-framework](https://github.com/ppy/osu-framework). It adds .NET core compatibility to OpenTK 2.x. There is an ongoing effort to modernise OpenTK over at [their repository](https://github.com/opentk/opentk) but it is lategly API incompatible with the 2.x releases.
+> This fork is maintained mainly for compatibility purposes for [osu-framework](https://github.com/ppy/osu-framework). It adds .NET core compatibility to OpenTK 2.x. There is an ongoing effort to modernise OpenTK over at [their repository](https://github.com/opentk/opentk) but it is largely API incompatible with the 2.x releases.
 >
 > If you are looking to start a fresh project, please consider checking their ongoing effort rather than using this. We maintain this package as a migration option for 2.x users that are looking to target .NET core.
 >
