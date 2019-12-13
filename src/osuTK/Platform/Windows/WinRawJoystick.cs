@@ -452,8 +452,8 @@ namespace osuTK.Platform.Windows
 
             for (int i = 0; i < stick.ButtonCaps.Count; i++)
             {
-                short* usage_list = stackalloc short[64];
-                int usage_length = 64;
+                short* usage_list = stackalloc short[128];
+                int usage_length = 128;
                 HIDPage page = stick.ButtonCaps[i].UsagePage;
                 short collection = stick.ButtonCaps[i].LinkCollection;
 
