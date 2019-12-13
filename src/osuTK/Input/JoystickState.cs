@@ -205,7 +205,7 @@ namespace osuTK.Input
             int index = axis;
             if (index < 0 || index >= MaxAxes)
             {
-                throw new ArgumentOutOfRangeException("axis");
+                return;
             }
 
             unsafe
@@ -226,7 +226,7 @@ namespace osuTK.Input
         {
             if (button < 0 || button >= MaxButtons)
             {
-                throw new ArgumentOutOfRangeException("button");
+                return;
             }
 
             if (value)
@@ -256,7 +256,7 @@ namespace osuTK.Input
                     hat3 = value;
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException("hat");
+                    return;
             }
         }
 
