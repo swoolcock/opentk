@@ -336,8 +336,11 @@ namespace osuTK.Platform.Windows
                         Array.Resize(ref DataBuffer, report_count);
                     }
 
-                    UpdateAxes(rin, stick);
-                    UpdateButtons(rin, stick);
+                    lock (stick)
+                    {
+                        UpdateAxes(rin, stick);
+                        UpdateButtons(rin, stick);
+                    }
                     return true;
                 }
             }
@@ -813,7 +816,10 @@ namespace osuTK.Platform.Windows
                     }
                     else
                     {
-                        return dev.GetState();
+                        lock (dev)
+                        {
+                            return dev.GetState();
+                        }
                     }
                 }
                 return new JoystickState();
