@@ -1,13 +1,13 @@
 osuTK
 ======
 
-
-### MAINTAINERS WANTED
-
-osuTK is a large project, with a huge number of components. We're looking to add a more maintainers to the team.
-Email [@varon](https://github.com/varon) or message him in Gitter if you'd like to help out.
-
-[![Join the chat at https://gitter.im/opentk/opentk](https://badges.gitter.im/opentk/opentk.svg)](https://gitter.im/opentk/opentk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Join the chat at https://discord.gg/GZTYR4s](https://img.shields.io/badge/chat-on%20discord-green.svg)](https://discord.gg/GZTYR4s)  
+> ### Note about this fork
+>
+> This fork is maintained mainly for compatibility purposes for [osu-framework](https://github.com/ppy/osu-framework). It adds .NET core compatibility to OpenTK 2.x. There is an ongoing effort to modernise OpenTK over at [their repository](https://github.com/opentk/opentk) but it is lategly API incompatible with the 2.x releases.
+>
+> If you are looking to start a fresh project, please consider checking their ongoing effort rather than using this. We maintain this package as a migration option for 2.x users that are looking to target .NET core.
+>
+> The project has been renamed from "opentk" mainly to allow for iOS compatibility.
 
 The Open Toolkit library is a fast, low-level C# binding for OpenGL, OpenGL ES and OpenAL. It runs on all major platforms and powers hundreds of apps, games and scientific research.
 
