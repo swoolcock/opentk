@@ -72,11 +72,8 @@ namespace osuTK.Input
         /// <returns><see cref="ButtonState.Pressed"/> if the specified button is pressed; otherwise, <see cref="ButtonState.Released"/>.</returns>
         /// <param name="button">The button to query.</param>
         public ButtonState GetButton(int button)
-        {
-            unsafe
-            {
-                return buttons[button] ? ButtonState.Pressed : ButtonState.Released;
-            }
+        { 
+            return IsButtonDown(button) ? ButtonState.Pressed : ButtonState.Released;
         }
 
         /// <summary>
@@ -108,9 +105,18 @@ namespace osuTK.Input
         /// <param name="button">The button to query.</param>
         public bool IsButtonDown(int button)
         {
+            if (button < 0 || button >= MaxButtons)
+            {
+                Debug.Print("[Joystick] IsButtonDown on invalid button {0}", button);
+                return false;
+            }
+
             unsafe
             {
-                return buttons[button];
+                fixed (bool* pbuttons = buttons)
+                {
+                    return *(pbuttons + button);
+                }
             }
         }
 
@@ -121,10 +127,7 @@ namespace osuTK.Input
         /// <param name="button">The button to query.</param>
         public bool IsButtonUp(int button)
         {
-            unsafe
-            {
-                return !buttons[button];
-            }
+            return !IsButtonDown(button);
         }
 
         /// <summary>
@@ -225,7 +228,7 @@ namespace osuTK.Input
             }
             else
             {
-                Debug.Print("[Joystick] Invalid axis {0}", axis);
+                Debug.Print("[Joystick] GetAxisRaw on invalid axis {0}", axis);
             }
             return value;
         }
@@ -235,7 +238,8 @@ namespace osuTK.Input
             int index = axis;
             if (index < 0 || index >= MaxAxes)
             {
-                throw new ArgumentOutOfRangeException("axis");
+                Debug.Print("[Joystick] Attempted SetAxis on invalid axis {0}", axis);
+                return;
             }
 
             unsafe
@@ -260,12 +264,16 @@ namespace osuTK.Input
         {
             if (button < 0 || button >= MaxButtons)
             {
-                throw new ArgumentOutOfRangeException("button");
+                Debug.Print("[Joystick] SetButton on invalid button {0}", button);
+                return;
             }
 
             unsafe
             {
-                buttons[button] = value;
+                fixed (bool* pbuttons = buttons)
+                {
+                    *(pbuttons + button) = value;
+                }
             }
         }
 
