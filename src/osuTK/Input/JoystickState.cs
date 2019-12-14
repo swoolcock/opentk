@@ -141,7 +141,7 @@ namespace osuTK.Input
                 unsafe
                 {
                     for (int i = 0; i < MaxButtons; i++)
-                        if (buttons[i])
+                        if (IsButtonDown(i))
                             return true;
                 }
 
@@ -173,7 +173,7 @@ namespace osuTK.Input
             {
                 for (int i = 0; i < MaxButtons; i++)
                 {
-                    sbAxes.Append(buttons[i] ? "1" : "0");
+                    sbAxes.Append(IsButtonDown(i) ? "1" : "0");
                 }
             }
 
@@ -256,7 +256,7 @@ namespace osuTK.Input
             unsafe
             {
                 for (int i = 0; i < MaxButtons; i++)
-                    buttons[i] = false;
+                    SetButton(i, false);
             }
         }
 
