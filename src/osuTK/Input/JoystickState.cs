@@ -138,12 +138,9 @@ namespace osuTK.Input
         {
             get
             {
-                unsafe
-                {
-                    for (int i = 0; i < MaxButtons; i++)
-                        if (IsButtonDown(i))
-                            return true;
-                }
+                for (int i = 0; i < MaxButtons; i++)
+                    if (IsButtonDown(i))
+                        return true;
 
                 return false;
             }
@@ -253,11 +250,8 @@ namespace osuTK.Input
 
         internal void ClearButtons()
         {
-            unsafe
-            {
-                for (int i = 0; i < MaxButtons; i++)
-                    SetButton(i, false);
-            }
+            for (int i = 0; i < MaxButtons; i++)
+                SetButton(i, false);
         }
 
         internal void SetButton(int button, bool value)
