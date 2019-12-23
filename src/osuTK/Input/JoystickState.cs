@@ -26,6 +26,7 @@
 //
 
 using System;
+using System.Collections;
 using System.Diagnostics;
 using System.Text;
 
@@ -39,12 +40,12 @@ namespace osuTK.Input
         // If we ever add more values to JoystickAxis or JoystickButton
         // then we'll need to increase these limits.
         internal const int MaxAxes = 64;
-        internal const int MaxButtons = 64;
+        internal const int MaxButtons = 128;
         internal const int MaxHats = (int)JoystickHat.Last + 1;
 
         private const float ConversionFactor = 1.0f / (short.MaxValue + 0.5f);
 
-        private long buttons;
+        private unsafe fixed bool buttons[MaxButtons];
         private unsafe fixed short axes[MaxAxes];
         private JoystickHatState hat0;
         private JoystickHatState hat1;
@@ -71,8 +72,8 @@ namespace osuTK.Input
         /// <returns><see cref="ButtonState.Pressed"/> if the specified button is pressed; otherwise, <see cref="ButtonState.Released"/>.</returns>
         /// <param name="button">The button to query.</param>
         public ButtonState GetButton(int button)
-        {
-            return (buttons & ((long)1 << button)) != 0 ? ButtonState.Pressed : ButtonState.Released;
+        { 
+            return IsButtonDown(button) ? ButtonState.Pressed : ButtonState.Released;
         }
 
         /// <summary>
@@ -104,7 +105,19 @@ namespace osuTK.Input
         /// <param name="button">The button to query.</param>
         public bool IsButtonDown(int button)
         {
-            return (buttons & ((long)1 << button)) != 0;
+            if (button < 0 || button >= MaxButtons)
+            {
+                Debug.Print("[Joystick] IsButtonDown on invalid button {0}", button);
+                return false;
+            }
+
+            unsafe
+            {
+                fixed (bool* pbuttons = buttons)
+                {
+                    return *(pbuttons + button);
+                }
+            }
         }
 
         /// <summary>
@@ -114,7 +127,7 @@ namespace osuTK.Input
         /// <param name="button">The button to query.</param>
         public bool IsButtonUp(int button)
         {
-            return (buttons & ((long)1 << button)) == 0;
+            return !IsButtonDown(button);
         }
 
         /// <summary>
@@ -125,8 +138,11 @@ namespace osuTK.Input
         {
             get
             {
-                // If any bit is set then a button is down.
-                return buttons != 0;
+                for (int i = 0; i < MaxButtons; i++)
+                    if (IsButtonDown(i))
+                        return true;
+
+                return false;
             }
         }
 
@@ -142,16 +158,26 @@ namespace osuTK.Input
         /// <returns>A <see cref="System.String"/> that represents the current <see cref="osuTK.Input.JoystickState"/>.</returns>
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sbAxes = new StringBuilder();
             for (int i = 0; i < MaxAxes; i++)
             {
-                sb.Append(" ");
-                sb.Append(String.Format("{0:f4}", GetAxis(i)));
+                sbAxes.Append(" ");
+                sbAxes.Append(String.Format("{0:f4}", GetAxis(i)));
             }
+            
+            StringBuilder sbBtns = new StringBuilder();
+            unsafe
+            {
+                for (int i = 0; i < MaxButtons; i++)
+                {
+                    sbAxes.Append(IsButtonDown(i) ? "1" : "0");
+                }
+            }
+
             return String.Format(
                 "{{Axes:{0}; Buttons: {1}; Hat: {2}; IsConnected: {3}}}",
-                sb.ToString(),
-                Convert.ToString(buttons, 2).PadLeft(16, '0'),
+                sbAxes,
+                sbBtns,
                 hat0,
                 IsConnected);
         }
@@ -163,7 +189,11 @@ namespace osuTK.Input
         /// hash table.</returns>
         public override int GetHashCode()
         {
-            int hash = buttons.GetHashCode() ^ IsConnected.GetHashCode();
+            int hash = IsConnected.GetHashCode();
+            for (int i = 0; i < MaxButtons; i++)
+            {
+                hash ^= IsButtonDown(i).GetHashCode();
+            }
             for (int i = 0; i < MaxAxes; i++)
             {
                 hash ^= GetAxisUnsafe(i).GetHashCode();
@@ -195,7 +225,7 @@ namespace osuTK.Input
             }
             else
             {
-                Debug.Print("[Joystick] Invalid axis {0}", axis);
+                Debug.Print("[Joystick] GetAxisRaw on invalid axis {0}", axis);
             }
             return value;
         }
@@ -205,6 +235,7 @@ namespace osuTK.Input
             int index = axis;
             if (index < 0 || index >= MaxAxes)
             {
+                Debug.Print("[Joystick] Attempted SetAxis on invalid axis {0}", axis);
                 return;
             }
 
@@ -219,23 +250,24 @@ namespace osuTK.Input
 
         internal void ClearButtons()
         {
-            buttons = 0;
+            for (int i = 0; i < MaxButtons; i++)
+                SetButton(i, false);
         }
 
         internal void SetButton(int button, bool value)
         {
             if (button < 0 || button >= MaxButtons)
             {
+                Debug.Print("[Joystick] SetButton on invalid button {0}", button);
                 return;
             }
 
-            if (value)
+            unsafe
             {
-                buttons |= (long)1 << button;
-            }
-            else
-            {
-                buttons &= ~((long)1 << button);
+                fixed (bool* pbuttons = buttons)
+                {
+                    *(pbuttons + button) = value;
+                }
             }
         }
 
@@ -289,9 +321,11 @@ namespace osuTK.Input
         /// <see cref="osuTK.Input.JoystickState"/>; otherwise, <c>false</c>.</returns>
         public bool Equals(JoystickState other)
         {
-            bool equals =
-                buttons == other.buttons &&
-                IsConnected == other.IsConnected;
+            bool equals = IsConnected == other.IsConnected;
+            for (int i = 0; equals && i < MaxButtons; i++)
+            {
+                equals &= IsButtonDown(i) == other.IsButtonDown(i);
+            }
             for (int i = 0; equals && i < MaxAxes; i++)
             {
                 equals &= GetAxisUnsafe(i) == other.GetAxisUnsafe(i);

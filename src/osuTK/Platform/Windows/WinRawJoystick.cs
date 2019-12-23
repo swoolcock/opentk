@@ -336,8 +336,11 @@ namespace osuTK.Platform.Windows
                         Array.Resize(ref DataBuffer, report_count);
                     }
 
-                    UpdateAxes(rin, stick);
-                    UpdateButtons(rin, stick);
+                    lock (stick)
+                    {
+                        UpdateAxes(rin, stick);
+                        UpdateButtons(rin, stick);
+                    }
                     return true;
                 }
             }
@@ -452,8 +455,8 @@ namespace osuTK.Platform.Windows
 
             for (int i = 0; i < stick.ButtonCaps.Count; i++)
             {
-                short* usage_list = stackalloc short[64];
-                int usage_length = 64;
+                short* usage_list = stackalloc short[128];
+                int usage_length = 128;
                 HIDPage page = stick.ButtonCaps[i].UsagePage;
                 short collection = stick.ButtonCaps[i].LinkCollection;
 
@@ -813,7 +816,10 @@ namespace osuTK.Platform.Windows
                     }
                     else
                     {
-                        return dev.GetState();
+                        lock (dev)
+                        {
+                            return dev.GetState();
+                        }
                     }
                 }
                 return new JoystickState();
