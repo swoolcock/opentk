@@ -140,7 +140,7 @@ namespace osuTK.iOS
         private iOSGameView view;
         private CADisplayLink displayLink;
 
-        public CADisplayLinkTimeSource (iOSGameView view, int frameInterval)
+        public CADisplayLinkTimeSource (iOSGameView view, int preferredFramesPerSecond)
         {
             this.view = view;
 
@@ -150,7 +150,7 @@ namespace osuTK.iOS
             }
 
             displayLink = CADisplayLink.Create (this, selRunIteration);
-            displayLink.FrameInterval = frameInterval;
+            displayLink.PreferredFramesPerSecond = preferredFramesPerSecond;
             displayLink.Paused = true;
         }
 
@@ -732,7 +732,7 @@ namespace osuTK.iOS
 
         public void Run()
         {
-            RunWithFrameInterval (1);
+            RunWithPreferredFramesPerSecond(0);
         }
 
         public void Run(double updatesPerSecond)
@@ -760,18 +760,18 @@ namespace osuTK.iOS
         }
 
         [Obsolete ("Use either Run (float updatesPerSecond) or RunWithFrameInterval (int frameInterval)")]
-        public void Run(int frameInterval)
+        public void Run(int preferredFramesPerSecond)
         {
-            RunWithFrameInterval (frameInterval);
+            RunWithPreferredFramesPerSecond(preferredFramesPerSecond);
         }
 
-        public void RunWithFrameInterval(int frameInterval)
+        public void RunWithPreferredFramesPerSecond(int preferredFramesPerSecond)
         {
             AssertValid ();
 
-            if (frameInterval < 1)
+            if (preferredFramesPerSecond < 0)
             {
-                throw new ArgumentException ("frameInterval");
+                throw new ArgumentException ("preferredFramesPerSecond");
             }
 
             if (timesource != null)
@@ -779,7 +779,7 @@ namespace osuTK.iOS
                 timesource.Invalidate ();
             }
 
-            timesource = new CADisplayLinkTimeSource (this, frameInterval);
+            timesource = new CADisplayLinkTimeSource (this, preferredFramesPerSecond);
 
             CreateFrameBuffer ();
             OnLoad (EventArgs.Empty);
