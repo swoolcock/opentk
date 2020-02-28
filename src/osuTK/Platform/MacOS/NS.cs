@@ -49,7 +49,7 @@ namespace osuTK.Platform.MacOS
 
     public class NS
     {
-        private const string Library = "libdl.dylib";
+        private const string Library = "libSystem.dylib";
 
         [DllImport(Library, EntryPoint = "NSAddImage")]
         internal static extern IntPtr AddImage(string s, AddImageFlags flags);
