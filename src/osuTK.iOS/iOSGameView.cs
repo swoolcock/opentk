@@ -743,7 +743,7 @@ namespace osuTK.iOS
             }
 
             if (updatesPerSecond == 0.0) {
-                RunWithFrameInterval (1);
+                RunWithPreferredFramesPerSecond (0);
                 return;
             }
 
@@ -759,7 +759,7 @@ namespace osuTK.iOS
             Start ();
         }
 
-        [Obsolete ("Use either Run (float updatesPerSecond) or RunWithFrameInterval (int frameInterval)")]
+        [Obsolete ("Use either Run (float updatesPerSecond) or RunWithPreferredFramesPerSecond(int preferredFramesPerSecond)")]
         public void Run(int preferredFramesPerSecond)
         {
             RunWithPreferredFramesPerSecond(preferredFramesPerSecond);
