@@ -57,6 +57,11 @@ namespace osuTK.Platform.MacOS
 
             // Setup the application
             Cocoa.SendBool(Handle, Selector.Get("setActivationPolicy:"), (int)NSApplicationActivationPolicy.Regular);
+            
+            // Versions of macOS prior to Catalina (10.15) must discard events here to ensure the app correctly gains focus
+            if (!NSProcessInfo.IsOperatingSystemAtLeastVersion(new NSOperatingSystemVersion(10, 15, 0)))
+                Cocoa.SendVoid(Handle, Selector.Get("discardEventsMatchingMask:beforeEvent:"), uint.MaxValue, IntPtr.Zero);
+            
             Cocoa.SendVoid(Handle, Selector.Get("activateIgnoringOtherApps:"), true);
 
             if (Cocoa.SendIntPtr(Handle, Selector.Get("mainMenu")) == IntPtr.Zero)
