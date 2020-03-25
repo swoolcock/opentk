@@ -89,6 +89,9 @@ namespace osuTK.Platform.MacOS
 
         [DllImport(LibObjC, EntryPoint="objc_msgSend")]
         public extern static bool SendBool(IntPtr receiver, IntPtr selector, int int1);
+        
+        [DllImport(LibObjC, EntryPoint="objc_msgSend")]
+        public extern static bool SendBool(IntPtr receiver, IntPtr selector, NSOperatingSystemVersion version);
 
         [DllImport(LibObjC, EntryPoint="objc_msgSend")]
         public extern static void SendVoid(IntPtr receiver, IntPtr selector);
