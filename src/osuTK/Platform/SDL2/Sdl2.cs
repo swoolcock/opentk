@@ -459,6 +459,10 @@ namespace osuTK.Platform.SDL2
         public static extern void SetWindowGrab(IntPtr window, bool grabbed);
 
         [SuppressUnmanagedCodeSecurity]
+        [DllImport(lib, CallingConvention = CallingConvention.Cdecl, EntryPoint = "SDL_CaptureMouse", ExactSpelling = true)]
+        public static extern void CaptureMouse(bool enabled);
+
+        [SuppressUnmanagedCodeSecurity]
         [DllImport(lib, CallingConvention = CallingConvention.Cdecl, EntryPoint = "SDL_SetWindowIcon", ExactSpelling = true)]
         public static extern void SetWindowIcon(IntPtr window, IntPtr icon);
 

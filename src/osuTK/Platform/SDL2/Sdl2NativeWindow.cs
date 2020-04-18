@@ -223,11 +223,10 @@ namespace osuTK.Platform.SDL2
             bool button_pressed = ev.State == State.Pressed;
 
             // We need MouseUp events to be reported even if they occur
-            // outside the window. SetWindowGrab ensures we get them.
+            // outside the window. CaptureMouse ensures we get them.
             if (!window.is_cursor_grabbed)
             {
-                SDL.SetWindowGrab(window.window.Handle,
-                    button_pressed ? true : false);
+                SDL.CaptureMouse(button_pressed);
             }
 
             MouseButton button = Sdl2Mouse.TranslateButton(ev.Button);
