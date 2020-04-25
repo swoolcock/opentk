@@ -45,8 +45,9 @@ namespace osuTK
         private readonly INativeWindow implementation;
 
         private bool events;
-        private bool previous_cursor_grabbed = false;
-        private bool previous_cursor_visible = true;
+        private bool has_previous_cursor_state;
+        private bool previous_cursor_grabbed;
+        private bool previous_cursor_visible;
 
         /// <summary>
         /// System.Threading.Thread.CurrentThread.ManagedThreadId of the thread that created this <see cref="osuTK.NativeWindow"/>.
@@ -684,13 +685,15 @@ namespace osuTK
             {
                 // Release cursor and make it visible when losing focus,
                 // to ensure IDEs continue working as expected.
+                has_previous_cursor_state = true;
                 previous_cursor_grabbed = CursorGrabbed;
                 previous_cursor_visible = CursorVisible;
                 CursorGrabbed = false;
                 CursorVisible = true;
             }
-            else
+            else if (has_previous_cursor_state)
             {
+                has_previous_cursor_state = false;
                 CursorGrabbed = previous_cursor_grabbed;
                 CursorVisible = previous_cursor_visible;
             }
