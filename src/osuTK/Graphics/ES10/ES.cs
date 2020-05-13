@@ -49,14 +49,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ActiveTexture(osuTK.Graphics.ES10.All texture)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ActiveTexture((osuTK.Graphics.ES10.All)texture);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -77,14 +72,9 @@ namespace osuTK.Graphics.ES10
         public static
         void AlphaFunc(osuTK.Graphics.ES10.All func, Single @ref)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.AlphaFunc((osuTK.Graphics.ES10.All)func, (Single)@ref);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -92,14 +82,9 @@ namespace osuTK.Graphics.ES10
         public static
         void AlphaFuncx(osuTK.Graphics.ES10.All func, int @ref)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.AlphaFuncx((osuTK.Graphics.ES10.All)func, (int)@ref);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -120,14 +105,9 @@ namespace osuTK.Graphics.ES10
         public static
         void BindTexture(osuTK.Graphics.ES10.All target, Int32 texture)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.BindTexture((osuTK.Graphics.ES10.All)target, (UInt32)texture);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -149,14 +129,9 @@ namespace osuTK.Graphics.ES10
         public static
         void BindTexture(osuTK.Graphics.ES10.All target, UInt32 texture)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.BindTexture((osuTK.Graphics.ES10.All)target, (UInt32)texture);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -177,14 +152,9 @@ namespace osuTK.Graphics.ES10
         public static
         void BlendFunc(osuTK.Graphics.ES10.All sfactor, osuTK.Graphics.ES10.All dfactor)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.BlendFunc((osuTK.Graphics.ES10.All)sfactor, (osuTK.Graphics.ES10.All)dfactor);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -200,14 +170,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Clear(Int32 mask)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Clear((UInt32)mask);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -224,14 +189,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Clear(UInt32 mask)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Clear((UInt32)mask);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -247,14 +207,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ClearColor(Single red, Single green, Single blue, Single alpha)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ClearColor((Single)red, (Single)green, (Single)blue, (Single)alpha);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -262,14 +217,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ClearColorx(int red, int green, int blue, int alpha)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ClearColorx((int)red, (int)green, (int)blue, (int)alpha);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -285,14 +235,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ClearDepth(Single depth)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ClearDepthf((Single)depth);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -300,14 +245,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ClearDepthx(int depth)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ClearDepthx((int)depth);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -323,14 +263,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ClearStencil(Int32 s)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ClearStencil((Int32)s);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -346,14 +281,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ClientActiveTexture(osuTK.Graphics.ES10.All texture)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ClientActiveTexture((osuTK.Graphics.ES10.All)texture);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -374,14 +304,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Color4(Single red, Single green, Single blue, Single alpha)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Color4f((Single)red, (Single)green, (Single)blue, (Single)alpha);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -389,14 +314,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Color4x(int red, int green, int blue, int alpha)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Color4x((int)red, (int)green, (int)blue, (int)alpha);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -412,14 +332,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ColorMask(bool red, bool green, bool blue, bool alpha)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ColorMask((bool)red, (bool)green, (bool)blue, (bool)alpha);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -450,14 +365,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ColorPointer(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, IntPtr pointer)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ColorPointer((Int32)size, (osuTK.Graphics.ES10.All)type, (Int32)stride, (IntPtr)pointer);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -489,10 +399,7 @@ namespace osuTK.Graphics.ES10
         void ColorPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T3[] pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -502,9 +409,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -536,10 +441,7 @@ namespace osuTK.Graphics.ES10
         void ColorPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T3[,] pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -549,9 +451,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -583,10 +483,7 @@ namespace osuTK.Graphics.ES10
         void ColorPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T3[,,] pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -596,9 +493,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -630,10 +525,7 @@ namespace osuTK.Graphics.ES10
         void ColorPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] ref T3 pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -644,9 +536,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -697,14 +587,9 @@ namespace osuTK.Graphics.ES10
         public static
         void CompressedTexImage2D(osuTK.Graphics.ES10.All target, Int32 level, osuTK.Graphics.ES10.All internalformat, Int32 width, Int32 height, Int32 border, Int32 imageSize, IntPtr data)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.CompressedTexImage2D((osuTK.Graphics.ES10.All)target, (Int32)level, (osuTK.Graphics.ES10.All)internalformat, (Int32)width, (Int32)height, (Int32)border, (Int32)imageSize, (IntPtr)data);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -756,10 +641,7 @@ namespace osuTK.Graphics.ES10
         void CompressedTexImage2D<T7>(osuTK.Graphics.ES10.All target, Int32 level, osuTK.Graphics.ES10.All internalformat, Int32 width, Int32 height, Int32 border, Int32 imageSize, [InAttribute, OutAttribute] T7[] data)
             where T7 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle data_ptr = GCHandle.Alloc(data, GCHandleType.Pinned);
             try
             {
@@ -769,9 +651,7 @@ namespace osuTK.Graphics.ES10
             {
                 data_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -823,10 +703,7 @@ namespace osuTK.Graphics.ES10
         void CompressedTexImage2D<T7>(osuTK.Graphics.ES10.All target, Int32 level, osuTK.Graphics.ES10.All internalformat, Int32 width, Int32 height, Int32 border, Int32 imageSize, [InAttribute, OutAttribute] T7[,] data)
             where T7 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle data_ptr = GCHandle.Alloc(data, GCHandleType.Pinned);
             try
             {
@@ -836,9 +713,7 @@ namespace osuTK.Graphics.ES10
             {
                 data_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -890,10 +765,7 @@ namespace osuTK.Graphics.ES10
         void CompressedTexImage2D<T7>(osuTK.Graphics.ES10.All target, Int32 level, osuTK.Graphics.ES10.All internalformat, Int32 width, Int32 height, Int32 border, Int32 imageSize, [InAttribute, OutAttribute] T7[,,] data)
             where T7 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle data_ptr = GCHandle.Alloc(data, GCHandleType.Pinned);
             try
             {
@@ -903,9 +775,7 @@ namespace osuTK.Graphics.ES10
             {
                 data_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -957,10 +827,7 @@ namespace osuTK.Graphics.ES10
         void CompressedTexImage2D<T7>(osuTK.Graphics.ES10.All target, Int32 level, osuTK.Graphics.ES10.All internalformat, Int32 width, Int32 height, Int32 border, Int32 imageSize, [InAttribute, OutAttribute] ref T7 data)
             where T7 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle data_ptr = GCHandle.Alloc(data, GCHandleType.Pinned);
             try
             {
@@ -971,9 +838,7 @@ namespace osuTK.Graphics.ES10
             {
                 data_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1029,14 +894,9 @@ namespace osuTK.Graphics.ES10
         public static
         void CompressedTexSubImage2D(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, Int32 imageSize, IntPtr data)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.CompressedTexSubImage2D((osuTK.Graphics.ES10.All)target, (Int32)level, (Int32)xoffset, (Int32)yoffset, (Int32)width, (Int32)height, (osuTK.Graphics.ES10.All)format, (Int32)imageSize, (IntPtr)data);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1093,10 +953,7 @@ namespace osuTK.Graphics.ES10
         void CompressedTexSubImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, Int32 imageSize, [InAttribute, OutAttribute] T8[] data)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle data_ptr = GCHandle.Alloc(data, GCHandleType.Pinned);
             try
             {
@@ -1106,9 +963,7 @@ namespace osuTK.Graphics.ES10
             {
                 data_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1165,10 +1020,7 @@ namespace osuTK.Graphics.ES10
         void CompressedTexSubImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, Int32 imageSize, [InAttribute, OutAttribute] T8[,] data)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle data_ptr = GCHandle.Alloc(data, GCHandleType.Pinned);
             try
             {
@@ -1178,9 +1030,7 @@ namespace osuTK.Graphics.ES10
             {
                 data_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1237,10 +1087,7 @@ namespace osuTK.Graphics.ES10
         void CompressedTexSubImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, Int32 imageSize, [InAttribute, OutAttribute] T8[,,] data)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle data_ptr = GCHandle.Alloc(data, GCHandleType.Pinned);
             try
             {
@@ -1250,9 +1097,7 @@ namespace osuTK.Graphics.ES10
             {
                 data_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1309,10 +1154,7 @@ namespace osuTK.Graphics.ES10
         void CompressedTexSubImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, Int32 imageSize, [InAttribute, OutAttribute] ref T8 data)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle data_ptr = GCHandle.Alloc(data, GCHandleType.Pinned);
             try
             {
@@ -1323,9 +1165,7 @@ namespace osuTK.Graphics.ES10
             {
                 data_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1371,14 +1211,9 @@ namespace osuTK.Graphics.ES10
         public static
         void CopyTexImage2D(osuTK.Graphics.ES10.All target, Int32 level, osuTK.Graphics.ES10.All internalformat, Int32 x, Int32 y, Int32 width, Int32 height, Int32 border)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.CopyTexImage2D((osuTK.Graphics.ES10.All)target, (Int32)level, (osuTK.Graphics.ES10.All)internalformat, (Int32)x, (Int32)y, (Int32)width, (Int32)height, (Int32)border);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1424,14 +1259,9 @@ namespace osuTK.Graphics.ES10
         public static
         void CopyTexSubImage2D(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 x, Int32 y, Int32 width, Int32 height)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.CopyTexSubImage2D((osuTK.Graphics.ES10.All)target, (Int32)level, (Int32)xoffset, (Int32)yoffset, (Int32)x, (Int32)y, (Int32)width, (Int32)height);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1447,14 +1277,9 @@ namespace osuTK.Graphics.ES10
         public static
         void CullFace(osuTK.Graphics.ES10.All mode)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.CullFace((osuTK.Graphics.ES10.All)mode);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1475,10 +1300,7 @@ namespace osuTK.Graphics.ES10
         public static
         void DeleteTextures(Int32 n, Int32[] textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Int32* textures_ptr = textures)
@@ -1486,9 +1308,7 @@ namespace osuTK.Graphics.ES10
                     Core.DeleteTextures((Int32)n, (UInt32*)textures_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1509,10 +1329,7 @@ namespace osuTK.Graphics.ES10
         public static
         void DeleteTextures(Int32 n, ref Int32 textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Int32* textures_ptr = &textures)
@@ -1520,9 +1337,7 @@ namespace osuTK.Graphics.ES10
                     Core.DeleteTextures((Int32)n, (UInt32*)textures_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1544,14 +1359,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void DeleteTextures(Int32 n, Int32* textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.DeleteTextures((Int32)n, (UInt32*)textures);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1573,10 +1383,7 @@ namespace osuTK.Graphics.ES10
         public static
         void DeleteTextures(Int32 n, UInt32[] textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (UInt32* textures_ptr = textures)
@@ -1584,9 +1391,7 @@ namespace osuTK.Graphics.ES10
                     Core.DeleteTextures((Int32)n, (UInt32*)textures_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1608,10 +1413,7 @@ namespace osuTK.Graphics.ES10
         public static
         void DeleteTextures(Int32 n, ref UInt32 textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (UInt32* textures_ptr = &textures)
@@ -1619,9 +1421,7 @@ namespace osuTK.Graphics.ES10
                     Core.DeleteTextures((Int32)n, (UInt32*)textures_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1643,14 +1443,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void DeleteTextures(Int32 n, UInt32* textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.DeleteTextures((Int32)n, (UInt32*)textures);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1666,14 +1461,9 @@ namespace osuTK.Graphics.ES10
         public static
         void DepthFunc(osuTK.Graphics.ES10.All func)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.DepthFunc((osuTK.Graphics.ES10.All)func);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1689,14 +1479,9 @@ namespace osuTK.Graphics.ES10
         public static
         void DepthMask(bool flag)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.DepthMask((bool)flag);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1717,14 +1502,9 @@ namespace osuTK.Graphics.ES10
         public static
         void DepthRange(Single zNear, Single zFar)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.DepthRangef((Single)zNear, (Single)zFar);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -1732,14 +1512,9 @@ namespace osuTK.Graphics.ES10
         public static
         void DepthRangex(int zNear, int zFar)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.DepthRangex((int)zNear, (int)zFar);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -1747,14 +1522,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Disable(osuTK.Graphics.ES10.All cap)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Disable((osuTK.Graphics.ES10.All)cap);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -1762,14 +1532,9 @@ namespace osuTK.Graphics.ES10
         public static
         void DisableClientState(osuTK.Graphics.ES10.All array)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.DisableClientState((osuTK.Graphics.ES10.All)array);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1795,14 +1560,9 @@ namespace osuTK.Graphics.ES10
         public static
         void DrawArrays(osuTK.Graphics.ES10.All mode, Int32 first, Int32 count)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.DrawArrays((osuTK.Graphics.ES10.All)mode, (Int32)first, (Int32)count);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1833,14 +1593,9 @@ namespace osuTK.Graphics.ES10
         public static
         void DrawElements(osuTK.Graphics.ES10.All mode, Int32 count, osuTK.Graphics.ES10.All type, IntPtr indices)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.DrawElements((osuTK.Graphics.ES10.All)mode, (Int32)count, (osuTK.Graphics.ES10.All)type, (IntPtr)indices);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1872,10 +1627,7 @@ namespace osuTK.Graphics.ES10
         void DrawElements<T3>(osuTK.Graphics.ES10.All mode, Int32 count, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T3[] indices)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle indices_ptr = GCHandle.Alloc(indices, GCHandleType.Pinned);
             try
             {
@@ -1885,9 +1637,7 @@ namespace osuTK.Graphics.ES10
             {
                 indices_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1919,10 +1669,7 @@ namespace osuTK.Graphics.ES10
         void DrawElements<T3>(osuTK.Graphics.ES10.All mode, Int32 count, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T3[,] indices)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle indices_ptr = GCHandle.Alloc(indices, GCHandleType.Pinned);
             try
             {
@@ -1932,9 +1679,7 @@ namespace osuTK.Graphics.ES10
             {
                 indices_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -1966,10 +1711,7 @@ namespace osuTK.Graphics.ES10
         void DrawElements<T3>(osuTK.Graphics.ES10.All mode, Int32 count, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T3[,,] indices)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle indices_ptr = GCHandle.Alloc(indices, GCHandleType.Pinned);
             try
             {
@@ -1979,9 +1721,7 @@ namespace osuTK.Graphics.ES10
             {
                 indices_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2013,10 +1753,7 @@ namespace osuTK.Graphics.ES10
         void DrawElements<T3>(osuTK.Graphics.ES10.All mode, Int32 count, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] ref T3 indices)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle indices_ptr = GCHandle.Alloc(indices, GCHandleType.Pinned);
             try
             {
@@ -2027,9 +1764,7 @@ namespace osuTK.Graphics.ES10
             {
                 indices_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2045,14 +1780,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Enable(osuTK.Graphics.ES10.All cap)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Enable((osuTK.Graphics.ES10.All)cap);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2068,14 +1798,9 @@ namespace osuTK.Graphics.ES10
         public static
         void EnableClientState(osuTK.Graphics.ES10.All array)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.EnableClientState((osuTK.Graphics.ES10.All)array);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2086,14 +1811,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Finish()
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Finish();
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2104,14 +1824,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Flush()
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Flush();
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2132,14 +1847,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Fog(osuTK.Graphics.ES10.All pname, Single param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Fogf((osuTK.Graphics.ES10.All)pname, (Single)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2160,10 +1870,7 @@ namespace osuTK.Graphics.ES10
         public static
         void Fog(osuTK.Graphics.ES10.All pname, Single[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Single* @params_ptr = @params)
@@ -2171,9 +1878,7 @@ namespace osuTK.Graphics.ES10
                     Core.Fogfv((osuTK.Graphics.ES10.All)pname, (Single*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2195,14 +1900,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void Fog(osuTK.Graphics.ES10.All pname, Single* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Fogfv((osuTK.Graphics.ES10.All)pname, (Single*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2210,14 +1910,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Fogx(osuTK.Graphics.ES10.All pname, int param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Fogx((osuTK.Graphics.ES10.All)pname, (int)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2225,10 +1920,7 @@ namespace osuTK.Graphics.ES10
         public static
         void Fogx(osuTK.Graphics.ES10.All pname, int[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (int* @params_ptr = @params)
@@ -2236,9 +1928,7 @@ namespace osuTK.Graphics.ES10
                     Core.Fogxv((osuTK.Graphics.ES10.All)pname, (int*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2247,14 +1937,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void Fogx(osuTK.Graphics.ES10.All pname, int* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Fogxv((osuTK.Graphics.ES10.All)pname, (int*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2270,14 +1955,9 @@ namespace osuTK.Graphics.ES10
         public static
         void FrontFace(osuTK.Graphics.ES10.All mode)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.FrontFace((osuTK.Graphics.ES10.All)mode);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2303,14 +1983,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Frustum(Single left, Single right, Single bottom, Single top, Single zNear, Single zFar)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Frustumf((Single)left, (Single)right, (Single)bottom, (Single)top, (Single)zNear, (Single)zFar);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2318,14 +1993,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Frustumx(int left, int right, int bottom, int top, int zNear, int zFar)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Frustumx((int)left, (int)right, (int)bottom, (int)top, (int)zNear, (int)zFar);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2346,10 +2016,7 @@ namespace osuTK.Graphics.ES10
         public static
         void GenTextures(Int32 n, Int32[] textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Int32* textures_ptr = textures)
@@ -2357,9 +2024,7 @@ namespace osuTK.Graphics.ES10
                     Core.GenTextures((Int32)n, (UInt32*)textures_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2380,10 +2045,7 @@ namespace osuTK.Graphics.ES10
         public static
         void GenTextures(Int32 n, ref Int32 textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Int32* textures_ptr = &textures)
@@ -2391,9 +2053,7 @@ namespace osuTK.Graphics.ES10
                     Core.GenTextures((Int32)n, (UInt32*)textures_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2415,14 +2075,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void GenTextures(Int32 n, Int32* textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.GenTextures((Int32)n, (UInt32*)textures);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2444,10 +2099,7 @@ namespace osuTK.Graphics.ES10
         public static
         void GenTextures(Int32 n, UInt32[] textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (UInt32* textures_ptr = textures)
@@ -2455,9 +2107,7 @@ namespace osuTK.Graphics.ES10
                     Core.GenTextures((Int32)n, (UInt32*)textures_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2479,10 +2129,7 @@ namespace osuTK.Graphics.ES10
         public static
         void GenTextures(Int32 n, ref UInt32 textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (UInt32* textures_ptr = &textures)
@@ -2490,9 +2137,7 @@ namespace osuTK.Graphics.ES10
                     Core.GenTextures((Int32)n, (UInt32*)textures_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2514,14 +2159,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void GenTextures(Int32 n, UInt32* textures)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.GenTextures((Int32)n, (UInt32*)textures);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2540,10 +2180,7 @@ namespace osuTK.Graphics.ES10
         public static
         void GetInteger(osuTK.Graphics.ES10.All pname, Int32[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Int32* @params_ptr = @params)
@@ -2551,9 +2188,7 @@ namespace osuTK.Graphics.ES10
                     Core.GetIntegerv((osuTK.Graphics.ES10.All)pname, (Int32*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2561,10 +2196,7 @@ namespace osuTK.Graphics.ES10
         public static
         void GetInteger(osuTK.Graphics.ES10.All pname, ref Int32 @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Int32* @params_ptr = &@params)
@@ -2572,9 +2204,7 @@ namespace osuTK.Graphics.ES10
                     Core.GetIntegerv((osuTK.Graphics.ES10.All)pname, (Int32*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2583,14 +2213,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void GetInteger(osuTK.Graphics.ES10.All pname, Int32* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.GetIntegerv((osuTK.Graphics.ES10.All)pname, (Int32*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2612,14 +2237,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe System.String GetString(osuTK.Graphics.ES10.All name)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe { return new string((sbyte*)Core.GetString((osuTK.Graphics.ES10.All)name)); }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2640,14 +2260,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Hint(osuTK.Graphics.ES10.All target, osuTK.Graphics.ES10.All mode)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Hint((osuTK.Graphics.ES10.All)target, (osuTK.Graphics.ES10.All)mode);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2673,14 +2288,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Light(osuTK.Graphics.ES10.All light, osuTK.Graphics.ES10.All pname, Single param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Lightf((osuTK.Graphics.ES10.All)light, (osuTK.Graphics.ES10.All)pname, (Single)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2706,10 +2316,7 @@ namespace osuTK.Graphics.ES10
         public static
         void Light(osuTK.Graphics.ES10.All light, osuTK.Graphics.ES10.All pname, Single[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Single* @params_ptr = @params)
@@ -2717,9 +2324,7 @@ namespace osuTK.Graphics.ES10
                     Core.Lightfv((osuTK.Graphics.ES10.All)light, (osuTK.Graphics.ES10.All)pname, (Single*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2746,14 +2351,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void Light(osuTK.Graphics.ES10.All light, osuTK.Graphics.ES10.All pname, Single* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Lightfv((osuTK.Graphics.ES10.All)light, (osuTK.Graphics.ES10.All)pname, (Single*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2774,14 +2374,9 @@ namespace osuTK.Graphics.ES10
         public static
         void LightModel(osuTK.Graphics.ES10.All pname, Single param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.LightModelf((osuTK.Graphics.ES10.All)pname, (Single)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2802,10 +2397,7 @@ namespace osuTK.Graphics.ES10
         public static
         void LightModel(osuTK.Graphics.ES10.All pname, Single[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Single* @params_ptr = @params)
@@ -2813,9 +2405,7 @@ namespace osuTK.Graphics.ES10
                     Core.LightModelfv((osuTK.Graphics.ES10.All)pname, (Single*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2837,14 +2427,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void LightModel(osuTK.Graphics.ES10.All pname, Single* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.LightModelfv((osuTK.Graphics.ES10.All)pname, (Single*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2852,14 +2437,9 @@ namespace osuTK.Graphics.ES10
         public static
         void LightModelx(osuTK.Graphics.ES10.All pname, int param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.LightModelx((osuTK.Graphics.ES10.All)pname, (int)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2867,10 +2447,7 @@ namespace osuTK.Graphics.ES10
         public static
         void LightModelx(osuTK.Graphics.ES10.All pname, int[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (int* @params_ptr = @params)
@@ -2878,9 +2455,7 @@ namespace osuTK.Graphics.ES10
                     Core.LightModelxv((osuTK.Graphics.ES10.All)pname, (int*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2889,14 +2464,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void LightModelx(osuTK.Graphics.ES10.All pname, int* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.LightModelxv((osuTK.Graphics.ES10.All)pname, (int*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2904,14 +2474,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Lightx(osuTK.Graphics.ES10.All light, osuTK.Graphics.ES10.All pname, int param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Lightx((osuTK.Graphics.ES10.All)light, (osuTK.Graphics.ES10.All)pname, (int)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2919,10 +2484,7 @@ namespace osuTK.Graphics.ES10
         public static
         void Lightx(osuTK.Graphics.ES10.All light, osuTK.Graphics.ES10.All pname, int[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (int* @params_ptr = @params)
@@ -2930,9 +2492,7 @@ namespace osuTK.Graphics.ES10
                     Core.Lightxv((osuTK.Graphics.ES10.All)light, (osuTK.Graphics.ES10.All)pname, (int*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2941,14 +2501,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void Lightx(osuTK.Graphics.ES10.All light, osuTK.Graphics.ES10.All pname, int* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Lightxv((osuTK.Graphics.ES10.All)light, (osuTK.Graphics.ES10.All)pname, (int*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2964,14 +2519,9 @@ namespace osuTK.Graphics.ES10
         public static
         void LineWidth(Single width)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.LineWidth((Single)width);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -2979,14 +2529,9 @@ namespace osuTK.Graphics.ES10
         public static
         void LineWidthx(int width)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.LineWidthx((int)width);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -2997,14 +2542,9 @@ namespace osuTK.Graphics.ES10
         public static
         void LoadIdentity()
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.LoadIdentity();
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3020,10 +2560,7 @@ namespace osuTK.Graphics.ES10
         public static
         void LoadMatrix(Single[] m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Single* m_ptr = m)
@@ -3031,9 +2568,7 @@ namespace osuTK.Graphics.ES10
                     Core.LoadMatrixf((Single*)m_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3049,10 +2584,7 @@ namespace osuTK.Graphics.ES10
         public static
         void LoadMatrix(ref Single m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Single* m_ptr = &m)
@@ -3060,9 +2592,7 @@ namespace osuTK.Graphics.ES10
                     Core.LoadMatrixf((Single*)m_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3079,14 +2609,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void LoadMatrix(Single* m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.LoadMatrixf((Single*)m);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3094,10 +2619,7 @@ namespace osuTK.Graphics.ES10
         public static
         void LoadMatrixx(int[] m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (int* m_ptr = m)
@@ -3105,9 +2627,7 @@ namespace osuTK.Graphics.ES10
                     Core.LoadMatrixx((int*)m_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3115,10 +2635,7 @@ namespace osuTK.Graphics.ES10
         public static
         void LoadMatrixx(ref int m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (int* m_ptr = &m)
@@ -3126,9 +2643,7 @@ namespace osuTK.Graphics.ES10
                     Core.LoadMatrixx((int*)m_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3137,14 +2652,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void LoadMatrixx(int* m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.LoadMatrixx((int*)m);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3160,14 +2670,9 @@ namespace osuTK.Graphics.ES10
         public static
         void LogicOp(osuTK.Graphics.ES10.All opcode)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.LogicOp((osuTK.Graphics.ES10.All)opcode);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3193,14 +2698,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Material(osuTK.Graphics.ES10.All face, osuTK.Graphics.ES10.All pname, Single param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Materialf((osuTK.Graphics.ES10.All)face, (osuTK.Graphics.ES10.All)pname, (Single)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3226,10 +2726,7 @@ namespace osuTK.Graphics.ES10
         public static
         void Material(osuTK.Graphics.ES10.All face, osuTK.Graphics.ES10.All pname, Single[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Single* @params_ptr = @params)
@@ -3237,9 +2734,7 @@ namespace osuTK.Graphics.ES10
                     Core.Materialfv((osuTK.Graphics.ES10.All)face, (osuTK.Graphics.ES10.All)pname, (Single*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3266,14 +2761,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void Material(osuTK.Graphics.ES10.All face, osuTK.Graphics.ES10.All pname, Single* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Materialfv((osuTK.Graphics.ES10.All)face, (osuTK.Graphics.ES10.All)pname, (Single*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3281,14 +2771,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Materialx(osuTK.Graphics.ES10.All face, osuTK.Graphics.ES10.All pname, int param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Materialx((osuTK.Graphics.ES10.All)face, (osuTK.Graphics.ES10.All)pname, (int)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3296,10 +2781,7 @@ namespace osuTK.Graphics.ES10
         public static
         void Materialx(osuTK.Graphics.ES10.All face, osuTK.Graphics.ES10.All pname, int[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (int* @params_ptr = @params)
@@ -3307,9 +2789,7 @@ namespace osuTK.Graphics.ES10
                     Core.Materialxv((osuTK.Graphics.ES10.All)face, (osuTK.Graphics.ES10.All)pname, (int*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3318,14 +2798,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void Materialx(osuTK.Graphics.ES10.All face, osuTK.Graphics.ES10.All pname, int* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Materialxv((osuTK.Graphics.ES10.All)face, (osuTK.Graphics.ES10.All)pname, (int*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3341,14 +2816,9 @@ namespace osuTK.Graphics.ES10
         public static
         void MatrixMode(osuTK.Graphics.ES10.All mode)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.MatrixMode((osuTK.Graphics.ES10.All)mode);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3369,14 +2839,9 @@ namespace osuTK.Graphics.ES10
         public static
         void MultiTexCoord4(osuTK.Graphics.ES10.All target, Single s, Single t, Single r, Single q)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.MultiTexCoord4f((osuTK.Graphics.ES10.All)target, (Single)s, (Single)t, (Single)r, (Single)q);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3384,14 +2849,9 @@ namespace osuTK.Graphics.ES10
         public static
         void MultiTexCoord4x(osuTK.Graphics.ES10.All target, int s, int t, int r, int q)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.MultiTexCoord4x((osuTK.Graphics.ES10.All)target, (int)s, (int)t, (int)r, (int)q);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3407,10 +2867,7 @@ namespace osuTK.Graphics.ES10
         public static
         void MultMatrix(Single[] m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Single* m_ptr = m)
@@ -3418,9 +2875,7 @@ namespace osuTK.Graphics.ES10
                     Core.MultMatrixf((Single*)m_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3436,10 +2891,7 @@ namespace osuTK.Graphics.ES10
         public static
         void MultMatrix(ref Single m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Single* m_ptr = &m)
@@ -3447,9 +2899,7 @@ namespace osuTK.Graphics.ES10
                     Core.MultMatrixf((Single*)m_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3466,14 +2916,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void MultMatrix(Single* m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.MultMatrixf((Single*)m);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3481,10 +2926,7 @@ namespace osuTK.Graphics.ES10
         public static
         void MultMatrixx(int[] m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (int* m_ptr = m)
@@ -3492,9 +2934,7 @@ namespace osuTK.Graphics.ES10
                     Core.MultMatrixx((int*)m_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3502,10 +2942,7 @@ namespace osuTK.Graphics.ES10
         public static
         void MultMatrixx(ref int m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (int* m_ptr = &m)
@@ -3513,9 +2950,7 @@ namespace osuTK.Graphics.ES10
                     Core.MultMatrixx((int*)m_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3524,14 +2959,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void MultMatrixx(int* m)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.MultMatrixx((int*)m);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3550,14 +2980,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Normal3(Single nx, Single ny, Single nz)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Normal3f((Single)nx, (Single)ny, (Single)nz);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3565,14 +2990,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Normal3x(int nx, int ny, int nz)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Normal3x((int)nx, (int)ny, (int)nz);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3598,14 +3018,9 @@ namespace osuTK.Graphics.ES10
         public static
         void NormalPointer(osuTK.Graphics.ES10.All type, Int32 stride, IntPtr pointer)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.NormalPointer((osuTK.Graphics.ES10.All)type, (Int32)stride, (IntPtr)pointer);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3632,10 +3047,7 @@ namespace osuTK.Graphics.ES10
         void NormalPointer<T2>(osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T2[] pointer)
             where T2 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -3645,9 +3057,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3674,10 +3084,7 @@ namespace osuTK.Graphics.ES10
         void NormalPointer<T2>(osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T2[,] pointer)
             where T2 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -3687,9 +3094,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3716,10 +3121,7 @@ namespace osuTK.Graphics.ES10
         void NormalPointer<T2>(osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T2[,,] pointer)
             where T2 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -3729,9 +3131,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3758,10 +3158,7 @@ namespace osuTK.Graphics.ES10
         void NormalPointer<T2>(osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] ref T2 pointer)
             where T2 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -3772,9 +3169,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3800,14 +3195,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Ortho(Single left, Single right, Single bottom, Single top, Single zNear, Single zFar)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Orthof((Single)left, (Single)right, (Single)bottom, (Single)top, (Single)zNear, (Single)zFar);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3815,14 +3205,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Orthox(int left, int right, int bottom, int top, int zNear, int zFar)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Orthox((int)left, (int)right, (int)bottom, (int)top, (int)zNear, (int)zFar);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3843,14 +3228,9 @@ namespace osuTK.Graphics.ES10
         public static
         void PixelStore(osuTK.Graphics.ES10.All pname, Int32 param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.PixelStorei((osuTK.Graphics.ES10.All)pname, (Int32)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3866,14 +3246,9 @@ namespace osuTK.Graphics.ES10
         public static
         void PointSize(Single size)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.PointSize((Single)size);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3881,14 +3256,9 @@ namespace osuTK.Graphics.ES10
         public static
         void PointSizex(int size)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.PointSizex((int)size);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3909,14 +3279,9 @@ namespace osuTK.Graphics.ES10
         public static
         void PolygonOffset(Single factor, Single units)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.PolygonOffset((Single)factor, (Single)units);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3924,14 +3289,9 @@ namespace osuTK.Graphics.ES10
         public static
         void PolygonOffsetx(int factor, int units)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.PolygonOffsetx((int)factor, (int)units);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -3939,14 +3299,9 @@ namespace osuTK.Graphics.ES10
         public static
         void PopMatrix()
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.PopMatrix();
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -3957,14 +3312,9 @@ namespace osuTK.Graphics.ES10
         public static
         void PushMatrix()
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.PushMatrix();
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4000,14 +3350,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ReadPixels(Int32 x, Int32 y, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, IntPtr pixels)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ReadPixels((Int32)x, (Int32)y, (Int32)width, (Int32)height, (osuTK.Graphics.ES10.All)format, (osuTK.Graphics.ES10.All)type, (IntPtr)pixels);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4044,10 +3389,7 @@ namespace osuTK.Graphics.ES10
         void ReadPixels<T6>(Int32 x, Int32 y, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T6[] pixels)
             where T6 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -4057,9 +3399,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4096,10 +3436,7 @@ namespace osuTK.Graphics.ES10
         void ReadPixels<T6>(Int32 x, Int32 y, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T6[,] pixels)
             where T6 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -4109,9 +3446,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4148,10 +3483,7 @@ namespace osuTK.Graphics.ES10
         void ReadPixels<T6>(Int32 x, Int32 y, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T6[,,] pixels)
             where T6 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -4161,9 +3493,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4200,10 +3530,7 @@ namespace osuTK.Graphics.ES10
         void ReadPixels<T6>(Int32 x, Int32 y, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] ref T6 pixels)
             where T6 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -4214,9 +3541,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4237,14 +3562,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Rotate(Single angle, Single x, Single y, Single z)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Rotatef((Single)angle, (Single)x, (Single)y, (Single)z);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -4252,14 +3572,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Rotatex(int angle, int x, int y, int z)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Rotatex((int)angle, (int)x, (int)y, (int)z);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4280,14 +3595,9 @@ namespace osuTK.Graphics.ES10
         public static
         void SampleCoverage(Single value, bool invert)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.SampleCoverage((Single)value, (bool)invert);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -4295,14 +3605,9 @@ namespace osuTK.Graphics.ES10
         public static
         void SampleCoveragex(int value, bool invert)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.SampleCoveragex((int)value, (bool)invert);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4318,14 +3623,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Scale(Single x, Single y, Single z)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Scalef((Single)x, (Single)y, (Single)z);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -4333,14 +3633,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Scalex(int x, int y, int z)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Scalex((int)x, (int)y, (int)z);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4361,14 +3656,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Scissor(Int32 x, Int32 y, Int32 width, Int32 height)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Scissor((Int32)x, (Int32)y, (Int32)width, (Int32)height);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4384,14 +3674,9 @@ namespace osuTK.Graphics.ES10
         public static
         void ShadeModel(osuTK.Graphics.ES10.All mode)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.ShadeModel((osuTK.Graphics.ES10.All)mode);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4417,14 +3702,9 @@ namespace osuTK.Graphics.ES10
         public static
         void StencilFunc(osuTK.Graphics.ES10.All func, Int32 @ref, Int32 mask)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.StencilFunc((osuTK.Graphics.ES10.All)func, (Int32)@ref, (UInt32)mask);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4451,14 +3731,9 @@ namespace osuTK.Graphics.ES10
         public static
         void StencilFunc(osuTK.Graphics.ES10.All func, Int32 @ref, UInt32 mask)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.StencilFunc((osuTK.Graphics.ES10.All)func, (Int32)@ref, (UInt32)mask);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4474,14 +3749,9 @@ namespace osuTK.Graphics.ES10
         public static
         void StencilMask(Int32 mask)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.StencilMask((UInt32)mask);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4498,14 +3768,9 @@ namespace osuTK.Graphics.ES10
         public static
         void StencilMask(UInt32 mask)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.StencilMask((UInt32)mask);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4531,14 +3796,9 @@ namespace osuTK.Graphics.ES10
         public static
         void StencilOp(osuTK.Graphics.ES10.All fail, osuTK.Graphics.ES10.All zfail, osuTK.Graphics.ES10.All zpass)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.StencilOp((osuTK.Graphics.ES10.All)fail, (osuTK.Graphics.ES10.All)zfail, (osuTK.Graphics.ES10.All)zpass);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4569,14 +3829,9 @@ namespace osuTK.Graphics.ES10
         public static
         void TexCoordPointer(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, IntPtr pointer)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.TexCoordPointer((Int32)size, (osuTK.Graphics.ES10.All)type, (Int32)stride, (IntPtr)pointer);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4608,10 +3863,7 @@ namespace osuTK.Graphics.ES10
         void TexCoordPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T3[] pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -4621,9 +3873,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4655,10 +3905,7 @@ namespace osuTK.Graphics.ES10
         void TexCoordPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T3[,] pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -4668,9 +3915,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4702,10 +3947,7 @@ namespace osuTK.Graphics.ES10
         void TexCoordPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T3[,,] pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -4715,9 +3957,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4749,10 +3989,7 @@ namespace osuTK.Graphics.ES10
         void TexCoordPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] ref T3 pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -4763,9 +4000,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4791,14 +4026,9 @@ namespace osuTK.Graphics.ES10
         public static
         void TexEnv(osuTK.Graphics.ES10.All target, osuTK.Graphics.ES10.All pname, Single param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.TexEnvf((osuTK.Graphics.ES10.All)target, (osuTK.Graphics.ES10.All)pname, (Single)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4824,10 +4054,7 @@ namespace osuTK.Graphics.ES10
         public static
         void TexEnv(osuTK.Graphics.ES10.All target, osuTK.Graphics.ES10.All pname, Single[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (Single* @params_ptr = @params)
@@ -4835,9 +4062,7 @@ namespace osuTK.Graphics.ES10
                     Core.TexEnvfv((osuTK.Graphics.ES10.All)target, (osuTK.Graphics.ES10.All)pname, (Single*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4864,14 +4089,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void TexEnv(osuTK.Graphics.ES10.All target, osuTK.Graphics.ES10.All pname, Single* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.TexEnvfv((osuTK.Graphics.ES10.All)target, (osuTK.Graphics.ES10.All)pname, (Single*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -4879,14 +4099,9 @@ namespace osuTK.Graphics.ES10
         public static
         void TexEnvx(osuTK.Graphics.ES10.All target, osuTK.Graphics.ES10.All pname, int param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.TexEnvx((osuTK.Graphics.ES10.All)target, (osuTK.Graphics.ES10.All)pname, (int)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -4894,10 +4109,7 @@ namespace osuTK.Graphics.ES10
         public static
         void TexEnvx(osuTK.Graphics.ES10.All target, osuTK.Graphics.ES10.All pname, int[] @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             unsafe
             {
                 fixed (int* @params_ptr = @params)
@@ -4905,9 +4117,7 @@ namespace osuTK.Graphics.ES10
                     Core.TexEnvxv((osuTK.Graphics.ES10.All)target, (osuTK.Graphics.ES10.All)pname, (int*)@params_ptr);
                 }
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -4916,14 +4126,9 @@ namespace osuTK.Graphics.ES10
         public static
         unsafe void TexEnvx(osuTK.Graphics.ES10.All target, osuTK.Graphics.ES10.All pname, int* @params)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.TexEnvxv((osuTK.Graphics.ES10.All)target, (osuTK.Graphics.ES10.All)pname, (int*)@params);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -4979,14 +4184,9 @@ namespace osuTK.Graphics.ES10
         public static
         void TexImage2D(osuTK.Graphics.ES10.All target, Int32 level, Int32 internalformat, Int32 width, Int32 height, Int32 border, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, IntPtr pixels)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.TexImage2D((osuTK.Graphics.ES10.All)target, (Int32)level, (Int32)internalformat, (Int32)width, (Int32)height, (Int32)border, (osuTK.Graphics.ES10.All)format, (osuTK.Graphics.ES10.All)type, (IntPtr)pixels);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5043,10 +4243,7 @@ namespace osuTK.Graphics.ES10
         void TexImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 internalformat, Int32 width, Int32 height, Int32 border, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T8[] pixels)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -5056,9 +4253,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5115,10 +4310,7 @@ namespace osuTK.Graphics.ES10
         void TexImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 internalformat, Int32 width, Int32 height, Int32 border, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T8[,] pixels)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -5128,9 +4320,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5187,10 +4377,7 @@ namespace osuTK.Graphics.ES10
         void TexImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 internalformat, Int32 width, Int32 height, Int32 border, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T8[,,] pixels)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -5200,9 +4387,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5259,10 +4444,7 @@ namespace osuTK.Graphics.ES10
         void TexImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 internalformat, Int32 width, Int32 height, Int32 border, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] ref T8 pixels)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -5273,9 +4455,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5301,14 +4481,9 @@ namespace osuTK.Graphics.ES10
         public static
         void TexParameter(osuTK.Graphics.ES10.All target, osuTK.Graphics.ES10.All pname, Single param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.TexParameterf((osuTK.Graphics.ES10.All)target, (osuTK.Graphics.ES10.All)pname, (Single)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -5316,14 +4491,9 @@ namespace osuTK.Graphics.ES10
         public static
         void TexParameterx(osuTK.Graphics.ES10.All target, osuTK.Graphics.ES10.All pname, int param)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.TexParameterx((osuTK.Graphics.ES10.All)target, (osuTK.Graphics.ES10.All)pname, (int)param);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5379,14 +4549,9 @@ namespace osuTK.Graphics.ES10
         public static
         void TexSubImage2D(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, IntPtr pixels)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.TexSubImage2D((osuTK.Graphics.ES10.All)target, (Int32)level, (Int32)xoffset, (Int32)yoffset, (Int32)width, (Int32)height, (osuTK.Graphics.ES10.All)format, (osuTK.Graphics.ES10.All)type, (IntPtr)pixels);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5443,10 +4608,7 @@ namespace osuTK.Graphics.ES10
         void TexSubImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T8[] pixels)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -5456,9 +4618,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5515,10 +4675,7 @@ namespace osuTK.Graphics.ES10
         void TexSubImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T8[,] pixels)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -5528,9 +4685,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5587,10 +4742,7 @@ namespace osuTK.Graphics.ES10
         void TexSubImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] T8[,,] pixels)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -5600,9 +4752,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5659,10 +4809,7 @@ namespace osuTK.Graphics.ES10
         void TexSubImage2D<T8>(osuTK.Graphics.ES10.All target, Int32 level, Int32 xoffset, Int32 yoffset, Int32 width, Int32 height, osuTK.Graphics.ES10.All format, osuTK.Graphics.ES10.All type, [InAttribute, OutAttribute] ref T8 pixels)
             where T8 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pixels_ptr = GCHandle.Alloc(pixels, GCHandleType.Pinned);
             try
             {
@@ -5673,9 +4820,7 @@ namespace osuTK.Graphics.ES10
             {
                 pixels_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5691,14 +4836,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Translate(Single x, Single y, Single z)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Translatef((Single)x, (Single)y, (Single)z);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
         /// <summary>[requires: v1.0 and 1.0]</summary>
@@ -5706,14 +4846,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Translatex(int x, int y, int z)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Translatex((int)x, (int)y, (int)z);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5744,14 +4879,9 @@ namespace osuTK.Graphics.ES10
         public static
         void VertexPointer(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, IntPtr pointer)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.VertexPointer((Int32)size, (osuTK.Graphics.ES10.All)type, (Int32)stride, (IntPtr)pointer);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5783,10 +4913,7 @@ namespace osuTK.Graphics.ES10
         void VertexPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T3[] pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -5796,9 +4923,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5830,10 +4955,7 @@ namespace osuTK.Graphics.ES10
         void VertexPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T3[,] pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -5843,9 +4965,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5877,10 +4997,7 @@ namespace osuTK.Graphics.ES10
         void VertexPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] T3[,,] pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -5890,9 +5007,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5924,10 +5039,7 @@ namespace osuTK.Graphics.ES10
         void VertexPointer<T3>(Int32 size, osuTK.Graphics.ES10.All type, Int32 stride, [InAttribute, OutAttribute] ref T3 pointer)
             where T3 : struct
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             GCHandle pointer_ptr = GCHandle.Alloc(pointer, GCHandleType.Pinned);
             try
             {
@@ -5938,9 +5050,7 @@ namespace osuTK.Graphics.ES10
             {
                 pointer_ptr.Free();
             }
-            #if DEBUG
-            }
-            #endif
+            
         }
 
 
@@ -5961,14 +5071,9 @@ namespace osuTK.Graphics.ES10
         public static
         void Viewport(Int32 x, Int32 y, Int32 width, Int32 height)
         {
-            #if DEBUG
-            using (new ErrorHelper(GraphicsContext.CurrentContext))
-            {
-            #endif
+            
             Core.Viewport((Int32)x, (Int32)y, (Int32)width, (Int32)height);
-            #if DEBUG
-            }
-            #endif
+            
         }
 
     }
