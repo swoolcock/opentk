@@ -33,7 +33,7 @@ namespace osuTK.Graphics.ES31
     /// <summary>
     /// Provides access to OpenGL ES 3.0 methods.
     /// </summary>
-    public sealed partial class GL : GraphicsBindingsBase
+    public sealed partial class GL : GLBindings
     {
         private const string Library = "GLESv2";
         private static readonly object sync_root = new object();

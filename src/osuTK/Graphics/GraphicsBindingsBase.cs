@@ -31,11 +31,22 @@ namespace osuTK.Graphics
     /// <summary>
     /// Implements BindingsBase for the osuTK.Graphics namespace (OpenGL and OpenGL|ES).
     /// </summary>
-    public abstract class GraphicsBindingsBase : BindingsBase
+    public class GraphicsBindingsBase : BindingsBase
     {
         internal IntPtr[] _EntryPointsInstance;
         internal byte[] _EntryPointNamesInstance;
         internal int[] _EntryPointNameOffsetsInstance;
+
+        private readonly GLBindings glBindings;
+
+        protected GraphicsBindingsBase()
+        {
+        }
+
+        public GraphicsBindingsBase(GLBindings glBindings)
+        {
+            this.glBindings = glBindings;
+        }
 
         /// <summary>
         /// Retrieves an unmanaged function pointer to the specified function.
@@ -62,6 +73,8 @@ namespace osuTK.Graphics
             return context != null ? context.GetAddress(funcname) : IntPtr.Zero;
         }
 
+        protected override object SyncRoot { get; }
+
         // Loads all available entry points for the current API.
         // Note: we prefer IGraphicsContextInternal.GetAddress over
         // this.GetAddress to improve loading performance (less
@@ -79,12 +92,19 @@ namespace osuTK.Graphics
             IGraphicsContextInternal context_internal = context as IGraphicsContextInternal;
             unsafe
             {
-                fixed (byte* name = _EntryPointNamesInstance)
+                fixed (byte* name = glBindings?._EntryPointNamesInstance ?? _EntryPointNamesInstance)
                 {
-                    for (int i = 0; i < _EntryPointsInstance.Length; i++)
+                    var length = glBindings?._EntryPointsInstance.Length ?? _EntryPointsInstance.Length;
+
+                    for (int i = 0; i < length; i++)
                     {
-                        _EntryPointsInstance[i] = context_internal.GetAddress(
-                            new IntPtr(name + _EntryPointNameOffsetsInstance[i]));
+                        var offset = glBindings?._EntryPointNameOffsetsInstance[i] ?? _EntryPointNameOffsetsInstance[i];
+                        var address = context_internal.GetAddress(new IntPtr(name + offset));
+
+                        if (glBindings != null)
+                            glBindings._EntryPointsInstance[i] = address;
+                        else
+                            _EntryPointsInstance[i] = address;
                     }
                 }
             }

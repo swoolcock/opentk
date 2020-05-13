@@ -33,7 +33,7 @@ namespace osuTK.Graphics.OpenGL4
     /// <summary>
     /// Provides access to OpenGL 4.x methods for the core profile.
     /// </summary>
-    public sealed partial class GL : GraphicsBindingsBase
+    public sealed partial class GL : GLBindings
     {
         private const string Library = "opengl32.dll";
         private static readonly object sync_root = new object();

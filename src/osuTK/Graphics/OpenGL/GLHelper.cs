@@ -57,7 +57,7 @@ namespace osuTK.Graphics.OpenGL
     /// </para>
     /// </remarks>
     /// <see href="http://opengl.org/registry/"/>
-    public sealed partial class GL : GraphicsBindingsBase
+    public sealed partial class GL : GLBindings
     {
         internal const string Library = "opengl32.dll";
 

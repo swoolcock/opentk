@@ -7,7 +7,7 @@ namespace osuTK.Graphics.ES11
     /// Provides access to OpenGL ES 1.1 methods.
     /// </summary>
 
-    public sealed partial class GL : GraphicsBindingsBase
+    public sealed partial class GL : GLBindings
     {
         private const string Library = "GLESv1_CM";
         private static readonly object sync_root = new object();
