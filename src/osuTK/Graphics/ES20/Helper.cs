@@ -73,97 +73,10 @@ namespace osuTK.Graphics.ES20
             GL.ClearColor(color.R / 255.0f, color.G / 255.0f, color.B / 255.0f, color.A / 255.0f);
         }
 
-        public static void ClearColor(Color4 color)
-        {
-            GL.ClearColor(color.R, color.G, color.B, color.A);
-        }
-
         public static void BlendColor(Color color)
         {
             GL.BlendColor(color.R / 255.0f, color.G / 255.0f, color.B / 255.0f, color.A / 255.0f);
         }
-
-        public static void BlendColor(Color4 color)
-        {
-            GL.BlendColor(color.R, color.G, color.B, color.A);
-        }
-
-        [CLSCompliant(false)]
-        public static void Uniform2(int location, ref Vector2 vector)
-        {
-            GL.Uniform2(location, vector.X, vector.Y);
-        }
-
-        [CLSCompliant(false)]
-        public static void Uniform3(int location, ref Vector3 vector)
-        {
-            GL.Uniform3(location, vector.X, vector.Y, vector.Z);
-        }
-
-        [CLSCompliant(false)]
-        public static void Uniform4(int location, ref Vector4 vector)
-        {
-            GL.Uniform4(location, vector.X, vector.Y, vector.Z, vector.W);
-        }
-
-        public static void Uniform2(int location, Vector2 vector)
-        {
-            GL.Uniform2(location, vector.X, vector.Y);
-        }
-
-        public static void Uniform3(int location, Vector3 vector)
-        {
-            GL.Uniform3(location, vector.X, vector.Y, vector.Z);
-        }
-
-        public static void Uniform4(int location, Vector4 vector)
-        {
-            GL.Uniform4(location, vector.X, vector.Y, vector.Z, vector.W);
-        }
-
-        public static void Uniform4(int location, Color4 color)
-        {
-            GL.Uniform4(location, color.R, color.G, color.B, color.A);
-        }
-
-        public static void Uniform4(int location, Quaternion quaternion)
-        {
-            GL.Uniform4(location, quaternion.X, quaternion.Y, quaternion.Z, quaternion.W);
-        }
-
-        public static void UniformMatrix2(int location, bool transpose, ref Matrix2 matrix)
-        {
-            unsafe
-            {
-                fixed (float* matrix_ptr = &matrix.Row0.X)
-                {
-                    GL.UniformMatrix2(location, 1, transpose, matrix_ptr);
-                }
-            }
-        }
-
-        public static void UniformMatrix3(int location, bool transpose, ref Matrix3 matrix)
-        {
-            unsafe
-            {
-                fixed (float* matrix_ptr = &matrix.Row0.X)
-                {
-                    GL.UniformMatrix3(location, 1, transpose, matrix_ptr);
-                }
-            }
-        }
-
-        public static void UniformMatrix4(int location, bool transpose, ref Matrix4 matrix)
-        {
-            unsafe
-            {
-                fixed (float* matrix_ptr = &matrix.Row0.X)
-                {
-                    GL.UniformMatrix4(location, 1, transpose, matrix_ptr);
-                }
-            }
-        }
-
 
         public static string GetActiveAttrib(int program, int index, out int size, out ActiveAttribType type)
         {
@@ -237,39 +150,6 @@ namespace osuTK.Graphics.ES20
             }
         }
 
-        [CLSCompliant(false)]
-        public static void VertexAttrib2(Int32 index, ref Vector2 v)
-        {
-            GL.VertexAttrib2(index, v.X, v.Y);
-        }
-
-        [CLSCompliant(false)]
-        public static void VertexAttrib3(Int32 index, ref Vector3 v)
-        {
-            GL.VertexAttrib3(index, v.X, v.Y, v.Z);
-        }
-
-        [CLSCompliant(false)]
-        public static void VertexAttrib4(Int32 index, ref Vector4 v)
-        {
-            GL.VertexAttrib4(index, v.X, v.Y, v.Z, v.W);
-        }
-
-        public static void VertexAttrib2(Int32 index, Vector2 v)
-        {
-            GL.VertexAttrib2(index, v.X, v.Y);
-        }
-
-        public static void VertexAttrib3(Int32 index, Vector3 v)
-        {
-            GL.VertexAttrib3(index, v.X, v.Y, v.Z);
-        }
-
-        public static void VertexAttrib4(Int32 index, Vector4 v)
-        {
-            GL.VertexAttrib4(index, v.X, v.Y, v.Z, v.W);
-        }
-
         public static void VertexAttribPointer(int index, int size, VertexAttribPointerType type, bool normalized, int stride, int offset)
         {
             VertexAttribPointer(index, size, type, normalized, stride, (IntPtr)offset);
@@ -284,50 +164,6 @@ namespace osuTK.Graphics.ES20
         public static void DrawElements(BeginMode mode, int count, DrawElementsType type, int offset)
         {
             DrawElements((PrimitiveType)mode, count, type, new IntPtr(offset));
-        }
-
-        public static void GetFloat(GetPName pname, out Vector2 vector)
-        {
-            unsafe
-            {
-                fixed (Vector2* ptr = &vector)
-                {
-                    GetFloat(pname, (float*)ptr);
-                }
-            }
-        }
-
-        public static void GetFloat(GetPName pname, out Vector3 vector)
-        {
-            unsafe
-            {
-                fixed (Vector3* ptr = &vector)
-                {
-                    GetFloat(pname, (float*)ptr);
-                }
-            }
-        }
-
-        public static void GetFloat(GetPName pname, out Vector4 vector)
-        {
-            unsafe
-            {
-                fixed (Vector4* ptr = &vector)
-                {
-                    GetFloat(pname, (float*)ptr);
-                }
-            }
-        }
-
-        public static void GetFloat(GetPName pname, out Matrix4 matrix)
-        {
-            unsafe
-            {
-                fixed (Matrix4* ptr = &matrix)
-                {
-                    GetFloat(pname, (float*)ptr);
-                }
-            }
         }
 
         public static void Viewport(Size size)
