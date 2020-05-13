@@ -22,6 +22,19 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
     </ProjectReference>
+    <ProjectReference Include="osuTK.GL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Graphics\ES10\*.cs" />
+    <Compile Remove="Graphics\ES11\*.cs" />
+    <Compile Remove="Graphics\ES20\*.cs" />
+    <Compile Remove="Graphics\ES30\*.cs" />
+    <Compile Remove="Graphics\ES31\*.cs" />
+    <Compile Remove="Graphics\OpenGL\*.cs" />
+    <Compile Remove="Graphics\OpenGL4\*.cs" />
+    <None Remove="osuTK.GL.dll.config" />
+    <Compile Remove="Graphics\GLBindings.cs" />
   </ItemGroup>
 
   <Target Name="Rewrite" AfterTargets="PostBuildEvent">

@@ -17,5 +17,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\osuTK\osuTK.NS20.csproj" />
+    <ProjectReference Include="..\osuTK\osuTK.GL.csproj" />
   </ItemGroup>
 </Project>

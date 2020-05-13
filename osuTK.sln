@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.Android", "src\osuTK.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.iOS", "src\osuTK.iOS\osuTK.iOS.csproj", "{41D0EF74-194E-4B0B-910D-440A7A38DFBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuTK.GL", "src\osuTK\osuTK.GL.csproj", "{A30BC08E-6332-449F-851F-09FEC77C235E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{23110598-EB45-4D97-899E-647735A660CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23110598-EB45-4D97-899E-647735A660CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23110598-EB45-4D97-899E-647735A660CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A30BC08E-6332-449F-851F-09FEC77C235E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A30BC08E-6332-449F-851F-09FEC77C235E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A30BC08E-6332-449F-851F-09FEC77C235E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A30BC08E-6332-449F-851F-09FEC77C235E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

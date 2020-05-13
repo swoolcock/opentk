@@ -4,9 +4,9 @@ namespace osuTK.Graphics
 {
     public abstract class GLBindings
     {
-        internal IntPtr[] _EntryPointsInstance;
-        internal byte[] _EntryPointNamesInstance;
-        internal int[] _EntryPointNameOffsetsInstance;
+        public IntPtr[] _EntryPointsInstance;
+        public byte[] _EntryPointNamesInstance;
+        public int[] _EntryPointNameOffsetsInstance;
 
         protected virtual object SyncRoot { get; }
     }

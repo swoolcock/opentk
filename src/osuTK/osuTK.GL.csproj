@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Common.props" />
+  <PropertyGroup>
+    <AssemblyName>osuTK.GL</AssemblyName>
+    <PackageId>ppy.osuTK.GL</PackageId>
+    <Title>ppy.osuTK.GL</Title>
+    <RootNamespace>osuTK</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <DefineConstants>$(DefineConstants);WIN32;CARBON;X11;SDL2;OPENGL;OPENGLES;MINIMAL</DefineConstants>
+    <NoWarn>3021</NoWarn> <!-- CLSCompliant not necessary -->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="osuTK.GL.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Graphics\ES10\*.cs" />
+    <Compile Include="Graphics\ES11\*.cs" />
+    <Compile Include="Graphics\ES20\*.cs" />
+    <Compile Include="Graphics\ES30\*.cs" />
+    <Compile Include="Graphics\ES31\*.cs" />
+    <Compile Include="Graphics\OpenGL\*.cs" />
+    <Compile Include="Graphics\OpenGL4\*.cs" />
+    <Compile Include="Graphics\GLBindings.cs" />
+    <None Remove="osuTK.dll.config" />
+  </ItemGroup>
+</Project>
